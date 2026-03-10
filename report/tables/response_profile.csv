@@ -1,0 +1,64 @@
+condition,condition_label,item_label,response_label,count,proportion
+item_only,Item Shift Only,Foil,new,1302,0.775
+item_only,Item Shift Only,Foil,old,59,0.03511904761904762
+item_only,Item Shift Only,Foil,similar,319,0.18988095238095237
+item_only,Item Shift Only,Lure (Mid-event),new,218,0.19464285714285715
+item_only,Item Shift Only,Lure (Mid-event),old,320,0.2857142857142857
+item_only,Item Shift Only,Lure (Mid-event),similar,582,0.5196428571428572
+item_only,Item Shift Only,Lure (Post-boundary),new,238,0.2125
+item_only,Item Shift Only,Lure (Post-boundary),old,318,0.2839285714285714
+item_only,Item Shift Only,Lure (Post-boundary),similar,564,0.5035714285714286
+item_only,Item Shift Only,Lure (Pre-boundary),new,221,0.19732142857142856
+item_only,Item Shift Only,Lure (Pre-boundary),old,335,0.29910714285714285
+item_only,Item Shift Only,Lure (Pre-boundary),similar,564,0.5035714285714286
+item_only,Item Shift Only,Target (Mid-event),new,108,0.09642857142857143
+item_only,Item Shift Only,Target (Mid-event),old,756,0.675
+item_only,Item Shift Only,Target (Mid-event),similar,256,0.22857142857142856
+item_only,Item Shift Only,Target (Post-boundary),new,106,0.09464285714285714
+item_only,Item Shift Only,Target (Post-boundary),old,750,0.6696428571428571
+item_only,Item Shift Only,Target (Post-boundary),similar,264,0.2357142857142857
+item_only,Item Shift Only,Target (Pre-boundary),new,115,0.10267857142857142
+item_only,Item Shift Only,Target (Pre-boundary),old,742,0.6625
+item_only,Item Shift Only,Target (Pre-boundary),similar,263,0.23482142857142857
+both,Item + Task Shift,Foil,new,1109,0.754421768707483
+both,Item + Task Shift,Foil,old,67,0.04557823129251701
+both,Item + Task Shift,Foil,similar,294,0.2
+both,Item + Task Shift,Lure (Mid-event),new,220,0.22448979591836735
+both,Item + Task Shift,Lure (Mid-event),old,278,0.2836734693877551
+both,Item + Task Shift,Lure (Mid-event),similar,482,0.49183673469387756
+both,Item + Task Shift,Lure (Post-boundary),new,236,0.24081632653061225
+both,Item + Task Shift,Lure (Post-boundary),old,295,0.3010204081632653
+both,Item + Task Shift,Lure (Post-boundary),similar,449,0.45816326530612245
+both,Item + Task Shift,Lure (Pre-boundary),new,206,0.21020408163265306
+both,Item + Task Shift,Lure (Pre-boundary),old,322,0.32857142857142857
+both,Item + Task Shift,Lure (Pre-boundary),similar,452,0.46122448979591835
+both,Item + Task Shift,Target (Mid-event),new,104,0.10612244897959183
+both,Item + Task Shift,Target (Mid-event),old,666,0.6795918367346939
+both,Item + Task Shift,Target (Mid-event),similar,210,0.21428571428571427
+both,Item + Task Shift,Target (Post-boundary),new,138,0.14081632653061224
+both,Item + Task Shift,Target (Post-boundary),old,594,0.6061224489795919
+both,Item + Task Shift,Target (Post-boundary),similar,248,0.2530612244897959
+both,Item + Task Shift,Target (Pre-boundary),new,84,0.08571428571428572
+both,Item + Task Shift,Target (Pre-boundary),old,644,0.6571428571428571
+both,Item + Task Shift,Target (Pre-boundary),similar,252,0.2571428571428571
+task_only,Task Shift Only,Foil,new,1232,0.7748427672955975
+task_only,Task Shift Only,Foil,old,50,0.031446540880503145
+task_only,Task Shift Only,Foil,similar,308,0.19371069182389938
+task_only,Task Shift Only,Lure (Mid-event),new,191,0.180188679245283
+task_only,Task Shift Only,Lure (Mid-event),old,273,0.25754716981132075
+task_only,Task Shift Only,Lure (Mid-event),similar,596,0.5622641509433962
+task_only,Task Shift Only,Lure (Post-boundary),new,197,0.18584905660377357
+task_only,Task Shift Only,Lure (Post-boundary),old,249,0.2349056603773585
+task_only,Task Shift Only,Lure (Post-boundary),similar,614,0.5792452830188679
+task_only,Task Shift Only,Lure (Pre-boundary),new,179,0.16886792452830188
+task_only,Task Shift Only,Lure (Pre-boundary),old,265,0.25
+task_only,Task Shift Only,Lure (Pre-boundary),similar,616,0.5811320754716981
+task_only,Task Shift Only,Target (Mid-event),new,104,0.09811320754716982
+task_only,Task Shift Only,Target (Mid-event),old,670,0.6320754716981132
+task_only,Task Shift Only,Target (Mid-event),similar,286,0.269811320754717
+task_only,Task Shift Only,Target (Post-boundary),new,120,0.11320754716981132
+task_only,Task Shift Only,Target (Post-boundary),old,630,0.5943396226415094
+task_only,Task Shift Only,Target (Post-boundary),similar,310,0.29245283018867924
+task_only,Task Shift Only,Target (Pre-boundary),new,103,0.09716981132075472
+task_only,Task Shift Only,Target (Pre-boundary),old,695,0.6556603773584906
+task_only,Task Shift Only,Target (Pre-boundary),similar,262,0.24716981132075472

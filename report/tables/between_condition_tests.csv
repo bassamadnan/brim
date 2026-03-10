@@ -1,0 +1,13 @@
+analysis_family,metric,description,test,f_value,p_value,contrast,t_value,cohens_d,p_value_holm,reject_holm
+between_condition_anova,rt_post_cost,post-minus-mid encoding RT,one_way_anova,42.12585691019367,2.4515438067100577e-15,,,,,
+between_condition_pairwise,rt_post_cost,post-minus-mid encoding RT,welch_t,,1.2745132606468283e-12,Item Shift Only - Item + Task Shift,-8.134626622747236,-1.5955290708340677,3.823539781940485e-12,True
+between_condition_pairwise,rt_post_cost,post-minus-mid encoding RT,welch_t,,2.473641969495094e-12,Item Shift Only - Task Shift Only,-8.004164466966811,-1.539119436532307,4.947283938990188e-12,True
+between_condition_pairwise,rt_post_cost,post-minus-mid encoding RT,welch_t,,0.6397400619000941,Item + Task Shift - Task Shift Only,-0.4695042227415093,-0.09273587841698663,0.6397400619000941,False
+between_condition_anova,REC_post_cost,post-minus-mid REC,one_way_anova,2.4903179992313027,0.08619491329813056,,,,,
+between_condition_pairwise,REC_post_cost,post-minus-mid REC,welch_t,,0.0291027379768267,Item Shift Only - Item + Task Shift,2.2132905671620513,0.43233671788785855,0.0873082139304801,False
+between_condition_pairwise,REC_post_cost,post-minus-mid REC,welch_t,,0.283154204471512,Item Shift Only - Task Shift Only,1.0786842313150113,0.20656502086741754,0.4850687753271381,False
+between_condition_pairwise,REC_post_cost,post-minus-mid REC,welch_t,,0.24253438766356905,Item + Task Shift - Task Shift Only,-1.175685982869621,-0.2330483694851297,0.4850687753271381,False
+between_condition_anova,LDI_pre_gain,pre-minus-mid LDI,one_way_anova,1.6134947566963096,0.202517618741728,,,,,
+between_condition_pairwise,LDI_pre_gain,pre-minus-mid LDI,welch_t,,0.6141110501648578,Item Shift Only - Item + Task Shift,0.5057962275333505,0.09905190980609674,0.6141110501648578,False
+between_condition_pairwise,LDI_pre_gain,pre-minus-mid LDI,welch_t,,0.1997664160902777,Item Shift Only - Task Shift Only,-1.2901902498467803,-0.24710700941843788,0.3995328321805554,False
+between_condition_pairwise,LDI_pre_gain,pre-minus-mid LDI,welch_t,,0.08639981291724025,Item + Task Shift - Task Shift Only,-1.7321706964787347,-0.3437908941188029,0.25919943875172075,False

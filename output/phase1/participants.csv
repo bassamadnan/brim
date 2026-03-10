@@ -1,0 +1,159 @@
+participant_uid,participant_id,condition,condition_label,task_file,test_file,pair_selection_note,encoding_task_accuracy,n_encoding_trials,n_test_trials
+item_only_00001,00001,item_only,Item Shift Only,00001_MST_task_2025-11-08_16h36.47.075.csv,00001_MST_test_2025-11-08_17h07.29.968.csv,unique_pair,0.9534883720930233,280,150
+item_only_00002,00002,item_only,Item Shift Only,00002_MST_task_2025-11-08_18h50.56.769.csv,00002_MST_test_2025-11-08_19h19.48.470.csv,unique_pair,0.9518072289156626,280,150
+item_only_00003,00003,item_only,Item Shift Only,00003_MST_task_2025-11-08_22h19.46.477.csv,00003_MST_test_2025-11-08_22h47.34.525.csv,unique_pair,0.9302325581395349,280,150
+item_only_00004,00004,item_only,Item Shift Only,00004_MST_task_2025-11-09_14h29.19.772.csv,00004_MST_test_2025-11-09_14h57.36.500.csv,unique_pair,0.9222222222222223,280,150
+item_only_00005,00005,item_only,Item Shift Only,00005_MST_task_2025-11-09_16h53.39.484.csv,00005_MST_test_2025-11-09_17h45.24.630.csv,unique_pair,0.9634146341463414,280,150
+item_only_00006,00006,item_only,Item Shift Only,00006_MST_task_2025-11-09_19h25.43.020.csv,00006_MST_test_2025-11-09_19h53.31.018.csv,unique_pair,0.9390243902439024,280,150
+item_only_00007,00007,item_only,Item Shift Only,00007_MST_task_2025-11-20_16h42.37.692.csv,00007_MST_test_2025-11-20_17h14.07.925.csv,unique_pair,0.8941176470588236,280,150
+item_only_00008,00008,item_only,Item Shift Only,00008_MST_task_2025-11-10_16h35.03.177.csv,00008_MST_test_2025-11-10_17h06.27.688.csv,unique_pair,0.9642857142857143,280,150
+item_only_00009,00009,item_only,Item Shift Only,00009_MST_task_2025-11-11_06h02.51.248.csv,00009_MST_test_2025-11-11_06h27.17.578.csv,unique_pair,0.9634146341463414,280,150
+item_only_00010,00010,item_only,Item Shift Only,00010_MST_task_2025-11-14_12h10.04.262.csv,00010_MST_test_2025-11-14_18h08.55.599.csv,unique_pair,0.9333333333333333,280,150
+item_only_00011,00011,item_only,Item Shift Only,00011_MST_task_2025-11-14_21h11.30.103.csv,00011_MST_test_2025-11-14_21h38.18.508.csv,unique_pair,0.8837209302325582,280,150
+item_only_00012,00012,item_only,Item Shift Only,00012_MST_task_2025-11-15_10h50.12.984.csv,00012_MST_test_2025-11-15_11h16.55.438.csv,unique_pair,0.9195402298850575,280,150
+item_only_00013,00013,item_only,Item Shift Only,00013_MST_task_2025-11-15_17h25.43.188.csv,00013_MST_test_2025-11-15_17h55.05.651.csv,unique_pair,0.975609756097561,280,150
+item_only_00014,00014,item_only,Item Shift Only,00014_MST_task_2025-11-17_15h22.12.288.csv,00014_MST_test_2025-11-17_16h00.28.058.csv,unique_pair,0.8987341772151899,280,150
+item_only_00015,00015,item_only,Item Shift Only,00015_MST_task_2025-11-17_18h05.33.650.csv,00015_MST_test_2025-11-17_18h33.40.554.csv,unique_pair,0.9655172413793104,280,150
+item_only_00016,00016,item_only,Item Shift Only,00016_MST_task_2025-11-18_15h18.28.519.csv,00016_MST_test_2025-11-18_15h57.27.139.csv,unique_pair,0.925,280,150
+item_only_00017,00017,item_only,Item Shift Only,00017_MST_task_2026-01-20_12h09.25.940.csv,00017_MST_test_2026-01-20_12h47.41.536.csv,unique_pair,0.927710843373494,280,150
+item_only_00018,00018,item_only,Item Shift Only,00018_MST_task_2026-01-20_14h57.56.200.csv,00018_MST_test_2026-01-20_15h46.27.618.csv,unique_pair,0.8837209302325582,280,150
+item_only_00019,00019,item_only,Item Shift Only,00019_MST_task_2026-01-20_15h19.21.867.csv,00019_MST_test_2026-01-20_15h44.09.765.csv,unique_pair,0.9186046511627907,280,150
+item_only_00020,00020,item_only,Item Shift Only,00020_MST_task_2026-01-20_16h14.02.894.csv,00020_MST_test_2026-01-20_16h39.03.637.csv,unique_pair,0.9125,280,150
+item_only_00021,00021,item_only,Item Shift Only,00021_MST_task_2026-01-20_15h54.11.031.csv,00021_MST_test_2026-01-20_17h10.36.612.csv,unique_pair,0.9770114942528736,280,150
+item_only_00022,00022,item_only,Item Shift Only,00022_MST_task_2026-01-20_16h50.51.424.csv,00022_MST_test_2026-01-20_17h30.21.472.csv,unique_pair,0.9880952380952381,280,150
+item_only_00023,00023,item_only,Item Shift Only,00023_MST_task_2026-01-20_17h20.47.244.csv,00023_MST_test_2026-01-20_17h47.38.675.csv,unique_pair,0.9367088607594937,280,150
+item_only_00024,00024,item_only,Item Shift Only,00024_MST_task_2026-01-20_17h45.28.652.csv,00024_MST_test_2026-01-20_18h09.57.673.csv,unique_pair,0.8571428571428571,280,150
+item_only_00025,00025,item_only,Item Shift Only,00025_MST_task_2026-01-20_19h03.31.875.csv,00025_MST_test_2026-01-20_19h32.59.931.csv,unique_pair,0.9545454545454546,280,150
+item_only_00026,00026,item_only,Item Shift Only,00026_MST_task_2026-01-20_19h20.16.777.csv,00026_MST_test_2026-01-20_19h45.56.914.csv,unique_pair,0.963855421686747,280,150
+item_only_00027,00027,item_only,Item Shift Only,00027_MST_task_2026-01-20_19h47.53.224.csv,00027_MST_test_2026-01-20_20h11.54.094.csv,unique_pair,0.9629629629629629,280,150
+item_only_00028,00028,item_only,Item Shift Only,00028_MST_task_2026-01-20_21h43.31.019.csv,00028_MST_test_2026-01-20_22h09.36.854.csv,unique_pair,0.8850574712643678,280,150
+item_only_00029,00029,item_only,Item Shift Only,00029_MST_task_2026-01-21_11h19.06.023.csv,00029_MST_test_2026-01-21_11h42.53.652.csv,unique_pair,0.9390243902439024,280,150
+item_only_00030,00030,item_only,Item Shift Only,00030_MST_task_2026-01-21_11h23.46.765.csv,00030_MST_test_2026-01-21_11h51.29.080.csv,unique_pair,0.9325842696629213,280,150
+item_only_00031,00031,item_only,Item Shift Only,00031_MST_task_2026-01-21_14h49.42.484.csv,00031_MST_test_2026-01-21_15h25.55.946.csv,unique_pair,0.9518072289156626,280,150
+item_only_00032,00032,item_only,Item Shift Only,00032_MST_task_2026-01-22_10h59.30.259.csv,00032_MST_test_2026-01-22_11h26.12.622.csv,unique_pair,0.9642857142857143,280,150
+item_only_00033,00033,item_only,Item Shift Only,00033_MST_task_2026-01-22_11h03.27.713.csv,00033_MST_test_2026-01-22_11h28.01.006.csv,unique_pair,0.9325842696629213,280,150
+item_only_00034,00034,item_only,Item Shift Only,00034_MST_task_2026-01-22_17h23.05.207.csv,00034_MST_test_2026-01-22_17h48.05.945.csv,unique_pair,0.9512195121951219,280,150
+item_only_00035,00035,item_only,Item Shift Only,00035_MST_task_2026-01-22_20h53.05.508.csv,00035_MST_test_2026-01-22_21h18.33.812.csv,unique_pair,0.8690476190476191,280,150
+item_only_00036,00036,item_only,Item Shift Only,00036_MST_task_2026-01-23_16h03.45.360.csv,00036_MST_test_2026-01-23_16h28.22.558.csv,unique_pair,0.8764044943820225,280,150
+item_only_00037,00037,item_only,Item Shift Only,00037_MST_task_2026-01-23_16h05.43.404.csv,00037_MST_test_2026-01-23_16h33.26.226.csv,unique_pair,0.872093023255814,280,150
+item_only_00038,00038,item_only,Item Shift Only,00038_MST_task_2026-01-23_16h36.46.044.csv,00038_MST_test_2026-01-23_17h00.07.805.csv,unique_pair,0.8953488372093024,280,150
+item_only_00039,00039,item_only,Item Shift Only,00039_MST_task_2026-01-23_17h02.47.129.csv,00039_MST_test_2026-01-23_17h27.51.140.csv,unique_pair,0.9883720930232558,280,150
+item_only_00040,00040,item_only,Item Shift Only,00040_MST_task_2026-01-23_17h20.31.026.csv,00040_MST_test_2026-01-23_17h44.12.035.csv,unique_pair,0.8902439024390244,280,150
+item_only_00041,00041,item_only,Item Shift Only,00041_MST_task_2026-01-23_18h51.27.276.csv,00041_MST_test_2026-01-23_19h17.51.467.csv,unique_pair,0.9047619047619048,280,150
+item_only_00042,00042,item_only,Item Shift Only,00042_MST_task_2026-01-23_21h18.31.909.csv,00042_MST_test_2026-01-23_22h06.21.633.csv,unique_pair,0.9036144578313253,280,150
+item_only_00043,00043,item_only,Item Shift Only,00043_MST_task_2026-01-23_21h19.14.514.csv,00043_MST_test_2026-01-23_22h08.45.877.csv,unique_pair,0.9418604651162791,280,150
+item_only_00044,00044,item_only,Item Shift Only,00044_MST_task_2026-01-24_10h56.04.295.csv,00044_MST_test_2026-01-24_11h25.58.400.csv,unique_pair,0.898876404494382,280,150
+item_only_00045,00045,item_only,Item Shift Only,00045_MST_task_2026-01-24_11h29.01.648.csv,00045_MST_test_2026-01-24_11h54.00.474.csv,unique_pair,0.9425287356321839,280,150
+item_only_00046,00046,item_only,Item Shift Only,00046_MST_task_2026-01-24_12h31.51.771.csv,00046_MST_test_2026-01-24_12h57.45.954.csv,unique_pair,0.8620689655172413,280,150
+item_only_00047,00047,item_only,Item Shift Only,00047_MST_task_2026-01-24_14h59.12.126.csv,00047_MST_test_2026-01-24_15h24.10.813.csv,unique_pair,0.9550561797752809,280,150
+item_only_00048,00048,item_only,Item Shift Only,00048_MST_task_2026-01-24_15h11.48.563.csv,00048_MST_test_2026-01-24_15h36.35.684.csv,unique_pair,0.8571428571428571,280,150
+item_only_00049,00049,item_only,Item Shift Only,00049_MST_task_2026-01-25_11h05.12.347.csv,00049_MST_test_2026-01-25_11h31.50.122.csv,unique_pair,0.9655172413793104,280,150
+item_only_00050,00050,item_only,Item Shift Only,00050_MST_task_2026-01-25_11h21.39.278.csv,00050_MST_test_2026-01-25_12h06.10.875.csv,unique_pair,0.9529411764705882,280,150
+item_only_00051,00051,item_only,Item Shift Only,00051_MST_task_2026-01-25_12h15.06.091.csv,00051_MST_test_2026-01-25_12h41.05.232.csv,unique_pair,0.8823529411764706,280,150
+item_only_00052,00052,item_only,Item Shift Only,00052_MST_task_2026-01-25_12h44.06.631.csv,00052_MST_test_2026-01-25_13h08.47.205.csv,unique_pair,0.8651685393258427,280,150
+item_only_00053,00053,item_only,Item Shift Only,00053_MST_task_2026-01-25_14h59.52.341.csv,00053_MST_test_2026-01-25_15h25.49.781.csv,unique_pair,0.9358974358974359,280,150
+item_only_00054,00054,item_only,Item Shift Only,00054_MST_task_2026-01-25_17h08.49.872.csv,00054_MST_test_2026-01-25_17h34.48.535.csv,unique_pair,0.9325842696629213,280,150
+item_only_00055,00055,item_only,Item Shift Only,00055_MST_task_2025-11-21_16h42.03.893.csv,00055_MST_test_2025-11-21_17h08.33.541.csv,unique_pair,0.9166666666666666,280,150
+item_only_00056,00056,item_only,Item Shift Only,00056_MST_task_2026-01-21_17h29.13.240.csv,00056_MST_test_2026-01-21_17h53.13.920.csv,unique_pair,0.9390243902439024,280,150
+both_00015,00015,both,Item + Task Shift,00015_MST_task_2025-11-08_11h36.39.538.csv,00015_MST_test_2025-11-08_12h04.25.183.csv,unique_pair,0.9735099337748344,280,150
+both_00016,00016,both,Item + Task Shift,00016_MST_task_2025-11-08_17h23.18.303.csv,00016_MST_test_2025-11-08_17h48.07.404.csv,unique_pair,0.9745222929936306,280,150
+both_00017,00017,both,Item + Task Shift,00017_MST_task_2025-11-08_19h45.48.093.csv,00017_MST_test_2025-11-08_20h16.49.187.csv,unique_pair,0.955696203,280,150
+both_00018,00018,both,Item + Task Shift,00018_MST_task_2025-11-09_10h52.32.840.csv,00018_MST_test_2025-11-09_11h24.21.434.csv,unique_pair,0.935064935064935,280,150
+both_00019,00019,both,Item + Task Shift,00019_MST_task_2025-11-09_15h07.19.518.csv,00019_MST_test_2025-11-09_15h47.52.826.csv,unique_pair,0.9119496855345912,280,150
+both_00020,00020,both,Item + Task Shift,00020_MST_task_2025-11-09_17h59.31.021.csv,00020_MST_test_2025-11-09_18h37.23.782.csv,unique_pair,0.8589743589743589,280,150
+both_00022,00022,both,Item + Task Shift,00022_MST_task_2025-11-11_04h49.33.010.csv,00022_MST_test_2025-11-11_05h14.33.217.csv,unique_pair,0.967948717948718,280,150
+both_00024,00024,both,Item + Task Shift,00024_MST_task_2025-11-14_18h21.40.405.csv,00024_MST_test_2025-11-14_18h50.28.414.csv,unique_pair,0.9466666666666667,280,150
+both_00025,00025,both,Item + Task Shift,00025_MST_task_2025-11-14_21h47.43.146.csv,00025_MST_test_2025-11-14_22h13.48.402.csv,unique_pair,0.9545454545454546,280,150
+both_00026,00026,both,Item + Task Shift,00026_MST_task_2025-11-15_16h03.48.687.csv,00026_MST_test_2025-11-15_16h29.12.970.csv,unique_pair,0.9567901234567902,280,150
+both_00027,00027,both,Item + Task Shift,00027_MST_task_2025-11-17_14h45.33.830.csv,00027_MST_test_2025-11-17_15h14.33.025.csv,unique_pair,0.9285714285714286,280,150
+both_00028,00028,both,Item + Task Shift,00028_MST_task_2025-11-17_17h09.59.427.csv,00028_MST_test_2025-11-17_17h48.12.274.csv,unique_pair,0.9631901840490797,280,150
+both_00029,00029,both,Item + Task Shift,00029_MST_task_2025-11-17_19h57.21.052.csv,00029_MST_test_2025-11-17_20h24.42.007.csv,unique_pair,0.9874213836477987,280,150
+both_00030,00030,both,Item + Task Shift,00030_MST_task_2025-11-18_16h15.07.638.csv,00030_MST_test_2025-11-18_16h42.15.702.csv,unique_pair,0.9745222929936306,280,150
+both_00031,00031,both,Item + Task Shift,00031_MST_task_2025-11-21_15h47.15.320.csv,00031_MST_test_2025-11-21_16h33.17.994.csv,unique_pair,0.9182389937106918,280,150
+both_00032,00032,both,Item + Task Shift,00032_MST_task_2026-01-16_10h16.07.864.csv,00032_MST_test_2026-01-16_11h00.42.172.csv,unique_pair,0.9693251533742331,280,150
+both_00033,00033,both,Item + Task Shift,00033_MST_task_2026-01-16_12h22.39.096.csv,00033_MST_test_2026-01-16_12h51.02.580.csv,resolved_latest_complete_pair,0.9490445859872612,280,150
+both_00034,00034,both,Item + Task Shift,00034_MST_task_2026-01-16_11h55.32.155.csv,00034_MST_test_2026-01-16_12h27.35.390.csv,unique_pair,0.9751552795031055,280,150
+both_00036,00036,both,Item + Task Shift,00036_MST_task_2026-01-16_15h17.10.885.csv,00036_MST_test_2026-01-16_15h43.24.043.csv,unique_pair,0.9146341463414634,280,150
+both_00037,00037,both,Item + Task Shift,00037_MST_task_2026-01-16_21h31.12.620.csv,00037_MST_test_2026-01-16_22h02.46.955.csv,unique_pair,0.9363057324840764,280,150
+both_00038,00038,both,Item + Task Shift,00038_MST_task_2026-01-16_22h21.40.058.csv,00038_MST_test_2026-01-16_23h03.09.394.csv,unique_pair,0.9487179487179487,280,150
+both_00039,00039,both,Item + Task Shift,00039_MST_task_2026-01-17_10h46.08.097.csv,00039_MST_test_2026-01-17_11h12.14.726.csv,unique_pair,0.9559748427672956,280,150
+both_00040,00040,both,Item + Task Shift,00040_MST_task_2026-01-17_11h26.33.901.csv,00040_MST_test_2026-01-17_12h02.35.455.csv,unique_pair,0.9691358024691358,280,150
+both_00041,00041,both,Item + Task Shift,00041_MST_task_2026-01-17_12h11.08.959.csv,00041_MST_test_2026-01-17_12h38.24.102.csv,unique_pair,0.9745222929936306,280,150
+both_00042,00042,both,Item + Task Shift,00042_MST_task_2026-01-17_15h05.40.791.csv,00042_MST_test_2026-01-17_15h54.18.926.csv,unique_pair,0.9671052631578947,280,150
+both_00043,00043,both,Item + Task Shift,00043_MST_task_2026-01-17_15h59.33.115.csv,00043_MST_test_2026-01-17_16h46.47.651.csv,unique_pair,0.9493670886075949,280,150
+both_00044,00044,both,Item + Task Shift,00044_MST_task_2026-01-17_16h35.46.136.csv,00044_MST_test_2026-01-17_17h07.24.402.csv,unique_pair,0.937888198757764,280,150
+both_00045,00045,both,Item + Task Shift,00045_MST_task_2026-01-17_17h37.26.166.csv,00045_MST_test_2026-01-17_18h03.54.425.csv,unique_pair,0.9407894736842105,280,150
+both_00046,00046,both,Item + Task Shift,00046_MST_task_2026-01-17_18h21.17.024.csv,00046_MST_test_2026-01-17_18h47.41.863.csv,unique_pair,0.9215686274509803,280,150
+both_00047,00047,both,Item + Task Shift,00047_MST_task_2026-01-18_10h42.03.071.csv,00047_MST_test_2026-01-18_11h21.32.587.csv,unique_pair,0.9299363057324841,280,150
+both_00049,00049,both,Item + Task Shift,00049_MST_task_2026-01-18_12h17.50.288.csv,00049_MST_test_2026-01-18_12h55.08.788.csv,unique_pair,0.9493670886075949,280,150
+both_00050,00050,both,Item + Task Shift,00050_MST_task_2026-01-18_14h46.37.542.csv,00050_MST_test_2026-01-18_15h27.16.543.csv,unique_pair,0.9745222929936306,280,150
+both_00051,00051,both,Item + Task Shift,00051_MST_task_2026-01-18_15h58.48.144.csv,00051_MST_test_2026-01-18_16h25.44.190.csv,unique_pair,0.9440993788819876,280,150
+both_00052,00052,both,Item + Task Shift,00052_MST_task_2026-01-18_16h38.10.006.csv,00052_MST_test_2026-01-18_17h03.51.417.csv,unique_pair,0.9050632911392406,280,150
+both_00053,00053,both,Item + Task Shift,00053_MST_task_2026-01-18_17h18.33.436.csv,00053_MST_test_2026-01-18_17h47.05.654.csv,unique_pair,0.9607843137254902,280,150
+both_00054,00054,both,Item + Task Shift,00054_MST_task_2026-01-18_18h01.08.629.csv,00054_MST_test_2026-01-18_18h26.51.352.csv,unique_pair,0.9490445859872612,280,150
+both_00055,00055,both,Item + Task Shift,00055_MST_task_2026-01-18_18h37.48.341.csv,00055_MST_test_2026-01-18_19h02.33.344.csv,unique_pair,0.8148148148148148,280,150
+both_00056,00056,both,Item + Task Shift,00056_MST_task_2026-01-18_19h23.59.153.csv,00056_MST_test_2026-01-18_19h48.57.810.csv,unique_pair,0.9415584415584416,280,150
+both_00057,00057,both,Item + Task Shift,00057_MST_task_2026-01-18_21h46.54.870.csv,00057_MST_test_2026-01-18_22h26.01.980.csv,unique_pair,0.9551282051282052,280,150
+both_00058,00058,both,Item + Task Shift,00058_MST_task_2026-01-19_10h33.30.310.csv,00058_MST_test_2026-01-19_11h41.42.159.csv,unique_pair,0.9867549668874173,280,150
+both_00059,00059,both,Item + Task Shift,00059_MST_task_2026-01-19_14h57.32.554.csv,00059_MST_test_2026-01-19_15h22.33.265.csv,unique_pair,0.9683544303797469,280,150
+both_00060,00060,both,Item + Task Shift,00060_MST_task_2026-01-19_16h09.40.790.csv,00060_MST_test_2026-01-19_17h39.04.439.csv,unique_pair,,280,150
+both_00061,00061,both,Item + Task Shift,00061_MST_task_2026-01-19_16h57.47.717.csv,00061_MST_test_2026-01-19_17h22.37.232.csv,unique_pair,0.9935483870967742,280,150
+both_00062,00062,both,Item + Task Shift,00062_MST_task_2026-01-19_17h33.39.502.csv,00062_MST_test_2026-01-19_18h03.17.511.csv,unique_pair,0.8961038961038961,280,150
+both_00063,00063,both,Item + Task Shift,00063_MST_task_2026-01-19_18h15.20.709.csv,00063_MST_test_2026-01-19_18h40.38.986.csv,unique_pair,0.9433962264150944,280,150
+both_00064,00064,both,Item + Task Shift,00064_MST_task_2026-01-19_21h51.27.317.csv,00064_MST_test_2026-01-19_22h17.30.709.csv,unique_pair,0.9620253164556962,280,150
+both_00065,00065,both,Item + Task Shift,00065_MST_task_2026-01-20_10h45.49.248.csv,00065_MST_test_2026-01-20_11h58.49.978.csv,unique_pair,0.95,280,150
+both_00066,00066,both,Item + Task Shift,00066_MST_task_2026-01-20_12h00.59.817.csv,00066_MST_test_2026-01-20_12h26.21.761.csv,unique_pair,0.9625,280,150
+both_00067,00067,both,Item + Task Shift,00067_MST_task_2026-01-25_15h01.19.462.csv,00067_MST_test_2026-01-25_15h37.10.370.csv,unique_pair,0.968944099378882,280,150
+task_only_00019,00019,task_only,Task Shift Only,00019_MST_task_2025-11-08_12h25.21.130.csv,00019_MST_test_2025-11-08_12h49.14.340.csv,unique_pair,0.8936170212765957,280,150
+task_only_00020,00020,task_only,Task Shift Only,00020_MST_task_2025-11-08_18h04.13.718.csv,00020_MST_test_2025-11-08_18h29.24.405.csv,unique_pair,0.9534883720930233,280,150
+task_only_00021,00021,task_only,Task Shift Only,00021_MST_task_2025-11-08_21h31.55.785.csv,00021_MST_test_2025-11-08_21h59.32.852.csv,resolved_latest_complete_pair,1.0,280,150
+task_only_00022,00022,task_only,Task Shift Only,00022_MST_task_2025-11-09_11h49.42.417.csv,00022_MST_test_2025-11-09_12h15.12.382.csv,unique_pair,0.9615384615384616,280,150
+task_only_00023,00023,task_only,Task Shift Only,00023_MST_task_2025-11-09_16h10.25.535.csv,00023_MST_test_2025-11-09_16h38.05.927.csv,resolved_latest_complete_pair,0.9767441860465116,280,150
+task_only_00024,00024,task_only,Task Shift Only,00024_MST_task_2025-11-09_18h45.42.464.csv,00024_MST_test_2025-11-09_19h14.07.408.csv,unique_pair,0.9318181818181818,280,150
+task_only_00025,00025,task_only,Task Shift Only,00025_MST_task_2025-11-10_15h37.05.281.csv,00025_MST_test_2025-11-10_16h04.32.749.csv,unique_pair,0.9743589743589743,280,150
+task_only_00026,00026,task_only,Task Shift Only,00026_MST_task_2025-11-11_05h26.46.426.csv,00026_MST_test_2025-11-11_05h50.27.008.csv,unique_pair,0.9761904761904762,280,150
+task_only_00027,00027,task_only,Task Shift Only,00027_MST_task_2025-11-14_16h15.34.724.csv,00027_MST_test_2025-11-14_17h03.55.071.csv,unique_pair,1.0,280,150
+task_only_00028,00028,task_only,Task Shift Only,00028_MST_task_2025-11-14_19h03.32.428.csv,00028_MST_test_2025-11-14_19h28.58.680.csv,unique_pair,0.9423076923076923,280,150
+task_only_00029,00029,task_only,Task Shift Only,00029_MST_task_2025-11-15_11h29.12.994.csv,00029_MST_test_2025-11-15_11h52.06.081.csv,unique_pair,0.9555555555555556,280,150
+task_only_00030,00030,task_only,Task Shift Only,00030_MST_task_2025-11-15_18h08.36.625.csv,00030_MST_test_2025-11-15_18h38.22.342.csv,unique_pair,0.9803921568627451,280,150
+task_only_00032,00032,task_only,Task Shift Only,00032_MST_task_2026-01-16_11h31.50.282.csv,00032_MST_test_2026-01-16_12h17.18.732.csv,unique_pair,0.9361702127659575,280,150
+task_only_00033,00033,task_only,Task Shift Only,00033_MST_task_2025-11-18_14h44.49.862.csv,00033_MST_test_2025-11-18_15h10.05.046.csv,unique_pair,1.0,280,150
+task_only_00034,00034,task_only,Task Shift Only,00034_MST_task_2026-01-16_12h47.55.482.csv,00034_MST_test_2026-01-16_13h12.28.236.csv,unique_pair,0.9069767441860465,280,150
+task_only_00035,00035,task_only,Task Shift Only,00035_MST_task_2026-01-16_14h49.08.296.csv,00035_MST_test_2026-01-16_15h26.14.383.csv,unique_pair,0.9111111111111111,280,150
+task_only_00036,00036,task_only,Task Shift Only,00036_MST_task_2026-01-16_22h07.58.999.csv,00036_MST_test_2026-01-16_22h32.11.646.csv,unique_pair,0.94,280,150
+task_only_00037,00037,task_only,Task Shift Only,00037_MST_task_2026-01-17_10h41.49.026.csv,00037_MST_test_2026-01-17_11h06.07.125.csv,unique_pair,0.9767441860465116,280,150
+task_only_00038,00038,task_only,Task Shift Only,00038_MST_task_2026-01-17_11h13.54.018.csv,00038_MST_test_2026-01-17_11h39.48.495.csv,unique_pair,0.8936170212765957,280,150
+task_only_00039,00039,task_only,Task Shift Only,00039_MST_task_2026-01-17_11h27.57.476.csv,00039_MST_test_2026-01-17_12h10.16.109.csv,unique_pair,0.9545454545454546,280,150
+task_only_00040,00040,task_only,Task Shift Only,00040_MST_task_2026-01-17_15h03.47.022.csv,00040_MST_test_2026-01-17_15h41.52.844.csv,unique_pair,0.9347826086956522,280,150
+task_only_00041,00041,task_only,Task Shift Only,00041_MST_task_2026-01-17_15h38.16.978.csv,00041_MST_test_2026-01-17_16h10.49.006.csv,unique_pair,0.875,280,150
+task_only_00042,00042,task_only,Task Shift Only,00042_MST_task_2026-01-17_16h29.52.993.csv,00042_MST_test_2026-01-17_16h56.53.653.csv,unique_pair,0.9512195121951219,280,150
+task_only_00043,00043,task_only,Task Shift Only,00043_MST_task_2026-01-17_16h59.39.804.csv,00043_MST_test_2026-01-17_17h25.10.870.csv,unique_pair,0.9444444444444444,280,150
+task_only_00044,00044,task_only,Task Shift Only,00044_MST_task_2026-01-17_17h50.12.146.csv,00044_MST_test_2026-01-17_18h25.01.445.csv,unique_pair,0.9736842105263158,280,150
+task_only_00045,00045,task_only,Task Shift Only,00045_MST_task_2026-01-18_10h35.39.680.csv,00045_MST_test_2026-01-18_11h00.57.957.csv,unique_pair,0.8666666666666667,280,150
+task_only_00046,00046,task_only,Task Shift Only,00046_MST_task_2026-01-18_11h15.02.395.csv,00046_MST_test_2026-01-18_11h48.54.013.csv,unique_pair,0.9591836734693877,280,150
+task_only_00047,00047,task_only,Task Shift Only,00047_MST_task_2026-01-18_12h01.27.453.csv,00047_MST_test_2026-01-18_12h29.07.522.csv,unique_pair,0.94,280,150
+task_only_00048,00048,task_only,Task Shift Only,00048_MST_task_2026-01-18_12h44.08.666.csv,00048_MST_test_2026-01-18_13h09.21.414.csv,unique_pair,0.9310344827586207,280,150
+task_only_00049,00049,task_only,Task Shift Only,00049_MST_task_2026-01-18_15h14.33.413.csv,00049_MST_test_2026-01-18_15h51.26.110.csv,unique_pair,0.9583333333333334,280,150
+task_only_00050,00050,task_only,Task Shift Only,00050_MST_task_2026-01-18_16h12.54.357.csv,00050_MST_test_2026-01-18_16h37.27.121.csv,unique_pair,0.9302325581395349,280,150
+task_only_00051,00051,task_only,Task Shift Only,00051_MST_task_2026-01-18_16h47.53.463.csv,00051_MST_test_2026-01-18_17h15.14.453.csv,unique_pair,0.9583333333333334,280,150
+task_only_00052,00052,task_only,Task Shift Only,00052_MST_task_2026-01-18_17h28.15.143.csv,00052_MST_test_2026-01-18_18h26.03.402.csv,unique_pair,0.925,280,150
+task_only_00053,00053,task_only,Task Shift Only,00053_MST_task_2026-01-18_18h34.57.020.csv,00053_MST_test_2026-01-18_19h05.55.236.csv,unique_pair,0.9555555555555556,280,150
+task_only_00054,00054,task_only,Task Shift Only,00054_MST_task_2026-01-18_18h59.11.419.csv,00054_MST_test_2026-01-18_19h26.53.815.csv,unique_pair,0.8367346938775511,280,150
+task_only_00055,00055,task_only,Task Shift Only,00055_MST_task_2026-01-18_21h39.30.446.csv,00055_MST_test_2026-01-18_22h10.40.713.csv,unique_pair,0.9361702127659575,280,150
+task_only_00056,00056,task_only,Task Shift Only,00056_MST_task_2026-01-19_10h30.41.083.csv,00056_MST_test_2026-01-19_11h07.07.462.csv,unique_pair,0.9807692307692307,280,150
+task_only_00057,00057,task_only,Task Shift Only,00057_MST_task_2026-01-19_11h17.15.155.csv,00057_MST_test_2026-01-19_11h48.50.532.csv,unique_pair,0.92,280,150
+task_only_00058,00058,task_only,Task Shift Only,00058_MST_task_2026-01-19_15h01.44.304.csv,00058_MST_test_2026-01-19_15h27.36.538.csv,unique_pair,0.9782608695652174,280,150
+task_only_00059,00059,task_only,Task Shift Only,00059_MST_task_2026-01-19_16h24.22.614.csv,00059_MST_test_2026-01-19_16h49.56.647.csv,unique_pair,0.9772727272727273,280,150
+task_only_00060,00060,task_only,Task Shift Only,00060_MST_task_2026-01-19_17h07.13.071.csv,00060_MST_test_2026-01-19_17h34.35.123.csv,unique_pair,0.9166666666666666,280,150
+task_only_00061,00061,task_only,Task Shift Only,00061_MST_task_2026-01-19_17h44.07.535.csv,00061_MST_test_2026-01-19_18h08.07.496.csv,unique_pair,1.0,280,150
+task_only_00062,00062,task_only,Task Shift Only,00062_MST_task_2026-01-19_18h25.43.917.csv,00062_MST_test_2026-01-19_19h46.43.275.csv,unique_pair,0.8297872340425532,280,150
+task_only_00063,00063,task_only,Task Shift Only,00063_MST_task_2026-01-19_21h58.30.655.csv,00063_MST_test_2026-01-19_22h22.35.848.csv,unique_pair,0.9111111111111111,280,150
+task_only_00064,00064,task_only,Task Shift Only,00064_MST_task_2026-01-20_10h40.57.117.csv,00064_MST_test_2026-01-20_11h50.51.345.csv,unique_pair,0.8541666666666666,280,150
+task_only_00065,00065,task_only,Task Shift Only,00065_MST_task_2026-01-20_11h49.32.082.csv,00065_MST_test_2026-01-20_12h13.42.600.csv,unique_pair,0.875,280,150
+task_only_00066,00066,task_only,Task Shift Only,00066_MST_task_2026-01-16_10h19.28.668.csv,00066_MST_test_2026-01-16_11h24.31.717.csv,unique_pair,0.9487179487179487,280,150
+task_only_00067,00067,task_only,Task Shift Only,00067_MST_task_2025-11-17_18h52.18.098.csv,00067_MST_test_2025-11-17_19h45.14.102.csv,unique_pair,0.975609756097561,280,150
+task_only_00068,00068,task_only,Task Shift Only,00068_MST_task_2026-01-16_22h41.10.264.csv,00068_MST_test_2026-01-16_23h19.04.686.csv,unique_pair,0.9761904761904762,280,150
+task_only_00069,00069,task_only,Task Shift Only,00069_MST_task_2026-01-25_15h44.35.264.csv,00069_MST_test_2026-01-25_16h10.30.795.csv,unique_pair,0.9512195121951219,280,150
+task_only_00070,00070,task_only,Task Shift Only,00070_MST_task_2026-01-16_12h36.17.636.csv,00070_MST_test_2026-01-16_13h00.56.755.csv,unique_pair,,280,150
+task_only_00071,00071,task_only,Task Shift Only,00071_MST_task_2025-11-17_18h52.18.098.csv,00071_MST_test_2025-11-17_19h45.14.102.csv,unique_pair,0.975609756097561,280,150
+task_only_00072,00072,task_only,Task Shift Only,00072_MST_task_2026-01-18_11h30.21.482.csv,00072_MST_test_2026-01-18_11h57.30.393.csv,unique_pair,1.0,280,150

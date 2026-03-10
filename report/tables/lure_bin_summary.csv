@@ -1,0 +1,2346 @@
+participant_uid,condition,condition_label,test_boundary_position,lure_bin,similar_response
+both_00015,both,Item + Task Shift,post,1,0.4
+both_00015,both,Item + Task Shift,post,2,0.42857142857142855
+both_00015,both,Item + Task Shift,post,3,0.3333333333333333
+both_00015,both,Item + Task Shift,post,4,0.6666666666666666
+both_00015,both,Item + Task Shift,post,5,1.0
+both_00015,both,Item + Task Shift,mid,1,1.0
+both_00015,both,Item + Task Shift,mid,2,0.0
+both_00015,both,Item + Task Shift,mid,3,0.0
+both_00015,both,Item + Task Shift,mid,4,0.5714285714285714
+both_00015,both,Item + Task Shift,mid,5,0.3333333333333333
+both_00015,both,Item + Task Shift,pre,1,0.5
+both_00015,both,Item + Task Shift,pre,2,0.16666666666666666
+both_00015,both,Item + Task Shift,pre,3,0.0
+both_00015,both,Item + Task Shift,pre,4,0.4
+both_00015,both,Item + Task Shift,pre,5,0.25
+both_00016,both,Item + Task Shift,post,1,0.6666666666666666
+both_00016,both,Item + Task Shift,post,2,0.3333333333333333
+both_00016,both,Item + Task Shift,post,3,1.0
+both_00016,both,Item + Task Shift,post,4,0.75
+both_00016,both,Item + Task Shift,post,5,0.6666666666666666
+both_00016,both,Item + Task Shift,mid,1,1.0
+both_00016,both,Item + Task Shift,mid,2,0.6666666666666666
+both_00016,both,Item + Task Shift,mid,3,0.6666666666666666
+both_00016,both,Item + Task Shift,mid,4,1.0
+both_00016,both,Item + Task Shift,mid,5,0.75
+both_00016,both,Item + Task Shift,pre,1,0.3333333333333333
+both_00016,both,Item + Task Shift,pre,2,0.5
+both_00016,both,Item + Task Shift,pre,3,0.2
+both_00016,both,Item + Task Shift,pre,4,1.0
+both_00016,both,Item + Task Shift,pre,5,1.0
+both_00017,both,Item + Task Shift,post,1,0.5
+both_00017,both,Item + Task Shift,post,2,1.0
+both_00017,both,Item + Task Shift,post,3,0.6
+both_00017,both,Item + Task Shift,post,4,0.6666666666666666
+both_00017,both,Item + Task Shift,post,5,0.6666666666666666
+both_00017,both,Item + Task Shift,mid,1,0.6
+both_00017,both,Item + Task Shift,mid,2,0.5
+both_00017,both,Item + Task Shift,mid,3,0.6666666666666666
+both_00017,both,Item + Task Shift,mid,4,0.3333333333333333
+both_00017,both,Item + Task Shift,mid,5,0.6
+both_00017,both,Item + Task Shift,pre,1,0.3333333333333333
+both_00017,both,Item + Task Shift,pre,2,0.6666666666666666
+both_00017,both,Item + Task Shift,pre,3,0.5
+both_00017,both,Item + Task Shift,pre,4,0.6666666666666666
+both_00017,both,Item + Task Shift,pre,5,0.25
+both_00018,both,Item + Task Shift,post,1,0.6666666666666666
+both_00018,both,Item + Task Shift,post,2,0.0
+both_00018,both,Item + Task Shift,post,3,0.6
+both_00018,both,Item + Task Shift,post,4,0.5
+both_00018,both,Item + Task Shift,post,5,1.0
+both_00018,both,Item + Task Shift,mid,1,0.3333333333333333
+both_00018,both,Item + Task Shift,mid,2,0.0
+both_00018,both,Item + Task Shift,mid,3,0.3333333333333333
+both_00018,both,Item + Task Shift,mid,4,0.25
+both_00018,both,Item + Task Shift,mid,5,0.5
+both_00018,both,Item + Task Shift,pre,1,0.0
+both_00018,both,Item + Task Shift,pre,2,1.0
+both_00018,both,Item + Task Shift,pre,3,0.2
+both_00018,both,Item + Task Shift,pre,4,0.5
+both_00018,both,Item + Task Shift,pre,5,0.5
+both_00019,both,Item + Task Shift,post,1,0.0
+both_00019,both,Item + Task Shift,post,2,0.5
+both_00019,both,Item + Task Shift,post,3,0.4
+both_00019,both,Item + Task Shift,post,4,0.3333333333333333
+both_00019,both,Item + Task Shift,post,5,0.42857142857142855
+both_00019,both,Item + Task Shift,mid,1,0.0
+both_00019,both,Item + Task Shift,mid,2,0.16666666666666666
+both_00019,both,Item + Task Shift,mid,3,0.0
+both_00019,both,Item + Task Shift,mid,4,0.2
+both_00019,both,Item + Task Shift,mid,5,0.6
+both_00019,both,Item + Task Shift,pre,1,0.6666666666666666
+both_00019,both,Item + Task Shift,pre,2,0.2
+both_00019,both,Item + Task Shift,pre,3,0.5
+both_00019,both,Item + Task Shift,pre,4,0.4
+both_00019,both,Item + Task Shift,pre,5,0.3333333333333333
+both_00020,both,Item + Task Shift,post,1,0.5714285714285714
+both_00020,both,Item + Task Shift,post,2,0.5
+both_00020,both,Item + Task Shift,post,3,0.5
+both_00020,both,Item + Task Shift,post,5,0.6666666666666666
+both_00020,both,Item + Task Shift,mid,1,0.16666666666666666
+both_00020,both,Item + Task Shift,mid,2,0.6666666666666666
+both_00020,both,Item + Task Shift,mid,3,1.0
+both_00020,both,Item + Task Shift,mid,4,0.75
+both_00020,both,Item + Task Shift,mid,5,0.75
+both_00020,both,Item + Task Shift,pre,1,1.0
+both_00020,both,Item + Task Shift,pre,2,0.25
+both_00020,both,Item + Task Shift,pre,3,0.5
+both_00020,both,Item + Task Shift,pre,4,0.7142857142857143
+both_00020,both,Item + Task Shift,pre,5,0.6666666666666666
+both_00022,both,Item + Task Shift,post,2,0.2
+both_00022,both,Item + Task Shift,post,3,0.2857142857142857
+both_00022,both,Item + Task Shift,post,4,0.25
+both_00022,both,Item + Task Shift,post,5,0.25
+both_00022,both,Item + Task Shift,mid,1,0.0
+both_00022,both,Item + Task Shift,mid,2,0.3333333333333333
+both_00022,both,Item + Task Shift,mid,3,0.5
+both_00022,both,Item + Task Shift,mid,4,0.3333333333333333
+both_00022,both,Item + Task Shift,mid,5,0.3333333333333333
+both_00022,both,Item + Task Shift,pre,1,0.3333333333333333
+both_00022,both,Item + Task Shift,pre,2,0.6666666666666666
+both_00022,both,Item + Task Shift,pre,3,0.5
+both_00022,both,Item + Task Shift,pre,4,0.2
+both_00022,both,Item + Task Shift,pre,5,0.0
+both_00024,both,Item + Task Shift,post,1,0.16666666666666666
+both_00024,both,Item + Task Shift,post,2,1.0
+both_00024,both,Item + Task Shift,post,3,0.0
+both_00024,both,Item + Task Shift,post,4,0.3333333333333333
+both_00024,both,Item + Task Shift,post,5,0.3333333333333333
+both_00024,both,Item + Task Shift,mid,1,0.3333333333333333
+both_00024,both,Item + Task Shift,mid,3,0.2857142857142857
+both_00024,both,Item + Task Shift,mid,4,0.5
+both_00024,both,Item + Task Shift,mid,5,0.75
+both_00024,both,Item + Task Shift,pre,1,0.4
+both_00024,both,Item + Task Shift,pre,2,0.5
+both_00024,both,Item + Task Shift,pre,3,0.3333333333333333
+both_00024,both,Item + Task Shift,pre,4,0.2
+both_00024,both,Item + Task Shift,pre,5,0.3333333333333333
+both_00025,both,Item + Task Shift,post,1,0.4
+both_00025,both,Item + Task Shift,post,2,0.5
+both_00025,both,Item + Task Shift,post,3,0.3333333333333333
+both_00025,both,Item + Task Shift,post,4,0.2857142857142857
+both_00025,both,Item + Task Shift,post,5,0.6666666666666666
+both_00025,both,Item + Task Shift,mid,1,0.0
+both_00025,both,Item + Task Shift,mid,2,0.5
+both_00025,both,Item + Task Shift,mid,3,0.125
+both_00025,both,Item + Task Shift,mid,4,1.0
+both_00025,both,Item + Task Shift,mid,5,0.5
+both_00025,both,Item + Task Shift,pre,1,0.5
+both_00025,both,Item + Task Shift,pre,2,0.25
+both_00025,both,Item + Task Shift,pre,3,0.6
+both_00025,both,Item + Task Shift,pre,4,1.0
+both_00025,both,Item + Task Shift,pre,5,0.25
+both_00026,both,Item + Task Shift,post,1,0.4
+both_00026,both,Item + Task Shift,post,2,1.0
+both_00026,both,Item + Task Shift,post,3,0.8
+both_00026,both,Item + Task Shift,post,4,0.6
+both_00026,both,Item + Task Shift,post,5,1.0
+both_00026,both,Item + Task Shift,mid,1,0.75
+both_00026,both,Item + Task Shift,mid,2,0.5
+both_00026,both,Item + Task Shift,mid,3,0.5
+both_00026,both,Item + Task Shift,mid,4,0.25
+both_00026,both,Item + Task Shift,mid,5,0.3333333333333333
+both_00026,both,Item + Task Shift,pre,1,0.6666666666666666
+both_00026,both,Item + Task Shift,pre,2,0.6
+both_00026,both,Item + Task Shift,pre,3,0.25
+both_00026,both,Item + Task Shift,pre,4,0.5
+both_00026,both,Item + Task Shift,pre,5,0.8333333333333334
+both_00027,both,Item + Task Shift,post,1,0.75
+both_00027,both,Item + Task Shift,post,2,1.0
+both_00027,both,Item + Task Shift,post,3,0.5714285714285714
+both_00027,both,Item + Task Shift,post,4,0.6666666666666666
+both_00027,both,Item + Task Shift,post,5,1.0
+both_00027,both,Item + Task Shift,mid,1,1.0
+both_00027,both,Item + Task Shift,mid,2,0.6666666666666666
+both_00027,both,Item + Task Shift,mid,3,0.3333333333333333
+both_00027,both,Item + Task Shift,mid,4,0.6
+both_00027,both,Item + Task Shift,mid,5,0.6666666666666666
+both_00027,both,Item + Task Shift,pre,1,0.0
+both_00027,both,Item + Task Shift,pre,2,0.8
+both_00027,both,Item + Task Shift,pre,3,0.0
+both_00027,both,Item + Task Shift,pre,4,0.6666666666666666
+both_00027,both,Item + Task Shift,pre,5,0.5
+both_00028,both,Item + Task Shift,post,1,0.0
+both_00028,both,Item + Task Shift,post,2,0.3333333333333333
+both_00028,both,Item + Task Shift,post,3,0.6666666666666666
+both_00028,both,Item + Task Shift,post,4,0.6666666666666666
+both_00028,both,Item + Task Shift,post,5,0.3333333333333333
+both_00028,both,Item + Task Shift,mid,1,0.5
+both_00028,both,Item + Task Shift,mid,2,0.3333333333333333
+both_00028,both,Item + Task Shift,mid,3,0.5
+both_00028,both,Item + Task Shift,mid,4,0.16666666666666666
+both_00028,both,Item + Task Shift,mid,5,0.5714285714285714
+both_00028,both,Item + Task Shift,pre,1,0.16666666666666666
+both_00028,both,Item + Task Shift,pre,2,0.3333333333333333
+both_00028,both,Item + Task Shift,pre,3,0.3333333333333333
+both_00028,both,Item + Task Shift,pre,4,0.5
+both_00028,both,Item + Task Shift,pre,5,0.6666666666666666
+both_00029,both,Item + Task Shift,post,1,0.6666666666666666
+both_00029,both,Item + Task Shift,post,2,0.5
+both_00029,both,Item + Task Shift,post,3,0.5
+both_00029,both,Item + Task Shift,post,4,0.6666666666666666
+both_00029,both,Item + Task Shift,post,5,0.7142857142857143
+both_00029,both,Item + Task Shift,mid,1,1.0
+both_00029,both,Item + Task Shift,mid,2,0.5
+both_00029,both,Item + Task Shift,mid,3,1.0
+both_00029,both,Item + Task Shift,mid,4,1.0
+both_00029,both,Item + Task Shift,mid,5,1.0
+both_00029,both,Item + Task Shift,pre,1,1.0
+both_00029,both,Item + Task Shift,pre,2,1.0
+both_00029,both,Item + Task Shift,pre,3,0.8
+both_00029,both,Item + Task Shift,pre,4,0.8333333333333334
+both_00029,both,Item + Task Shift,pre,5,1.0
+both_00030,both,Item + Task Shift,post,1,0.2
+both_00030,both,Item + Task Shift,post,2,0.0
+both_00030,both,Item + Task Shift,post,3,0.5
+both_00030,both,Item + Task Shift,post,4,0.5
+both_00030,both,Item + Task Shift,post,5,0.4
+both_00030,both,Item + Task Shift,mid,1,0.6
+both_00030,both,Item + Task Shift,mid,2,0.0
+both_00030,both,Item + Task Shift,mid,3,0.5
+both_00030,both,Item + Task Shift,mid,4,1.0
+both_00030,both,Item + Task Shift,mid,5,0.16666666666666666
+both_00030,both,Item + Task Shift,pre,1,0.2
+both_00030,both,Item + Task Shift,pre,2,0.6666666666666666
+both_00030,both,Item + Task Shift,pre,3,0.6666666666666666
+both_00030,both,Item + Task Shift,pre,4,0.375
+both_00030,both,Item + Task Shift,pre,5,0.0
+both_00031,both,Item + Task Shift,post,1,0.6666666666666666
+both_00031,both,Item + Task Shift,post,2,0.4
+both_00031,both,Item + Task Shift,post,3,0.0
+both_00031,both,Item + Task Shift,post,4,0.6
+both_00031,both,Item + Task Shift,post,5,0.75
+both_00031,both,Item + Task Shift,mid,1,0.0
+both_00031,both,Item + Task Shift,mid,2,0.5
+both_00031,both,Item + Task Shift,mid,3,1.0
+both_00031,both,Item + Task Shift,mid,4,0.8333333333333334
+both_00031,both,Item + Task Shift,mid,5,0.8
+both_00031,both,Item + Task Shift,pre,1,0.3333333333333333
+both_00031,both,Item + Task Shift,pre,2,0.6666666666666666
+both_00031,both,Item + Task Shift,pre,3,0.6
+both_00031,both,Item + Task Shift,pre,4,0.6666666666666666
+both_00031,both,Item + Task Shift,pre,5,0.6666666666666666
+both_00032,both,Item + Task Shift,post,1,0.0
+both_00032,both,Item + Task Shift,post,2,0.3333333333333333
+both_00032,both,Item + Task Shift,post,3,0.25
+both_00032,both,Item + Task Shift,post,4,0.75
+both_00032,both,Item + Task Shift,post,5,0.6666666666666666
+both_00032,both,Item + Task Shift,mid,1,0.2
+both_00032,both,Item + Task Shift,mid,2,0.0
+both_00032,both,Item + Task Shift,mid,3,0.5
+both_00032,both,Item + Task Shift,mid,4,0.3333333333333333
+both_00032,both,Item + Task Shift,mid,5,1.0
+both_00032,both,Item + Task Shift,pre,1,0.0
+both_00032,both,Item + Task Shift,pre,2,0.8
+both_00032,both,Item + Task Shift,pre,3,0.3333333333333333
+both_00032,both,Item + Task Shift,pre,4,0.3333333333333333
+both_00032,both,Item + Task Shift,pre,5,0.0
+both_00033,both,Item + Task Shift,post,1,0.5
+both_00033,both,Item + Task Shift,post,2,0.3333333333333333
+both_00033,both,Item + Task Shift,post,3,0.75
+both_00033,both,Item + Task Shift,post,4,0.6666666666666666
+both_00033,both,Item + Task Shift,post,5,0.6
+both_00033,both,Item + Task Shift,mid,1,0.5
+both_00033,both,Item + Task Shift,mid,2,1.0
+both_00033,both,Item + Task Shift,mid,3,0.6666666666666666
+both_00033,both,Item + Task Shift,mid,4,0.8
+both_00033,both,Item + Task Shift,mid,5,1.0
+both_00033,both,Item + Task Shift,pre,1,1.0
+both_00033,both,Item + Task Shift,pre,2,0.14285714285714285
+both_00033,both,Item + Task Shift,pre,3,0.25
+both_00033,both,Item + Task Shift,pre,4,1.0
+both_00033,both,Item + Task Shift,pre,5,0.6
+both_00034,both,Item + Task Shift,post,1,0.75
+both_00034,both,Item + Task Shift,post,2,0.5
+both_00034,both,Item + Task Shift,post,3,0.6
+both_00034,both,Item + Task Shift,post,4,1.0
+both_00034,both,Item + Task Shift,post,5,0.3333333333333333
+both_00034,both,Item + Task Shift,mid,1,0.0
+both_00034,both,Item + Task Shift,mid,2,0.8
+both_00034,both,Item + Task Shift,mid,3,0.6666666666666666
+both_00034,both,Item + Task Shift,mid,4,0.7142857142857143
+both_00034,both,Item + Task Shift,mid,5,0.75
+both_00034,both,Item + Task Shift,pre,1,0.75
+both_00034,both,Item + Task Shift,pre,2,0.6666666666666666
+both_00034,both,Item + Task Shift,pre,3,0.5
+both_00034,both,Item + Task Shift,pre,4,0.5
+both_00034,both,Item + Task Shift,pre,5,0.3333333333333333
+both_00036,both,Item + Task Shift,post,1,0.6666666666666666
+both_00036,both,Item + Task Shift,post,2,0.0
+both_00036,both,Item + Task Shift,post,4,0.42857142857142855
+both_00036,both,Item + Task Shift,post,5,0.16666666666666666
+both_00036,both,Item + Task Shift,mid,1,0.3333333333333333
+both_00036,both,Item + Task Shift,mid,2,0.5
+both_00036,both,Item + Task Shift,mid,3,0.3333333333333333
+both_00036,both,Item + Task Shift,mid,5,0.6666666666666666
+both_00036,both,Item + Task Shift,pre,1,0.42857142857142855
+both_00036,both,Item + Task Shift,pre,2,0.16666666666666666
+both_00036,both,Item + Task Shift,pre,3,0.0
+both_00036,both,Item + Task Shift,pre,4,0.3333333333333333
+both_00036,both,Item + Task Shift,pre,5,0.0
+both_00037,both,Item + Task Shift,post,1,0.0
+both_00037,both,Item + Task Shift,post,2,0.0
+both_00037,both,Item + Task Shift,post,3,0.0
+both_00037,both,Item + Task Shift,post,4,0.5
+both_00037,both,Item + Task Shift,post,5,0.2
+both_00037,both,Item + Task Shift,mid,1,0.2857142857142857
+both_00037,both,Item + Task Shift,mid,2,0.0
+both_00037,both,Item + Task Shift,mid,3,1.0
+both_00037,both,Item + Task Shift,mid,4,0.25
+both_00037,both,Item + Task Shift,mid,5,0.25
+both_00037,both,Item + Task Shift,pre,1,0.0
+both_00037,both,Item + Task Shift,pre,2,0.2
+both_00037,both,Item + Task Shift,pre,3,0.0
+both_00037,both,Item + Task Shift,pre,4,0.5
+both_00037,both,Item + Task Shift,pre,5,0.25
+both_00038,both,Item + Task Shift,post,1,0.75
+both_00038,both,Item + Task Shift,post,2,0.3333333333333333
+both_00038,both,Item + Task Shift,post,3,0.75
+both_00038,both,Item + Task Shift,post,4,0.4
+both_00038,both,Item + Task Shift,post,5,0.0
+both_00038,both,Item + Task Shift,mid,1,0.2
+both_00038,both,Item + Task Shift,mid,2,0.8
+both_00038,both,Item + Task Shift,mid,3,0.0
+both_00038,both,Item + Task Shift,mid,4,1.0
+both_00038,both,Item + Task Shift,mid,5,0.75
+both_00038,both,Item + Task Shift,pre,1,0.3333333333333333
+both_00038,both,Item + Task Shift,pre,2,1.0
+both_00038,both,Item + Task Shift,pre,3,0.3333333333333333
+both_00038,both,Item + Task Shift,pre,4,0.5
+both_00038,both,Item + Task Shift,pre,5,1.0
+both_00039,both,Item + Task Shift,post,1,0.25
+both_00039,both,Item + Task Shift,post,2,0.5
+both_00039,both,Item + Task Shift,post,3,0.5
+both_00039,both,Item + Task Shift,post,4,0.3333333333333333
+both_00039,both,Item + Task Shift,post,5,0.7142857142857143
+both_00039,both,Item + Task Shift,mid,1,0.2
+both_00039,both,Item + Task Shift,mid,2,0.0
+both_00039,both,Item + Task Shift,mid,3,0.3333333333333333
+both_00039,both,Item + Task Shift,mid,4,0.42857142857142855
+both_00039,both,Item + Task Shift,mid,5,0.0
+both_00039,both,Item + Task Shift,pre,1,0.2
+both_00039,both,Item + Task Shift,pre,2,0.0
+both_00039,both,Item + Task Shift,pre,3,0.5
+both_00039,both,Item + Task Shift,pre,4,0.5
+both_00039,both,Item + Task Shift,pre,5,0.5
+both_00040,both,Item + Task Shift,post,1,0.0
+both_00040,both,Item + Task Shift,post,2,0.5
+both_00040,both,Item + Task Shift,post,3,0.4
+both_00040,both,Item + Task Shift,post,4,0.0
+both_00040,both,Item + Task Shift,post,5,0.0
+both_00040,both,Item + Task Shift,mid,1,0.0
+both_00040,both,Item + Task Shift,mid,2,1.0
+both_00040,both,Item + Task Shift,mid,3,0.2857142857142857
+both_00040,both,Item + Task Shift,mid,4,0.3333333333333333
+both_00040,both,Item + Task Shift,mid,5,0.6666666666666666
+both_00040,both,Item + Task Shift,pre,1,0.0
+both_00040,both,Item + Task Shift,pre,2,0.5
+both_00040,both,Item + Task Shift,pre,3,0.0
+both_00040,both,Item + Task Shift,pre,4,0.5
+both_00040,both,Item + Task Shift,pre,5,0.6666666666666666
+both_00041,both,Item + Task Shift,post,1,0.0
+both_00041,both,Item + Task Shift,post,2,0.8333333333333334
+both_00041,both,Item + Task Shift,post,3,0.6
+both_00041,both,Item + Task Shift,post,4,1.0
+both_00041,both,Item + Task Shift,post,5,0.75
+both_00041,both,Item + Task Shift,mid,1,0.8333333333333334
+both_00041,both,Item + Task Shift,mid,2,0.5
+both_00041,both,Item + Task Shift,mid,3,1.0
+both_00041,both,Item + Task Shift,mid,4,1.0
+both_00041,both,Item + Task Shift,mid,5,1.0
+both_00041,both,Item + Task Shift,pre,1,0.75
+both_00041,both,Item + Task Shift,pre,2,0.8
+both_00041,both,Item + Task Shift,pre,3,1.0
+both_00041,both,Item + Task Shift,pre,4,1.0
+both_00041,both,Item + Task Shift,pre,5,0.75
+both_00042,both,Item + Task Shift,post,1,0.2
+both_00042,both,Item + Task Shift,post,2,0.6666666666666666
+both_00042,both,Item + Task Shift,post,3,0.125
+both_00042,both,Item + Task Shift,post,4,0.5
+both_00042,both,Item + Task Shift,post,5,0.5
+both_00042,both,Item + Task Shift,mid,1,0.3333333333333333
+both_00042,both,Item + Task Shift,mid,2,0.5
+both_00042,both,Item + Task Shift,mid,3,0.4
+both_00042,both,Item + Task Shift,mid,4,0.0
+both_00042,both,Item + Task Shift,mid,5,0.14285714285714285
+both_00042,both,Item + Task Shift,pre,1,0.0
+both_00042,both,Item + Task Shift,pre,2,0.5
+both_00042,both,Item + Task Shift,pre,3,0.0
+both_00042,both,Item + Task Shift,pre,4,0.0
+both_00042,both,Item + Task Shift,pre,5,0.25
+both_00043,both,Item + Task Shift,post,1,0.25
+both_00043,both,Item + Task Shift,post,2,0.3333333333333333
+both_00043,both,Item + Task Shift,post,3,0.25
+both_00043,both,Item + Task Shift,post,4,0.25
+both_00043,both,Item + Task Shift,post,5,0.5
+both_00043,both,Item + Task Shift,mid,1,0.5
+both_00043,both,Item + Task Shift,mid,2,0.0
+both_00043,both,Item + Task Shift,mid,3,0.3333333333333333
+both_00043,both,Item + Task Shift,mid,4,0.2857142857142857
+both_00043,both,Item + Task Shift,mid,5,0.0
+both_00043,both,Item + Task Shift,pre,1,0.6666666666666666
+both_00043,both,Item + Task Shift,pre,2,0.0
+both_00043,both,Item + Task Shift,pre,3,0.42857142857142855
+both_00043,both,Item + Task Shift,pre,4,0.16666666666666666
+both_00043,both,Item + Task Shift,pre,5,0.0
+both_00044,both,Item + Task Shift,post,1,0.25
+both_00044,both,Item + Task Shift,post,2,0.3333333333333333
+both_00044,both,Item + Task Shift,post,3,0.5
+both_00044,both,Item + Task Shift,post,4,0.3333333333333333
+both_00044,both,Item + Task Shift,post,5,0.4
+both_00044,both,Item + Task Shift,mid,1,0.5
+both_00044,both,Item + Task Shift,mid,2,0.4
+both_00044,both,Item + Task Shift,mid,3,0.0
+both_00044,both,Item + Task Shift,mid,4,0.6666666666666666
+both_00044,both,Item + Task Shift,mid,5,0.0
+both_00044,both,Item + Task Shift,pre,1,0.16666666666666666
+both_00044,both,Item + Task Shift,pre,2,0.0
+both_00044,both,Item + Task Shift,pre,3,0.2
+both_00044,both,Item + Task Shift,pre,4,0.6
+both_00044,both,Item + Task Shift,pre,5,1.0
+both_00045,both,Item + Task Shift,post,1,0.2
+both_00045,both,Item + Task Shift,post,2,0.6
+both_00045,both,Item + Task Shift,post,3,0.16666666666666666
+both_00045,both,Item + Task Shift,post,4,1.0
+both_00045,both,Item + Task Shift,post,5,0.3333333333333333
+both_00045,both,Item + Task Shift,mid,1,0.0
+both_00045,both,Item + Task Shift,mid,2,0.0
+both_00045,both,Item + Task Shift,mid,3,0.6666666666666666
+both_00045,both,Item + Task Shift,mid,4,0.4
+both_00045,both,Item + Task Shift,mid,5,0.2857142857142857
+both_00045,both,Item + Task Shift,pre,1,0.0
+both_00045,both,Item + Task Shift,pre,2,0.6666666666666666
+both_00045,both,Item + Task Shift,pre,3,0.375
+both_00045,both,Item + Task Shift,pre,4,0.6666666666666666
+both_00045,both,Item + Task Shift,pre,5,0.0
+both_00046,both,Item + Task Shift,post,1,0.0
+both_00046,both,Item + Task Shift,post,2,0.2
+both_00046,both,Item + Task Shift,post,3,0.25
+both_00046,both,Item + Task Shift,post,4,1.0
+both_00046,both,Item + Task Shift,post,5,0.3333333333333333
+both_00046,both,Item + Task Shift,mid,1,0.0
+both_00046,both,Item + Task Shift,mid,2,0.6
+both_00046,both,Item + Task Shift,mid,3,0.3333333333333333
+both_00046,both,Item + Task Shift,mid,4,0.5
+both_00046,both,Item + Task Shift,mid,5,0.16666666666666666
+both_00046,both,Item + Task Shift,pre,1,0.0
+both_00046,both,Item + Task Shift,pre,2,0.7142857142857143
+both_00046,both,Item + Task Shift,pre,3,1.0
+both_00046,both,Item + Task Shift,pre,4,0.3333333333333333
+both_00046,both,Item + Task Shift,pre,5,0.3333333333333333
+both_00047,both,Item + Task Shift,post,1,0.0
+both_00047,both,Item + Task Shift,post,2,0.6666666666666666
+both_00047,both,Item + Task Shift,post,3,0.25
+both_00047,both,Item + Task Shift,post,4,0.8
+both_00047,both,Item + Task Shift,post,5,0.75
+both_00047,both,Item + Task Shift,mid,1,0.0
+both_00047,both,Item + Task Shift,mid,2,0.75
+both_00047,both,Item + Task Shift,mid,3,1.0
+both_00047,both,Item + Task Shift,mid,4,1.0
+both_00047,both,Item + Task Shift,mid,5,0.875
+both_00047,both,Item + Task Shift,pre,1,0.6
+both_00047,both,Item + Task Shift,pre,2,0.75
+both_00047,both,Item + Task Shift,pre,4,1.0
+both_00047,both,Item + Task Shift,pre,5,0.75
+both_00049,both,Item + Task Shift,post,1,0.2857142857142857
+both_00049,both,Item + Task Shift,post,2,1.0
+both_00049,both,Item + Task Shift,post,3,0.5
+both_00049,both,Item + Task Shift,post,4,0.75
+both_00049,both,Item + Task Shift,post,5,0.5
+both_00049,both,Item + Task Shift,mid,1,0.6
+both_00049,both,Item + Task Shift,mid,2,0.5714285714285714
+both_00049,both,Item + Task Shift,mid,3,0.3333333333333333
+both_00049,both,Item + Task Shift,mid,4,0.25
+both_00049,both,Item + Task Shift,mid,5,1.0
+both_00049,both,Item + Task Shift,pre,1,0.5
+both_00049,both,Item + Task Shift,pre,2,0.5
+both_00049,both,Item + Task Shift,pre,3,0.5
+both_00049,both,Item + Task Shift,pre,4,0.0
+both_00049,both,Item + Task Shift,pre,5,0.4
+both_00050,both,Item + Task Shift,post,1,0.4
+both_00050,both,Item + Task Shift,post,2,0.6666666666666666
+both_00050,both,Item + Task Shift,post,3,0.6666666666666666
+both_00050,both,Item + Task Shift,post,4,0.3333333333333333
+both_00050,both,Item + Task Shift,post,5,0.6666666666666666
+both_00050,both,Item + Task Shift,mid,1,0.0
+both_00050,both,Item + Task Shift,mid,2,0.6
+both_00050,both,Item + Task Shift,mid,3,0.0
+both_00050,both,Item + Task Shift,mid,4,0.5
+both_00050,both,Item + Task Shift,mid,5,0.6
+both_00050,both,Item + Task Shift,pre,1,0.0
+both_00050,both,Item + Task Shift,pre,2,0.6
+both_00050,both,Item + Task Shift,pre,3,0.8571428571428571
+both_00050,both,Item + Task Shift,pre,4,0.3333333333333333
+both_00050,both,Item + Task Shift,pre,5,0.6666666666666666
+both_00051,both,Item + Task Shift,post,1,0.4
+both_00051,both,Item + Task Shift,post,2,0.5
+both_00051,both,Item + Task Shift,post,3,1.0
+both_00051,both,Item + Task Shift,post,4,0.3333333333333333
+both_00051,both,Item + Task Shift,post,5,0.6666666666666666
+both_00051,both,Item + Task Shift,mid,1,1.0
+both_00051,both,Item + Task Shift,mid,2,0.3333333333333333
+both_00051,both,Item + Task Shift,mid,3,0.4
+both_00051,both,Item + Task Shift,mid,4,0.7142857142857143
+both_00051,both,Item + Task Shift,mid,5,0.75
+both_00051,both,Item + Task Shift,pre,1,0.16666666666666666
+both_00051,both,Item + Task Shift,pre,2,1.0
+both_00051,both,Item + Task Shift,pre,3,0.6666666666666666
+both_00051,both,Item + Task Shift,pre,4,0.5
+both_00051,both,Item + Task Shift,pre,5,1.0
+both_00052,both,Item + Task Shift,post,1,0.4
+both_00052,both,Item + Task Shift,post,2,0.3333333333333333
+both_00052,both,Item + Task Shift,post,3,0.5
+both_00052,both,Item + Task Shift,post,4,0.42857142857142855
+both_00052,both,Item + Task Shift,post,5,0.3333333333333333
+both_00052,both,Item + Task Shift,mid,1,0.0
+both_00052,both,Item + Task Shift,mid,2,0.0
+both_00052,both,Item + Task Shift,mid,3,0.16666666666666666
+both_00052,both,Item + Task Shift,mid,4,0.4
+both_00052,both,Item + Task Shift,mid,5,0.0
+both_00052,both,Item + Task Shift,pre,1,0.0
+both_00052,both,Item + Task Shift,pre,2,0.0
+both_00052,both,Item + Task Shift,pre,3,0.2
+both_00052,both,Item + Task Shift,pre,4,0.3333333333333333
+both_00052,both,Item + Task Shift,pre,5,0.25
+both_00053,both,Item + Task Shift,post,1,0.6
+both_00053,both,Item + Task Shift,post,2,1.0
+both_00053,both,Item + Task Shift,post,3,1.0
+both_00053,both,Item + Task Shift,post,4,0.3333333333333333
+both_00053,both,Item + Task Shift,post,5,0.8
+both_00053,both,Item + Task Shift,mid,1,1.0
+both_00053,both,Item + Task Shift,mid,2,1.0
+both_00053,both,Item + Task Shift,mid,3,1.0
+both_00053,both,Item + Task Shift,mid,4,0.5
+both_00053,both,Item + Task Shift,mid,5,1.0
+both_00053,both,Item + Task Shift,pre,1,0.8333333333333334
+both_00053,both,Item + Task Shift,pre,2,0.2
+both_00053,both,Item + Task Shift,pre,3,0.5
+both_00053,both,Item + Task Shift,pre,4,0.75
+both_00053,both,Item + Task Shift,pre,5,0.3333333333333333
+both_00054,both,Item + Task Shift,post,1,0.0
+both_00054,both,Item + Task Shift,post,2,0.25
+both_00054,both,Item + Task Shift,post,3,0.25
+both_00054,both,Item + Task Shift,post,4,0.3333333333333333
+both_00054,both,Item + Task Shift,post,5,0.6666666666666666
+both_00054,both,Item + Task Shift,mid,1,0.3333333333333333
+both_00054,both,Item + Task Shift,mid,2,0.42857142857142855
+both_00054,both,Item + Task Shift,mid,3,1.0
+both_00054,both,Item + Task Shift,mid,4,0.3333333333333333
+both_00054,both,Item + Task Shift,mid,5,0.5
+both_00054,both,Item + Task Shift,pre,1,0.2
+both_00054,both,Item + Task Shift,pre,2,0.5
+both_00054,both,Item + Task Shift,pre,3,0.75
+both_00054,both,Item + Task Shift,pre,4,0.5
+both_00054,both,Item + Task Shift,pre,5,1.0
+both_00055,both,Item + Task Shift,post,1,0.25
+both_00055,both,Item + Task Shift,post,2,0.5
+both_00055,both,Item + Task Shift,post,3,0.25
+both_00055,both,Item + Task Shift,post,4,0.6666666666666666
+both_00055,both,Item + Task Shift,post,5,0.25
+both_00055,both,Item + Task Shift,mid,1,0.5
+both_00055,both,Item + Task Shift,mid,2,0.0
+both_00055,both,Item + Task Shift,mid,3,0.0
+both_00055,both,Item + Task Shift,mid,4,0.0
+both_00055,both,Item + Task Shift,mid,5,0.0
+both_00055,both,Item + Task Shift,pre,1,0.3333333333333333
+both_00055,both,Item + Task Shift,pre,2,0.0
+both_00055,both,Item + Task Shift,pre,3,0.0
+both_00055,both,Item + Task Shift,pre,4,0.0
+both_00055,both,Item + Task Shift,pre,5,0.4
+both_00056,both,Item + Task Shift,post,1,0.0
+both_00056,both,Item + Task Shift,post,2,0.4
+both_00056,both,Item + Task Shift,post,3,0.4
+both_00056,both,Item + Task Shift,post,4,0.6666666666666666
+both_00056,both,Item + Task Shift,post,5,0.6666666666666666
+both_00056,both,Item + Task Shift,mid,1,0.3333333333333333
+both_00056,both,Item + Task Shift,mid,2,1.0
+both_00056,both,Item + Task Shift,mid,3,0.0
+both_00056,both,Item + Task Shift,mid,4,0.6666666666666666
+both_00056,both,Item + Task Shift,mid,5,0.3333333333333333
+both_00056,both,Item + Task Shift,pre,1,0.6666666666666666
+both_00056,both,Item + Task Shift,pre,2,0.5714285714285714
+both_00056,both,Item + Task Shift,pre,3,0.0
+both_00056,both,Item + Task Shift,pre,4,0.25
+both_00056,both,Item + Task Shift,pre,5,0.5
+both_00057,both,Item + Task Shift,post,1,0.25
+both_00057,both,Item + Task Shift,post,3,0.4
+both_00057,both,Item + Task Shift,post,4,1.0
+both_00057,both,Item + Task Shift,post,5,0.4
+both_00057,both,Item + Task Shift,mid,1,1.0
+both_00057,both,Item + Task Shift,mid,2,0.6666666666666666
+both_00057,both,Item + Task Shift,mid,3,0.8333333333333334
+both_00057,both,Item + Task Shift,mid,4,0.8
+both_00057,both,Item + Task Shift,mid,5,0.8
+both_00057,both,Item + Task Shift,pre,1,0.75
+both_00057,both,Item + Task Shift,pre,2,0.6666666666666666
+both_00057,both,Item + Task Shift,pre,3,0.42857142857142855
+both_00057,both,Item + Task Shift,pre,4,0.0
+both_00057,both,Item + Task Shift,pre,5,0.3333333333333333
+both_00058,both,Item + Task Shift,post,1,0.5
+both_00058,both,Item + Task Shift,post,2,0.0
+both_00058,both,Item + Task Shift,post,3,0.3333333333333333
+both_00058,both,Item + Task Shift,post,4,0.75
+both_00058,both,Item + Task Shift,post,5,0.0
+both_00058,both,Item + Task Shift,mid,1,1.0
+both_00058,both,Item + Task Shift,mid,2,0.0
+both_00058,both,Item + Task Shift,mid,3,0.0
+both_00058,both,Item + Task Shift,mid,4,0.6666666666666666
+both_00058,both,Item + Task Shift,mid,5,0.1111111111111111
+both_00058,both,Item + Task Shift,pre,1,0.2857142857142857
+both_00058,both,Item + Task Shift,pre,2,0.0
+both_00058,both,Item + Task Shift,pre,3,0.5714285714285714
+both_00058,both,Item + Task Shift,pre,4,0.0
+both_00058,both,Item + Task Shift,pre,5,0.6666666666666666
+both_00059,both,Item + Task Shift,post,1,0.16666666666666666
+both_00059,both,Item + Task Shift,post,2,0.4
+both_00059,both,Item + Task Shift,post,3,0.5
+both_00059,both,Item + Task Shift,post,4,0.4
+both_00059,both,Item + Task Shift,post,5,0.5
+both_00059,both,Item + Task Shift,mid,1,0.0
+both_00059,both,Item + Task Shift,mid,2,1.0
+both_00059,both,Item + Task Shift,mid,3,0.4
+both_00059,both,Item + Task Shift,mid,4,0.625
+both_00059,both,Item + Task Shift,mid,5,0.6666666666666666
+both_00059,both,Item + Task Shift,pre,1,1.0
+both_00059,both,Item + Task Shift,pre,2,0.75
+both_00059,both,Item + Task Shift,pre,3,0.6
+both_00059,both,Item + Task Shift,pre,4,0.75
+both_00059,both,Item + Task Shift,pre,5,1.0
+both_00060,both,Item + Task Shift,post,1,0.3333333333333333
+both_00060,both,Item + Task Shift,post,2,0.625
+both_00060,both,Item + Task Shift,post,3,0.5
+both_00060,both,Item + Task Shift,post,4,0.0
+both_00060,both,Item + Task Shift,post,5,0.0
+both_00060,both,Item + Task Shift,mid,1,0.0
+both_00060,both,Item + Task Shift,mid,2,0.75
+both_00060,both,Item + Task Shift,mid,3,0.5
+both_00060,both,Item + Task Shift,mid,5,0.4
+both_00060,both,Item + Task Shift,pre,1,0.5
+both_00060,both,Item + Task Shift,pre,2,0.4
+both_00060,both,Item + Task Shift,pre,3,0.75
+both_00060,both,Item + Task Shift,pre,4,0.6666666666666666
+both_00060,both,Item + Task Shift,pre,5,0.75
+both_00061,both,Item + Task Shift,post,1,0.16666666666666666
+both_00061,both,Item + Task Shift,post,2,0.6666666666666666
+both_00061,both,Item + Task Shift,post,4,0.3333333333333333
+both_00061,both,Item + Task Shift,post,5,0.2
+both_00061,both,Item + Task Shift,mid,1,0.5
+both_00061,both,Item + Task Shift,mid,2,0.4
+both_00061,both,Item + Task Shift,mid,3,0.16666666666666666
+both_00061,both,Item + Task Shift,mid,4,0.0
+both_00061,both,Item + Task Shift,mid,5,0.3333333333333333
+both_00061,both,Item + Task Shift,pre,1,0.5
+both_00061,both,Item + Task Shift,pre,2,0.0
+both_00061,both,Item + Task Shift,pre,3,0.0
+both_00061,both,Item + Task Shift,pre,4,0.3333333333333333
+both_00061,both,Item + Task Shift,pre,5,0.25
+both_00062,both,Item + Task Shift,post,1,0.2
+both_00062,both,Item + Task Shift,post,3,0.3333333333333333
+both_00062,both,Item + Task Shift,post,4,1.0
+both_00062,both,Item + Task Shift,post,5,0.25
+both_00062,both,Item + Task Shift,mid,1,0.2
+both_00062,both,Item + Task Shift,mid,2,0.5
+both_00062,both,Item + Task Shift,mid,3,1.0
+both_00062,both,Item + Task Shift,mid,4,0.4
+both_00062,both,Item + Task Shift,mid,5,1.0
+both_00062,both,Item + Task Shift,pre,1,0.6
+both_00062,both,Item + Task Shift,pre,2,0.75
+both_00062,both,Item + Task Shift,pre,3,0.5
+both_00062,both,Item + Task Shift,pre,4,0.25
+both_00062,both,Item + Task Shift,pre,5,0.4
+both_00063,both,Item + Task Shift,post,1,0.4
+both_00063,both,Item + Task Shift,post,2,0.3333333333333333
+both_00063,both,Item + Task Shift,post,3,0.3333333333333333
+both_00063,both,Item + Task Shift,post,4,0.5
+both_00063,both,Item + Task Shift,post,5,0.8
+both_00063,both,Item + Task Shift,mid,1,0.3333333333333333
+both_00063,both,Item + Task Shift,mid,2,0.6666666666666666
+both_00063,both,Item + Task Shift,mid,3,0.6666666666666666
+both_00063,both,Item + Task Shift,mid,4,0.3333333333333333
+both_00063,both,Item + Task Shift,mid,5,0.25
+both_00063,both,Item + Task Shift,pre,1,0.75
+both_00063,both,Item + Task Shift,pre,2,0.5
+both_00063,both,Item + Task Shift,pre,3,0.3333333333333333
+both_00063,both,Item + Task Shift,pre,4,0.5
+both_00063,both,Item + Task Shift,pre,5,0.0
+both_00064,both,Item + Task Shift,post,1,0.5
+both_00064,both,Item + Task Shift,post,2,0.5
+both_00064,both,Item + Task Shift,post,3,0.6666666666666666
+both_00064,both,Item + Task Shift,post,4,1.0
+both_00064,both,Item + Task Shift,post,5,0.5
+both_00064,both,Item + Task Shift,mid,1,0.2
+both_00064,both,Item + Task Shift,mid,2,0.2
+both_00064,both,Item + Task Shift,mid,3,0.5
+both_00064,both,Item + Task Shift,mid,4,0.0
+both_00064,both,Item + Task Shift,mid,5,0.8333333333333334
+both_00064,both,Item + Task Shift,pre,1,0.16666666666666666
+both_00064,both,Item + Task Shift,pre,3,0.375
+both_00064,both,Item + Task Shift,pre,4,0.4
+both_00064,both,Item + Task Shift,pre,5,1.0
+both_00065,both,Item + Task Shift,post,1,0.0
+both_00065,both,Item + Task Shift,post,2,1.0
+both_00065,both,Item + Task Shift,post,3,0.3333333333333333
+both_00065,both,Item + Task Shift,post,4,0.6
+both_00065,both,Item + Task Shift,post,5,0.0
+both_00065,both,Item + Task Shift,mid,1,0.6666666666666666
+both_00065,both,Item + Task Shift,mid,2,0.5714285714285714
+both_00065,both,Item + Task Shift,mid,3,0.6666666666666666
+both_00065,both,Item + Task Shift,mid,4,0.5
+both_00065,both,Item + Task Shift,mid,5,0.8
+both_00065,both,Item + Task Shift,pre,1,0.5714285714285714
+both_00065,both,Item + Task Shift,pre,2,1.0
+both_00065,both,Item + Task Shift,pre,3,0.8333333333333334
+both_00065,both,Item + Task Shift,pre,4,1.0
+both_00065,both,Item + Task Shift,pre,5,1.0
+both_00066,both,Item + Task Shift,post,1,0.5
+both_00066,both,Item + Task Shift,post,2,0.8
+both_00066,both,Item + Task Shift,post,3,0.75
+both_00066,both,Item + Task Shift,post,4,1.0
+both_00066,both,Item + Task Shift,post,5,0.8333333333333334
+both_00066,both,Item + Task Shift,mid,1,0.5
+both_00066,both,Item + Task Shift,mid,2,0.8
+both_00066,both,Item + Task Shift,mid,3,1.0
+both_00066,both,Item + Task Shift,mid,4,1.0
+both_00066,both,Item + Task Shift,mid,5,1.0
+both_00066,both,Item + Task Shift,pre,1,0.0
+both_00066,both,Item + Task Shift,pre,2,0.5
+both_00066,both,Item + Task Shift,pre,3,0.6666666666666666
+both_00066,both,Item + Task Shift,pre,4,0.6666666666666666
+both_00066,both,Item + Task Shift,pre,5,0.6666666666666666
+both_00067,both,Item + Task Shift,post,1,0.5
+both_00067,both,Item + Task Shift,post,2,0.3333333333333333
+both_00067,both,Item + Task Shift,post,3,0.0
+both_00067,both,Item + Task Shift,post,4,0.0
+both_00067,both,Item + Task Shift,post,5,0.3333333333333333
+both_00067,both,Item + Task Shift,mid,1,0.0
+both_00067,both,Item + Task Shift,mid,2,0.5
+both_00067,both,Item + Task Shift,mid,3,0.5
+both_00067,both,Item + Task Shift,mid,4,0.6
+both_00067,both,Item + Task Shift,mid,5,0.5
+both_00067,both,Item + Task Shift,pre,1,0.5
+both_00067,both,Item + Task Shift,pre,2,0.2
+both_00067,both,Item + Task Shift,pre,3,0.0
+both_00067,both,Item + Task Shift,pre,4,0.375
+both_00067,both,Item + Task Shift,pre,5,1.0
+item_only_00001,item_only,Item Shift Only,post,1,0.25
+item_only_00001,item_only,Item Shift Only,post,3,0.6666666666666666
+item_only_00001,item_only,Item Shift Only,post,4,0.6
+item_only_00001,item_only,Item Shift Only,post,5,0.5
+item_only_00001,item_only,Item Shift Only,mid,1,0.8
+item_only_00001,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00001,item_only,Item Shift Only,mid,3,0.5
+item_only_00001,item_only,Item Shift Only,mid,4,0.5
+item_only_00001,item_only,Item Shift Only,mid,5,0.6666666666666666
+item_only_00001,item_only,Item Shift Only,pre,1,0.5
+item_only_00001,item_only,Item Shift Only,pre,2,0.6
+item_only_00001,item_only,Item Shift Only,pre,3,0.4
+item_only_00001,item_only,Item Shift Only,pre,4,0.3333333333333333
+item_only_00001,item_only,Item Shift Only,pre,5,0.6
+item_only_00002,item_only,Item Shift Only,post,1,0.6666666666666666
+item_only_00002,item_only,Item Shift Only,post,2,0.3333333333333333
+item_only_00002,item_only,Item Shift Only,post,3,0.0
+item_only_00002,item_only,Item Shift Only,post,4,0.3333333333333333
+item_only_00002,item_only,Item Shift Only,post,5,0.7142857142857143
+item_only_00002,item_only,Item Shift Only,mid,1,0.25
+item_only_00002,item_only,Item Shift Only,mid,2,0.0
+item_only_00002,item_only,Item Shift Only,mid,3,0.0
+item_only_00002,item_only,Item Shift Only,mid,4,0.0
+item_only_00002,item_only,Item Shift Only,mid,5,0.25
+item_only_00002,item_only,Item Shift Only,pre,1,1.0
+item_only_00002,item_only,Item Shift Only,pre,2,0.6
+item_only_00002,item_only,Item Shift Only,pre,3,0.625
+item_only_00002,item_only,Item Shift Only,pre,4,0.5
+item_only_00002,item_only,Item Shift Only,pre,5,0.5
+item_only_00003,item_only,Item Shift Only,post,1,0.0
+item_only_00003,item_only,Item Shift Only,post,2,0.5
+item_only_00003,item_only,Item Shift Only,post,3,0.5
+item_only_00003,item_only,Item Shift Only,post,4,0.3333333333333333
+item_only_00003,item_only,Item Shift Only,post,5,0.0
+item_only_00003,item_only,Item Shift Only,mid,1,0.5
+item_only_00003,item_only,Item Shift Only,mid,2,0.0
+item_only_00003,item_only,Item Shift Only,mid,3,0.0
+item_only_00003,item_only,Item Shift Only,mid,4,0.75
+item_only_00003,item_only,Item Shift Only,mid,5,0.6666666666666666
+item_only_00003,item_only,Item Shift Only,pre,1,0.4
+item_only_00003,item_only,Item Shift Only,pre,2,0.25
+item_only_00003,item_only,Item Shift Only,pre,3,0.0
+item_only_00003,item_only,Item Shift Only,pre,4,0.3333333333333333
+item_only_00003,item_only,Item Shift Only,pre,5,0.16666666666666666
+item_only_00004,item_only,Item Shift Only,post,1,0.0
+item_only_00004,item_only,Item Shift Only,post,2,0.6
+item_only_00004,item_only,Item Shift Only,post,3,1.0
+item_only_00004,item_only,Item Shift Only,post,4,1.0
+item_only_00004,item_only,Item Shift Only,post,5,0.75
+item_only_00004,item_only,Item Shift Only,mid,1,0.2222222222222222
+item_only_00004,item_only,Item Shift Only,mid,2,0.5
+item_only_00004,item_only,Item Shift Only,mid,3,0.0
+item_only_00004,item_only,Item Shift Only,mid,4,1.0
+item_only_00004,item_only,Item Shift Only,mid,5,1.0
+item_only_00004,item_only,Item Shift Only,pre,1,0.2
+item_only_00004,item_only,Item Shift Only,pre,2,0.5
+item_only_00004,item_only,Item Shift Only,pre,3,0.4
+item_only_00004,item_only,Item Shift Only,pre,4,0.6
+item_only_00004,item_only,Item Shift Only,pre,5,0.6666666666666666
+item_only_00005,item_only,Item Shift Only,post,1,0.3333333333333333
+item_only_00005,item_only,Item Shift Only,post,2,0.6
+item_only_00005,item_only,Item Shift Only,post,3,0.7142857142857143
+item_only_00005,item_only,Item Shift Only,post,4,0.8
+item_only_00005,item_only,Item Shift Only,mid,1,0.5
+item_only_00005,item_only,Item Shift Only,mid,2,1.0
+item_only_00005,item_only,Item Shift Only,mid,3,0.4
+item_only_00005,item_only,Item Shift Only,mid,4,1.0
+item_only_00005,item_only,Item Shift Only,mid,5,0.5
+item_only_00005,item_only,Item Shift Only,pre,1,0.3333333333333333
+item_only_00005,item_only,Item Shift Only,pre,2,1.0
+item_only_00005,item_only,Item Shift Only,pre,3,0.75
+item_only_00005,item_only,Item Shift Only,pre,4,0.5
+item_only_00005,item_only,Item Shift Only,pre,5,0.2
+item_only_00006,item_only,Item Shift Only,post,1,0.42857142857142855
+item_only_00006,item_only,Item Shift Only,post,2,0.25
+item_only_00006,item_only,Item Shift Only,post,3,1.0
+item_only_00006,item_only,Item Shift Only,post,4,0.6666666666666666
+item_only_00006,item_only,Item Shift Only,post,5,0.5
+item_only_00006,item_only,Item Shift Only,mid,1,0.3333333333333333
+item_only_00006,item_only,Item Shift Only,mid,2,0.5
+item_only_00006,item_only,Item Shift Only,mid,3,0.5
+item_only_00006,item_only,Item Shift Only,mid,4,0.2
+item_only_00006,item_only,Item Shift Only,mid,5,0.75
+item_only_00006,item_only,Item Shift Only,pre,1,0.5
+item_only_00006,item_only,Item Shift Only,pre,2,1.0
+item_only_00006,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00006,item_only,Item Shift Only,pre,4,0.5
+item_only_00006,item_only,Item Shift Only,pre,5,0.4
+item_only_00007,item_only,Item Shift Only,post,1,0.0
+item_only_00007,item_only,Item Shift Only,post,2,0.0
+item_only_00007,item_only,Item Shift Only,post,3,0.5
+item_only_00007,item_only,Item Shift Only,post,4,0.3333333333333333
+item_only_00007,item_only,Item Shift Only,post,5,0.0
+item_only_00007,item_only,Item Shift Only,mid,1,0.0
+item_only_00007,item_only,Item Shift Only,mid,2,0.25
+item_only_00007,item_only,Item Shift Only,mid,3,0.2
+item_only_00007,item_only,Item Shift Only,mid,4,0.5
+item_only_00007,item_only,Item Shift Only,mid,5,0.2
+item_only_00007,item_only,Item Shift Only,pre,1,0.4
+item_only_00007,item_only,Item Shift Only,pre,2,0.0
+item_only_00007,item_only,Item Shift Only,pre,3,0.2
+item_only_00007,item_only,Item Shift Only,pre,4,0.0
+item_only_00007,item_only,Item Shift Only,pre,5,0.4
+item_only_00008,item_only,Item Shift Only,post,1,0.4
+item_only_00008,item_only,Item Shift Only,post,2,1.0
+item_only_00008,item_only,Item Shift Only,post,3,0.16666666666666666
+item_only_00008,item_only,Item Shift Only,post,4,0.6666666666666666
+item_only_00008,item_only,Item Shift Only,post,5,1.0
+item_only_00008,item_only,Item Shift Only,mid,1,0.4
+item_only_00008,item_only,Item Shift Only,mid,2,0.2
+item_only_00008,item_only,Item Shift Only,mid,3,0.0
+item_only_00008,item_only,Item Shift Only,mid,4,0.6
+item_only_00008,item_only,Item Shift Only,mid,5,0.75
+item_only_00008,item_only,Item Shift Only,pre,1,0.5
+item_only_00008,item_only,Item Shift Only,pre,2,1.0
+item_only_00008,item_only,Item Shift Only,pre,3,0.6
+item_only_00008,item_only,Item Shift Only,pre,4,0.6666666666666666
+item_only_00008,item_only,Item Shift Only,pre,5,0.6666666666666666
+item_only_00009,item_only,Item Shift Only,post,1,0.5
+item_only_00009,item_only,Item Shift Only,post,2,1.0
+item_only_00009,item_only,Item Shift Only,post,3,0.5
+item_only_00009,item_only,Item Shift Only,post,4,0.8
+item_only_00009,item_only,Item Shift Only,post,5,0.6666666666666666
+item_only_00009,item_only,Item Shift Only,mid,1,0.2
+item_only_00009,item_only,Item Shift Only,mid,2,0.5
+item_only_00009,item_only,Item Shift Only,mid,3,0.6
+item_only_00009,item_only,Item Shift Only,mid,4,0.75
+item_only_00009,item_only,Item Shift Only,mid,5,0.75
+item_only_00009,item_only,Item Shift Only,pre,1,0.25
+item_only_00009,item_only,Item Shift Only,pre,2,0.0
+item_only_00009,item_only,Item Shift Only,pre,3,0.6
+item_only_00009,item_only,Item Shift Only,pre,4,0.6666666666666666
+item_only_00009,item_only,Item Shift Only,pre,5,0.4
+item_only_00010,item_only,Item Shift Only,post,1,0.25
+item_only_00010,item_only,Item Shift Only,post,2,0.5
+item_only_00010,item_only,Item Shift Only,post,3,0.75
+item_only_00010,item_only,Item Shift Only,post,4,0.4
+item_only_00010,item_only,Item Shift Only,post,5,0.6666666666666666
+item_only_00010,item_only,Item Shift Only,mid,1,0.2857142857142857
+item_only_00010,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00010,item_only,Item Shift Only,mid,3,0.0
+item_only_00010,item_only,Item Shift Only,mid,4,0.6
+item_only_00010,item_only,Item Shift Only,mid,5,0.0
+item_only_00010,item_only,Item Shift Only,pre,1,0.5
+item_only_00010,item_only,Item Shift Only,pre,2,0.2857142857142857
+item_only_00010,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00010,item_only,Item Shift Only,pre,4,0.5
+item_only_00010,item_only,Item Shift Only,pre,5,0.0
+item_only_00011,item_only,Item Shift Only,post,1,0.6666666666666666
+item_only_00011,item_only,Item Shift Only,post,2,0.75
+item_only_00011,item_only,Item Shift Only,post,3,1.0
+item_only_00011,item_only,Item Shift Only,post,4,0.8
+item_only_00011,item_only,Item Shift Only,post,5,0.7142857142857143
+item_only_00011,item_only,Item Shift Only,mid,1,0.3333333333333333
+item_only_00011,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00011,item_only,Item Shift Only,mid,3,0.5
+item_only_00011,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00011,item_only,Item Shift Only,mid,5,1.0
+item_only_00011,item_only,Item Shift Only,pre,1,0.6
+item_only_00011,item_only,Item Shift Only,pre,2,0.6666666666666666
+item_only_00011,item_only,Item Shift Only,pre,3,0.5
+item_only_00011,item_only,Item Shift Only,pre,4,0.8
+item_only_00011,item_only,Item Shift Only,pre,5,0.8
+item_only_00012,item_only,Item Shift Only,post,1,1.0
+item_only_00012,item_only,Item Shift Only,post,2,0.2
+item_only_00012,item_only,Item Shift Only,post,3,0.5
+item_only_00012,item_only,Item Shift Only,post,4,0.0
+item_only_00012,item_only,Item Shift Only,post,5,0.5714285714285714
+item_only_00012,item_only,Item Shift Only,mid,1,0.5
+item_only_00012,item_only,Item Shift Only,mid,2,0.25
+item_only_00012,item_only,Item Shift Only,mid,3,0.4
+item_only_00012,item_only,Item Shift Only,mid,4,1.0
+item_only_00012,item_only,Item Shift Only,mid,5,1.0
+item_only_00012,item_only,Item Shift Only,pre,1,1.0
+item_only_00012,item_only,Item Shift Only,pre,2,0.0
+item_only_00012,item_only,Item Shift Only,pre,3,1.0
+item_only_00012,item_only,Item Shift Only,pre,4,0.3333333333333333
+item_only_00012,item_only,Item Shift Only,pre,5,0.6
+item_only_00013,item_only,Item Shift Only,post,1,0.2
+item_only_00013,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00013,item_only,Item Shift Only,post,3,0.5
+item_only_00013,item_only,Item Shift Only,post,4,1.0
+item_only_00013,item_only,Item Shift Only,post,5,0.5
+item_only_00013,item_only,Item Shift Only,mid,1,0.5
+item_only_00013,item_only,Item Shift Only,mid,2,0.4
+item_only_00013,item_only,Item Shift Only,mid,3,1.0
+item_only_00013,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00013,item_only,Item Shift Only,mid,5,0.6666666666666666
+item_only_00013,item_only,Item Shift Only,pre,1,0.25
+item_only_00013,item_only,Item Shift Only,pre,2,0.5
+item_only_00013,item_only,Item Shift Only,pre,3,0.75
+item_only_00013,item_only,Item Shift Only,pre,4,0.8
+item_only_00013,item_only,Item Shift Only,pre,5,0.6666666666666666
+item_only_00014,item_only,Item Shift Only,post,1,0.5
+item_only_00014,item_only,Item Shift Only,post,2,0.0
+item_only_00014,item_only,Item Shift Only,post,3,0.625
+item_only_00014,item_only,Item Shift Only,post,4,0.25
+item_only_00014,item_only,Item Shift Only,post,5,0.0
+item_only_00014,item_only,Item Shift Only,mid,1,0.0
+item_only_00014,item_only,Item Shift Only,mid,2,1.0
+item_only_00014,item_only,Item Shift Only,mid,3,0.0
+item_only_00014,item_only,Item Shift Only,mid,4,0.2857142857142857
+item_only_00014,item_only,Item Shift Only,mid,5,0.7142857142857143
+item_only_00014,item_only,Item Shift Only,pre,1,0.0
+item_only_00014,item_only,Item Shift Only,pre,2,0.2
+item_only_00014,item_only,Item Shift Only,pre,3,0.0
+item_only_00014,item_only,Item Shift Only,pre,4,0.3333333333333333
+item_only_00014,item_only,Item Shift Only,pre,5,0.25
+item_only_00015,item_only,Item Shift Only,post,1,0.5
+item_only_00015,item_only,Item Shift Only,post,2,0.75
+item_only_00015,item_only,Item Shift Only,post,3,1.0
+item_only_00015,item_only,Item Shift Only,post,4,0.75
+item_only_00015,item_only,Item Shift Only,post,5,0.5
+item_only_00015,item_only,Item Shift Only,mid,1,0.8333333333333334
+item_only_00015,item_only,Item Shift Only,mid,2,0.25
+item_only_00015,item_only,Item Shift Only,mid,3,1.0
+item_only_00015,item_only,Item Shift Only,mid,4,1.0
+item_only_00015,item_only,Item Shift Only,mid,5,0.8
+item_only_00015,item_only,Item Shift Only,pre,1,0.5
+item_only_00015,item_only,Item Shift Only,pre,2,1.0
+item_only_00015,item_only,Item Shift Only,pre,3,1.0
+item_only_00015,item_only,Item Shift Only,pre,4,1.0
+item_only_00015,item_only,Item Shift Only,pre,5,1.0
+item_only_00016,item_only,Item Shift Only,post,1,0.0
+item_only_00016,item_only,Item Shift Only,post,2,0.25
+item_only_00016,item_only,Item Shift Only,post,3,0.75
+item_only_00016,item_only,Item Shift Only,post,4,0.6
+item_only_00016,item_only,Item Shift Only,post,5,1.0
+item_only_00016,item_only,Item Shift Only,mid,1,1.0
+item_only_00016,item_only,Item Shift Only,mid,2,0.3333333333333333
+item_only_00016,item_only,Item Shift Only,mid,3,0.2
+item_only_00016,item_only,Item Shift Only,mid,4,0.3333333333333333
+item_only_00016,item_only,Item Shift Only,mid,5,0.5
+item_only_00016,item_only,Item Shift Only,pre,1,0.4
+item_only_00016,item_only,Item Shift Only,pre,2,0.6
+item_only_00016,item_only,Item Shift Only,pre,4,0.7142857142857143
+item_only_00016,item_only,Item Shift Only,pre,5,0.0
+item_only_00017,item_only,Item Shift Only,post,1,0.3333333333333333
+item_only_00017,item_only,Item Shift Only,post,2,0.6
+item_only_00017,item_only,Item Shift Only,post,3,1.0
+item_only_00017,item_only,Item Shift Only,post,4,1.0
+item_only_00017,item_only,Item Shift Only,post,5,0.75
+item_only_00017,item_only,Item Shift Only,mid,1,0.0
+item_only_00017,item_only,Item Shift Only,mid,2,0.42857142857142855
+item_only_00017,item_only,Item Shift Only,mid,3,1.0
+item_only_00017,item_only,Item Shift Only,mid,4,0.8
+item_only_00017,item_only,Item Shift Only,mid,5,1.0
+item_only_00017,item_only,Item Shift Only,pre,1,0.3333333333333333
+item_only_00017,item_only,Item Shift Only,pre,2,0.3333333333333333
+item_only_00017,item_only,Item Shift Only,pre,3,0.4
+item_only_00017,item_only,Item Shift Only,pre,4,0.8
+item_only_00017,item_only,Item Shift Only,pre,5,0.5
+item_only_00018,item_only,Item Shift Only,post,1,0.25
+item_only_00018,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00018,item_only,Item Shift Only,post,3,0.0
+item_only_00018,item_only,Item Shift Only,post,4,0.3333333333333333
+item_only_00018,item_only,Item Shift Only,post,5,0.5
+item_only_00018,item_only,Item Shift Only,mid,1,0.4444444444444444
+item_only_00018,item_only,Item Shift Only,mid,2,1.0
+item_only_00018,item_only,Item Shift Only,mid,3,1.0
+item_only_00018,item_only,Item Shift Only,mid,4,0.2
+item_only_00018,item_only,Item Shift Only,mid,5,0.5
+item_only_00018,item_only,Item Shift Only,pre,1,0.4
+item_only_00018,item_only,Item Shift Only,pre,2,0.375
+item_only_00018,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00018,item_only,Item Shift Only,pre,4,0.6666666666666666
+item_only_00018,item_only,Item Shift Only,pre,5,1.0
+item_only_00019,item_only,Item Shift Only,post,1,0.25
+item_only_00019,item_only,Item Shift Only,post,2,0.5
+item_only_00019,item_only,Item Shift Only,post,3,0.0
+item_only_00019,item_only,Item Shift Only,post,4,1.0
+item_only_00019,item_only,Item Shift Only,post,5,0.5
+item_only_00019,item_only,Item Shift Only,mid,1,0.25
+item_only_00019,item_only,Item Shift Only,mid,2,0.25
+item_only_00019,item_only,Item Shift Only,mid,3,0.6
+item_only_00019,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00019,item_only,Item Shift Only,mid,5,0.75
+item_only_00019,item_only,Item Shift Only,pre,1,0.4
+item_only_00019,item_only,Item Shift Only,pre,2,0.5
+item_only_00019,item_only,Item Shift Only,pre,3,1.0
+item_only_00019,item_only,Item Shift Only,pre,4,0.4
+item_only_00019,item_only,Item Shift Only,pre,5,1.0
+item_only_00020,item_only,Item Shift Only,post,1,0.6666666666666666
+item_only_00020,item_only,Item Shift Only,post,2,0.6
+item_only_00020,item_only,Item Shift Only,post,3,1.0
+item_only_00020,item_only,Item Shift Only,post,4,0.6666666666666666
+item_only_00020,item_only,Item Shift Only,post,5,0.4
+item_only_00020,item_only,Item Shift Only,mid,1,0.16666666666666666
+item_only_00020,item_only,Item Shift Only,mid,2,0.0
+item_only_00020,item_only,Item Shift Only,mid,3,0.6
+item_only_00020,item_only,Item Shift Only,mid,4,1.0
+item_only_00020,item_only,Item Shift Only,mid,5,1.0
+item_only_00020,item_only,Item Shift Only,pre,1,0.5
+item_only_00020,item_only,Item Shift Only,pre,2,0.6
+item_only_00020,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00020,item_only,Item Shift Only,pre,4,0.75
+item_only_00020,item_only,Item Shift Only,pre,5,0.3333333333333333
+item_only_00021,item_only,Item Shift Only,post,1,0.3333333333333333
+item_only_00021,item_only,Item Shift Only,post,2,0.5
+item_only_00021,item_only,Item Shift Only,post,3,0.6
+item_only_00021,item_only,Item Shift Only,post,4,0.6666666666666666
+item_only_00021,item_only,Item Shift Only,post,5,1.0
+item_only_00021,item_only,Item Shift Only,mid,1,0.2857142857142857
+item_only_00021,item_only,Item Shift Only,mid,2,0.0
+item_only_00021,item_only,Item Shift Only,mid,3,0.6666666666666666
+item_only_00021,item_only,Item Shift Only,mid,4,0.5
+item_only_00021,item_only,Item Shift Only,mid,5,0.5
+item_only_00021,item_only,Item Shift Only,pre,1,0.4444444444444444
+item_only_00021,item_only,Item Shift Only,pre,2,0.6666666666666666
+item_only_00021,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00021,item_only,Item Shift Only,pre,4,0.25
+item_only_00021,item_only,Item Shift Only,pre,5,0.0
+item_only_00022,item_only,Item Shift Only,post,1,0.25
+item_only_00022,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00022,item_only,Item Shift Only,post,3,0.3333333333333333
+item_only_00022,item_only,Item Shift Only,post,4,0.0
+item_only_00022,item_only,Item Shift Only,post,5,0.0
+item_only_00022,item_only,Item Shift Only,mid,1,0.2
+item_only_00022,item_only,Item Shift Only,mid,2,0.5
+item_only_00022,item_only,Item Shift Only,mid,3,0.5
+item_only_00022,item_only,Item Shift Only,mid,4,0.5
+item_only_00022,item_only,Item Shift Only,mid,5,0.2
+item_only_00022,item_only,Item Shift Only,pre,1,0.0
+item_only_00022,item_only,Item Shift Only,pre,2,0.3333333333333333
+item_only_00022,item_only,Item Shift Only,pre,3,0.4
+item_only_00022,item_only,Item Shift Only,pre,4,0.5
+item_only_00022,item_only,Item Shift Only,pre,5,0.3333333333333333
+item_only_00023,item_only,Item Shift Only,post,1,0.0
+item_only_00023,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00023,item_only,Item Shift Only,post,3,0.6666666666666666
+item_only_00023,item_only,Item Shift Only,post,4,0.5
+item_only_00023,item_only,Item Shift Only,post,5,0.6666666666666666
+item_only_00023,item_only,Item Shift Only,mid,1,0.5
+item_only_00023,item_only,Item Shift Only,mid,2,0.5
+item_only_00023,item_only,Item Shift Only,mid,3,0.4
+item_only_00023,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00023,item_only,Item Shift Only,mid,5,1.0
+item_only_00023,item_only,Item Shift Only,pre,1,0.3333333333333333
+item_only_00023,item_only,Item Shift Only,pre,2,1.0
+item_only_00023,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00023,item_only,Item Shift Only,pre,4,0.6
+item_only_00023,item_only,Item Shift Only,pre,5,0.8571428571428571
+item_only_00024,item_only,Item Shift Only,post,1,0.0
+item_only_00024,item_only,Item Shift Only,post,2,0.0
+item_only_00024,item_only,Item Shift Only,post,3,0.2
+item_only_00024,item_only,Item Shift Only,post,4,0.0
+item_only_00024,item_only,Item Shift Only,post,5,0.25
+item_only_00024,item_only,Item Shift Only,mid,1,0.0
+item_only_00024,item_only,Item Shift Only,mid,2,0.0
+item_only_00024,item_only,Item Shift Only,mid,3,0.6
+item_only_00024,item_only,Item Shift Only,mid,4,0.0
+item_only_00024,item_only,Item Shift Only,mid,5,0.0
+item_only_00024,item_only,Item Shift Only,pre,1,0.0
+item_only_00024,item_only,Item Shift Only,pre,2,0.42857142857142855
+item_only_00024,item_only,Item Shift Only,pre,3,0.5
+item_only_00024,item_only,Item Shift Only,pre,4,0.0
+item_only_00024,item_only,Item Shift Only,pre,5,0.5
+item_only_00025,item_only,Item Shift Only,post,1,0.0
+item_only_00025,item_only,Item Shift Only,post,2,0.6
+item_only_00025,item_only,Item Shift Only,post,3,0.3333333333333333
+item_only_00025,item_only,Item Shift Only,post,4,0.5714285714285714
+item_only_00025,item_only,Item Shift Only,post,5,0.5
+item_only_00025,item_only,Item Shift Only,mid,1,0.6666666666666666
+item_only_00025,item_only,Item Shift Only,mid,2,0.0
+item_only_00025,item_only,Item Shift Only,mid,3,0.5
+item_only_00025,item_only,Item Shift Only,mid,4,0.75
+item_only_00025,item_only,Item Shift Only,mid,5,0.2857142857142857
+item_only_00025,item_only,Item Shift Only,pre,1,0.75
+item_only_00025,item_only,Item Shift Only,pre,2,0.3333333333333333
+item_only_00025,item_only,Item Shift Only,pre,3,0.4
+item_only_00025,item_only,Item Shift Only,pre,4,0.0
+item_only_00025,item_only,Item Shift Only,pre,5,0.5
+item_only_00026,item_only,Item Shift Only,post,1,0.6666666666666666
+item_only_00026,item_only,Item Shift Only,post,2,0.75
+item_only_00026,item_only,Item Shift Only,post,3,1.0
+item_only_00026,item_only,Item Shift Only,post,4,0.75
+item_only_00026,item_only,Item Shift Only,post,5,0.75
+item_only_00026,item_only,Item Shift Only,mid,1,0.4
+item_only_00026,item_only,Item Shift Only,mid,2,0.5714285714285714
+item_only_00026,item_only,Item Shift Only,mid,3,1.0
+item_only_00026,item_only,Item Shift Only,mid,4,0.5
+item_only_00026,item_only,Item Shift Only,mid,5,1.0
+item_only_00026,item_only,Item Shift Only,pre,1,0.4
+item_only_00026,item_only,Item Shift Only,pre,2,0.75
+item_only_00026,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00026,item_only,Item Shift Only,pre,4,1.0
+item_only_00026,item_only,Item Shift Only,pre,5,1.0
+item_only_00027,item_only,Item Shift Only,post,1,1.0
+item_only_00027,item_only,Item Shift Only,post,2,0.2
+item_only_00027,item_only,Item Shift Only,post,3,0.75
+item_only_00027,item_only,Item Shift Only,post,4,1.0
+item_only_00027,item_only,Item Shift Only,post,5,0.8
+item_only_00027,item_only,Item Shift Only,mid,1,0.6666666666666666
+item_only_00027,item_only,Item Shift Only,mid,2,0.42857142857142855
+item_only_00027,item_only,Item Shift Only,mid,3,0.4
+item_only_00027,item_only,Item Shift Only,mid,4,0.5
+item_only_00027,item_only,Item Shift Only,mid,5,0.6666666666666666
+item_only_00027,item_only,Item Shift Only,pre,1,0.2
+item_only_00027,item_only,Item Shift Only,pre,2,0.6
+item_only_00027,item_only,Item Shift Only,pre,3,0.2
+item_only_00027,item_only,Item Shift Only,pre,4,0.5
+item_only_00027,item_only,Item Shift Only,pre,5,1.0
+item_only_00028,item_only,Item Shift Only,post,1,0.25
+item_only_00028,item_only,Item Shift Only,post,2,0.6
+item_only_00028,item_only,Item Shift Only,post,3,0.0
+item_only_00028,item_only,Item Shift Only,post,4,0.0
+item_only_00028,item_only,Item Shift Only,post,5,0.6
+item_only_00028,item_only,Item Shift Only,mid,1,0.2
+item_only_00028,item_only,Item Shift Only,mid,2,0.5714285714285714
+item_only_00028,item_only,Item Shift Only,mid,3,0.5
+item_only_00028,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00028,item_only,Item Shift Only,mid,5,0.3333333333333333
+item_only_00028,item_only,Item Shift Only,pre,1,0.25
+item_only_00028,item_only,Item Shift Only,pre,2,0.3333333333333333
+item_only_00028,item_only,Item Shift Only,pre,3,0.0
+item_only_00028,item_only,Item Shift Only,pre,4,0.5
+item_only_00028,item_only,Item Shift Only,pre,5,0.5
+item_only_00029,item_only,Item Shift Only,post,1,0.8
+item_only_00029,item_only,Item Shift Only,post,2,0.8
+item_only_00029,item_only,Item Shift Only,post,3,0.6
+item_only_00029,item_only,Item Shift Only,post,4,0.3333333333333333
+item_only_00029,item_only,Item Shift Only,post,5,1.0
+item_only_00029,item_only,Item Shift Only,mid,1,0.8
+item_only_00029,item_only,Item Shift Only,mid,2,0.8
+item_only_00029,item_only,Item Shift Only,mid,3,0.6666666666666666
+item_only_00029,item_only,Item Shift Only,mid,4,1.0
+item_only_00029,item_only,Item Shift Only,mid,5,1.0
+item_only_00029,item_only,Item Shift Only,pre,1,0.0
+item_only_00029,item_only,Item Shift Only,pre,2,1.0
+item_only_00029,item_only,Item Shift Only,pre,3,0.5
+item_only_00029,item_only,Item Shift Only,pre,4,0.75
+item_only_00029,item_only,Item Shift Only,pre,5,0.6666666666666666
+item_only_00030,item_only,Item Shift Only,post,1,0.3333333333333333
+item_only_00030,item_only,Item Shift Only,post,2,0.4
+item_only_00030,item_only,Item Shift Only,post,3,0.2
+item_only_00030,item_only,Item Shift Only,post,4,0.0
+item_only_00030,item_only,Item Shift Only,post,5,0.75
+item_only_00030,item_only,Item Shift Only,mid,1,0.6666666666666666
+item_only_00030,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00030,item_only,Item Shift Only,mid,3,0.5714285714285714
+item_only_00030,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00030,item_only,Item Shift Only,mid,5,0.75
+item_only_00030,item_only,Item Shift Only,pre,1,0.25
+item_only_00030,item_only,Item Shift Only,pre,2,0.25
+item_only_00030,item_only,Item Shift Only,pre,3,0.8
+item_only_00030,item_only,Item Shift Only,pre,4,1.0
+item_only_00030,item_only,Item Shift Only,pre,5,0.6
+item_only_00031,item_only,Item Shift Only,post,1,0.0
+item_only_00031,item_only,Item Shift Only,post,2,1.0
+item_only_00031,item_only,Item Shift Only,post,3,0.8
+item_only_00031,item_only,Item Shift Only,post,4,0.6666666666666666
+item_only_00031,item_only,Item Shift Only,post,5,0.75
+item_only_00031,item_only,Item Shift Only,mid,1,0.6
+item_only_00031,item_only,Item Shift Only,mid,2,1.0
+item_only_00031,item_only,Item Shift Only,mid,3,0.75
+item_only_00031,item_only,Item Shift Only,mid,4,0.75
+item_only_00031,item_only,Item Shift Only,mid,5,0.8333333333333334
+item_only_00031,item_only,Item Shift Only,pre,1,0.3333333333333333
+item_only_00031,item_only,Item Shift Only,pre,2,1.0
+item_only_00031,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00031,item_only,Item Shift Only,pre,4,1.0
+item_only_00031,item_only,Item Shift Only,pre,5,1.0
+item_only_00032,item_only,Item Shift Only,post,1,0.4
+item_only_00032,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00032,item_only,Item Shift Only,post,3,0.16666666666666666
+item_only_00032,item_only,Item Shift Only,post,4,0.0
+item_only_00032,item_only,Item Shift Only,post,5,1.0
+item_only_00032,item_only,Item Shift Only,mid,1,0.5
+item_only_00032,item_only,Item Shift Only,mid,2,0.25
+item_only_00032,item_only,Item Shift Only,mid,3,0.6666666666666666
+item_only_00032,item_only,Item Shift Only,mid,4,0.25
+item_only_00032,item_only,Item Shift Only,mid,5,0.6
+item_only_00032,item_only,Item Shift Only,pre,1,0.5
+item_only_00032,item_only,Item Shift Only,pre,2,1.0
+item_only_00032,item_only,Item Shift Only,pre,3,1.0
+item_only_00032,item_only,Item Shift Only,pre,4,0.75
+item_only_00032,item_only,Item Shift Only,pre,5,0.8333333333333334
+item_only_00033,item_only,Item Shift Only,post,1,0.0
+item_only_00033,item_only,Item Shift Only,post,2,0.8
+item_only_00033,item_only,Item Shift Only,post,3,0.25
+item_only_00033,item_only,Item Shift Only,post,4,0.5
+item_only_00033,item_only,Item Shift Only,post,5,0.0
+item_only_00033,item_only,Item Shift Only,mid,1,0.4
+item_only_00033,item_only,Item Shift Only,mid,2,1.0
+item_only_00033,item_only,Item Shift Only,mid,3,0.4
+item_only_00033,item_only,Item Shift Only,mid,4,0.0
+item_only_00033,item_only,Item Shift Only,mid,5,0.5
+item_only_00033,item_only,Item Shift Only,pre,1,0.0
+item_only_00033,item_only,Item Shift Only,pre,2,0.25
+item_only_00033,item_only,Item Shift Only,pre,3,0.25
+item_only_00033,item_only,Item Shift Only,pre,4,0.0
+item_only_00033,item_only,Item Shift Only,pre,5,0.2
+item_only_00034,item_only,Item Shift Only,post,1,0.25
+item_only_00034,item_only,Item Shift Only,post,2,0.6
+item_only_00034,item_only,Item Shift Only,post,3,0.6666666666666666
+item_only_00034,item_only,Item Shift Only,post,4,0.5
+item_only_00034,item_only,Item Shift Only,post,5,0.5
+item_only_00034,item_only,Item Shift Only,mid,1,0.0
+item_only_00034,item_only,Item Shift Only,mid,2,0.5
+item_only_00034,item_only,Item Shift Only,mid,3,0.3333333333333333
+item_only_00034,item_only,Item Shift Only,mid,4,0.8
+item_only_00034,item_only,Item Shift Only,mid,5,0.0
+item_only_00034,item_only,Item Shift Only,pre,1,0.0
+item_only_00034,item_only,Item Shift Only,pre,2,0.6666666666666666
+item_only_00034,item_only,Item Shift Only,pre,3,0.5
+item_only_00034,item_only,Item Shift Only,pre,4,0.3333333333333333
+item_only_00034,item_only,Item Shift Only,pre,5,0.6666666666666666
+item_only_00035,item_only,Item Shift Only,post,1,0.0
+item_only_00035,item_only,Item Shift Only,post,2,0.3333333333333333
+item_only_00035,item_only,Item Shift Only,post,3,0.5
+item_only_00035,item_only,Item Shift Only,post,4,0.6666666666666666
+item_only_00035,item_only,Item Shift Only,post,5,1.0
+item_only_00035,item_only,Item Shift Only,mid,1,0.6666666666666666
+item_only_00035,item_only,Item Shift Only,mid,2,0.7142857142857143
+item_only_00035,item_only,Item Shift Only,mid,3,0.6666666666666666
+item_only_00035,item_only,Item Shift Only,mid,4,0.4
+item_only_00035,item_only,Item Shift Only,mid,5,0.5
+item_only_00035,item_only,Item Shift Only,pre,1,0.2
+item_only_00035,item_only,Item Shift Only,pre,2,0.6666666666666666
+item_only_00035,item_only,Item Shift Only,pre,3,0.5714285714285714
+item_only_00035,item_only,Item Shift Only,pre,4,0.3333333333333333
+item_only_00035,item_only,Item Shift Only,pre,5,1.0
+item_only_00036,item_only,Item Shift Only,post,1,0.0
+item_only_00036,item_only,Item Shift Only,post,2,0.2
+item_only_00036,item_only,Item Shift Only,post,3,0.3333333333333333
+item_only_00036,item_only,Item Shift Only,post,4,0.14285714285714285
+item_only_00036,item_only,Item Shift Only,post,5,0.5
+item_only_00036,item_only,Item Shift Only,mid,1,0.25
+item_only_00036,item_only,Item Shift Only,mid,2,0.5
+item_only_00036,item_only,Item Shift Only,mid,3,0.5
+item_only_00036,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00036,item_only,Item Shift Only,mid,5,1.0
+item_only_00036,item_only,Item Shift Only,pre,1,0.75
+item_only_00036,item_only,Item Shift Only,pre,2,0.5
+item_only_00036,item_only,Item Shift Only,pre,3,0.2857142857142857
+item_only_00036,item_only,Item Shift Only,pre,4,0.6666666666666666
+item_only_00036,item_only,Item Shift Only,pre,5,0.0
+item_only_00037,item_only,Item Shift Only,post,1,0.6666666666666666
+item_only_00037,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00037,item_only,Item Shift Only,post,3,0.6666666666666666
+item_only_00037,item_only,Item Shift Only,post,4,0.42857142857142855
+item_only_00037,item_only,Item Shift Only,post,5,0.75
+item_only_00037,item_only,Item Shift Only,mid,1,0.5
+item_only_00037,item_only,Item Shift Only,mid,2,1.0
+item_only_00037,item_only,Item Shift Only,mid,3,0.8333333333333334
+item_only_00037,item_only,Item Shift Only,mid,4,0.5
+item_only_00037,item_only,Item Shift Only,mid,5,1.0
+item_only_00037,item_only,Item Shift Only,pre,1,0.8333333333333334
+item_only_00037,item_only,Item Shift Only,pre,2,0.6666666666666666
+item_only_00037,item_only,Item Shift Only,pre,3,0.75
+item_only_00037,item_only,Item Shift Only,pre,4,0.75
+item_only_00037,item_only,Item Shift Only,pre,5,0.6666666666666666
+item_only_00038,item_only,Item Shift Only,post,1,0.75
+item_only_00038,item_only,Item Shift Only,post,2,1.0
+item_only_00038,item_only,Item Shift Only,post,3,0.25
+item_only_00038,item_only,Item Shift Only,post,4,0.8
+item_only_00038,item_only,Item Shift Only,post,5,1.0
+item_only_00038,item_only,Item Shift Only,mid,1,0.5
+item_only_00038,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00038,item_only,Item Shift Only,mid,3,0.8
+item_only_00038,item_only,Item Shift Only,mid,4,1.0
+item_only_00038,item_only,Item Shift Only,mid,5,1.0
+item_only_00038,item_only,Item Shift Only,pre,1,0.5
+item_only_00038,item_only,Item Shift Only,pre,2,0.6666666666666666
+item_only_00038,item_only,Item Shift Only,pre,3,1.0
+item_only_00038,item_only,Item Shift Only,pre,4,0.8
+item_only_00038,item_only,Item Shift Only,pre,5,1.0
+item_only_00039,item_only,Item Shift Only,post,1,0.5
+item_only_00039,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00039,item_only,Item Shift Only,post,3,1.0
+item_only_00039,item_only,Item Shift Only,post,4,0.8333333333333334
+item_only_00039,item_only,Item Shift Only,post,5,0.7142857142857143
+item_only_00039,item_only,Item Shift Only,mid,1,0.75
+item_only_00039,item_only,Item Shift Only,mid,2,1.0
+item_only_00039,item_only,Item Shift Only,mid,3,0.8333333333333334
+item_only_00039,item_only,Item Shift Only,mid,4,0.5
+item_only_00039,item_only,Item Shift Only,mid,5,1.0
+item_only_00039,item_only,Item Shift Only,pre,1,0.8
+item_only_00039,item_only,Item Shift Only,pre,2,0.8333333333333334
+item_only_00039,item_only,Item Shift Only,pre,3,0.8
+item_only_00039,item_only,Item Shift Only,pre,4,1.0
+item_only_00040,item_only,Item Shift Only,post,1,0.3333333333333333
+item_only_00040,item_only,Item Shift Only,post,2,0.5
+item_only_00040,item_only,Item Shift Only,post,3,0.2
+item_only_00040,item_only,Item Shift Only,post,4,0.3333333333333333
+item_only_00040,item_only,Item Shift Only,post,5,0.6
+item_only_00040,item_only,Item Shift Only,mid,1,0.0
+item_only_00040,item_only,Item Shift Only,mid,2,0.4
+item_only_00040,item_only,Item Shift Only,mid,3,0.4
+item_only_00040,item_only,Item Shift Only,mid,4,1.0
+item_only_00040,item_only,Item Shift Only,mid,5,0.8
+item_only_00040,item_only,Item Shift Only,pre,1,0.5714285714285714
+item_only_00040,item_only,Item Shift Only,pre,2,1.0
+item_only_00040,item_only,Item Shift Only,pre,3,1.0
+item_only_00040,item_only,Item Shift Only,pre,4,0.6
+item_only_00040,item_only,Item Shift Only,pre,5,0.25
+item_only_00041,item_only,Item Shift Only,post,1,0.8
+item_only_00041,item_only,Item Shift Only,post,2,1.0
+item_only_00041,item_only,Item Shift Only,post,3,1.0
+item_only_00041,item_only,Item Shift Only,post,4,0.6
+item_only_00041,item_only,Item Shift Only,post,5,0.6666666666666666
+item_only_00041,item_only,Item Shift Only,mid,1,0.3333333333333333
+item_only_00041,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00041,item_only,Item Shift Only,mid,3,0.6
+item_only_00041,item_only,Item Shift Only,mid,4,0.8
+item_only_00041,item_only,Item Shift Only,mid,5,0.5
+item_only_00041,item_only,Item Shift Only,pre,1,0.6
+item_only_00041,item_only,Item Shift Only,pre,2,0.5
+item_only_00041,item_only,Item Shift Only,pre,3,0.25
+item_only_00041,item_only,Item Shift Only,pre,4,0.6666666666666666
+item_only_00041,item_only,Item Shift Only,pre,5,0.5
+item_only_00042,item_only,Item Shift Only,post,1,0.5
+item_only_00042,item_only,Item Shift Only,post,2,0.5
+item_only_00042,item_only,Item Shift Only,post,3,0.75
+item_only_00042,item_only,Item Shift Only,post,4,0.5
+item_only_00042,item_only,Item Shift Only,post,5,0.25
+item_only_00042,item_only,Item Shift Only,mid,1,0.8
+item_only_00042,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00042,item_only,Item Shift Only,mid,3,1.0
+item_only_00042,item_only,Item Shift Only,mid,4,0.75
+item_only_00042,item_only,Item Shift Only,mid,5,0.5
+item_only_00042,item_only,Item Shift Only,pre,1,0.6666666666666666
+item_only_00042,item_only,Item Shift Only,pre,2,0.6
+item_only_00042,item_only,Item Shift Only,pre,3,0.5
+item_only_00042,item_only,Item Shift Only,pre,4,0.2
+item_only_00042,item_only,Item Shift Only,pre,5,0.6666666666666666
+item_only_00043,item_only,Item Shift Only,post,1,0.5
+item_only_00043,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00043,item_only,Item Shift Only,post,3,0.0
+item_only_00043,item_only,Item Shift Only,post,4,0.5
+item_only_00043,item_only,Item Shift Only,post,5,0.4
+item_only_00043,item_only,Item Shift Only,mid,1,0.0
+item_only_00043,item_only,Item Shift Only,mid,2,1.0
+item_only_00043,item_only,Item Shift Only,mid,3,1.0
+item_only_00043,item_only,Item Shift Only,mid,4,0.25
+item_only_00043,item_only,Item Shift Only,mid,5,0.5
+item_only_00043,item_only,Item Shift Only,pre,1,0.2
+item_only_00043,item_only,Item Shift Only,pre,2,0.0
+item_only_00043,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00043,item_only,Item Shift Only,pre,4,0.25
+item_only_00043,item_only,Item Shift Only,pre,5,0.25
+item_only_00044,item_only,Item Shift Only,post,1,0.0
+item_only_00044,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00044,item_only,Item Shift Only,post,3,0.0
+item_only_00044,item_only,Item Shift Only,post,4,0.4
+item_only_00044,item_only,Item Shift Only,post,5,0.5
+item_only_00044,item_only,Item Shift Only,mid,1,0.0
+item_only_00044,item_only,Item Shift Only,mid,2,0.0
+item_only_00044,item_only,Item Shift Only,mid,3,0.5
+item_only_00044,item_only,Item Shift Only,mid,4,0.5
+item_only_00044,item_only,Item Shift Only,mid,5,0.5714285714285714
+item_only_00044,item_only,Item Shift Only,pre,1,0.2
+item_only_00044,item_only,Item Shift Only,pre,2,0.25
+item_only_00044,item_only,Item Shift Only,pre,3,0.4
+item_only_00044,item_only,Item Shift Only,pre,4,0.3333333333333333
+item_only_00044,item_only,Item Shift Only,pre,5,0.3333333333333333
+item_only_00045,item_only,Item Shift Only,post,1,0.5
+item_only_00045,item_only,Item Shift Only,post,2,0.5
+item_only_00045,item_only,Item Shift Only,post,3,1.0
+item_only_00045,item_only,Item Shift Only,post,4,1.0
+item_only_00045,item_only,Item Shift Only,post,5,0.3333333333333333
+item_only_00045,item_only,Item Shift Only,mid,1,1.0
+item_only_00045,item_only,Item Shift Only,mid,2,1.0
+item_only_00045,item_only,Item Shift Only,mid,3,0.5
+item_only_00045,item_only,Item Shift Only,mid,4,0.8
+item_only_00045,item_only,Item Shift Only,mid,5,0.5
+item_only_00045,item_only,Item Shift Only,pre,1,0.8
+item_only_00045,item_only,Item Shift Only,pre,2,0.6
+item_only_00045,item_only,Item Shift Only,pre,3,1.0
+item_only_00045,item_only,Item Shift Only,pre,4,1.0
+item_only_00045,item_only,Item Shift Only,pre,5,1.0
+item_only_00046,item_only,Item Shift Only,post,1,0.0
+item_only_00046,item_only,Item Shift Only,post,2,0.6666666666666666
+item_only_00046,item_only,Item Shift Only,post,3,0.0
+item_only_00046,item_only,Item Shift Only,post,4,0.4
+item_only_00046,item_only,Item Shift Only,post,5,0.16666666666666666
+item_only_00046,item_only,Item Shift Only,mid,1,0.2
+item_only_00046,item_only,Item Shift Only,mid,2,0.4
+item_only_00046,item_only,Item Shift Only,mid,3,0.0
+item_only_00046,item_only,Item Shift Only,mid,4,0.25
+item_only_00046,item_only,Item Shift Only,mid,5,0.3333333333333333
+item_only_00046,item_only,Item Shift Only,pre,1,0.25
+item_only_00046,item_only,Item Shift Only,pre,2,0.25
+item_only_00046,item_only,Item Shift Only,pre,3,0.2
+item_only_00046,item_only,Item Shift Only,pre,4,0.5
+item_only_00046,item_only,Item Shift Only,pre,5,0.4
+item_only_00047,item_only,Item Shift Only,post,1,0.5
+item_only_00047,item_only,Item Shift Only,post,2,0.7142857142857143
+item_only_00047,item_only,Item Shift Only,post,3,0.75
+item_only_00047,item_only,Item Shift Only,post,4,0.5
+item_only_00047,item_only,Item Shift Only,post,5,1.0
+item_only_00047,item_only,Item Shift Only,mid,1,0.5714285714285714
+item_only_00047,item_only,Item Shift Only,mid,2,0.8
+item_only_00047,item_only,Item Shift Only,mid,3,0.6666666666666666
+item_only_00047,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00047,item_only,Item Shift Only,mid,5,0.5
+item_only_00047,item_only,Item Shift Only,pre,1,0.5
+item_only_00047,item_only,Item Shift Only,pre,2,1.0
+item_only_00047,item_only,Item Shift Only,pre,3,0.3333333333333333
+item_only_00047,item_only,Item Shift Only,pre,4,0.8
+item_only_00047,item_only,Item Shift Only,pre,5,0.5
+item_only_00048,item_only,Item Shift Only,post,1,0.0
+item_only_00048,item_only,Item Shift Only,post,2,0.3333333333333333
+item_only_00048,item_only,Item Shift Only,post,3,0.3333333333333333
+item_only_00048,item_only,Item Shift Only,post,4,0.5
+item_only_00048,item_only,Item Shift Only,post,5,0.8
+item_only_00048,item_only,Item Shift Only,mid,1,0.4
+item_only_00048,item_only,Item Shift Only,mid,2,0.8333333333333334
+item_only_00048,item_only,Item Shift Only,mid,3,0.0
+item_only_00048,item_only,Item Shift Only,mid,4,1.0
+item_only_00048,item_only,Item Shift Only,mid,5,0.5
+item_only_00048,item_only,Item Shift Only,pre,1,0.25
+item_only_00048,item_only,Item Shift Only,pre,2,0.4
+item_only_00048,item_only,Item Shift Only,pre,3,0.16666666666666666
+item_only_00048,item_only,Item Shift Only,pre,4,0.6666666666666666
+item_only_00048,item_only,Item Shift Only,pre,5,0.0
+item_only_00049,item_only,Item Shift Only,post,1,0.5
+item_only_00049,item_only,Item Shift Only,post,2,0.75
+item_only_00049,item_only,Item Shift Only,post,3,0.25
+item_only_00049,item_only,Item Shift Only,post,4,0.6
+item_only_00049,item_only,Item Shift Only,post,5,0.3333333333333333
+item_only_00049,item_only,Item Shift Only,mid,1,0.0
+item_only_00049,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00049,item_only,Item Shift Only,mid,3,0.42857142857142855
+item_only_00049,item_only,Item Shift Only,mid,4,0.5
+item_only_00049,item_only,Item Shift Only,mid,5,0.75
+item_only_00049,item_only,Item Shift Only,pre,1,0.25
+item_only_00049,item_only,Item Shift Only,pre,2,0.4
+item_only_00049,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00049,item_only,Item Shift Only,pre,4,0.16666666666666666
+item_only_00049,item_only,Item Shift Only,pre,5,0.5
+item_only_00050,item_only,Item Shift Only,post,1,0.5
+item_only_00050,item_only,Item Shift Only,post,2,0.8333333333333334
+item_only_00050,item_only,Item Shift Only,post,3,0.5
+item_only_00050,item_only,Item Shift Only,post,4,1.0
+item_only_00050,item_only,Item Shift Only,post,5,0.5
+item_only_00050,item_only,Item Shift Only,mid,1,0.5
+item_only_00050,item_only,Item Shift Only,mid,2,0.625
+item_only_00050,item_only,Item Shift Only,mid,3,0.6666666666666666
+item_only_00050,item_only,Item Shift Only,mid,4,0.5
+item_only_00050,item_only,Item Shift Only,mid,5,1.0
+item_only_00050,item_only,Item Shift Only,pre,1,0.25
+item_only_00050,item_only,Item Shift Only,pre,2,0.5
+item_only_00050,item_only,Item Shift Only,pre,3,0.6666666666666666
+item_only_00050,item_only,Item Shift Only,pre,4,0.5
+item_only_00050,item_only,Item Shift Only,pre,5,0.7142857142857143
+item_only_00051,item_only,Item Shift Only,post,1,0.3333333333333333
+item_only_00051,item_only,Item Shift Only,post,2,0.0
+item_only_00051,item_only,Item Shift Only,post,3,0.6
+item_only_00051,item_only,Item Shift Only,post,4,1.0
+item_only_00051,item_only,Item Shift Only,post,5,0.0
+item_only_00051,item_only,Item Shift Only,mid,1,0.125
+item_only_00051,item_only,Item Shift Only,mid,2,0.25
+item_only_00051,item_only,Item Shift Only,mid,3,0.0
+item_only_00051,item_only,Item Shift Only,mid,4,0.75
+item_only_00051,item_only,Item Shift Only,mid,5,0.3333333333333333
+item_only_00051,item_only,Item Shift Only,pre,1,0.5
+item_only_00051,item_only,Item Shift Only,pre,2,0.4444444444444444
+item_only_00051,item_only,Item Shift Only,pre,3,0.3333333333333333
+item_only_00051,item_only,Item Shift Only,pre,4,0.75
+item_only_00051,item_only,Item Shift Only,pre,5,0.0
+item_only_00052,item_only,Item Shift Only,post,1,0.5
+item_only_00052,item_only,Item Shift Only,post,2,0.5
+item_only_00052,item_only,Item Shift Only,post,3,0.6666666666666666
+item_only_00052,item_only,Item Shift Only,post,4,0.6666666666666666
+item_only_00052,item_only,Item Shift Only,post,5,0.0
+item_only_00052,item_only,Item Shift Only,mid,1,0.25
+item_only_00052,item_only,Item Shift Only,mid,2,0.6
+item_only_00052,item_only,Item Shift Only,mid,3,0.16666666666666666
+item_only_00052,item_only,Item Shift Only,mid,5,0.4
+item_only_00052,item_only,Item Shift Only,pre,1,0.0
+item_only_00052,item_only,Item Shift Only,pre,2,0.4
+item_only_00052,item_only,Item Shift Only,pre,3,0.6
+item_only_00052,item_only,Item Shift Only,pre,4,0.3333333333333333
+item_only_00052,item_only,Item Shift Only,pre,5,0.25
+item_only_00053,item_only,Item Shift Only,post,1,0.0
+item_only_00053,item_only,Item Shift Only,post,2,0.16666666666666666
+item_only_00053,item_only,Item Shift Only,post,3,0.3333333333333333
+item_only_00053,item_only,Item Shift Only,post,4,0.3333333333333333
+item_only_00053,item_only,Item Shift Only,post,5,0.3333333333333333
+item_only_00053,item_only,Item Shift Only,mid,1,0.5
+item_only_00053,item_only,Item Shift Only,mid,2,0.8
+item_only_00053,item_only,Item Shift Only,mid,3,0.6
+item_only_00053,item_only,Item Shift Only,mid,4,0.6666666666666666
+item_only_00053,item_only,Item Shift Only,mid,5,0.6666666666666666
+item_only_00053,item_only,Item Shift Only,pre,1,0.5714285714285714
+item_only_00053,item_only,Item Shift Only,pre,2,0.5
+item_only_00053,item_only,Item Shift Only,pre,3,0.5
+item_only_00053,item_only,Item Shift Only,pre,4,1.0
+item_only_00053,item_only,Item Shift Only,pre,5,0.3333333333333333
+item_only_00054,item_only,Item Shift Only,post,1,0.42857142857142855
+item_only_00054,item_only,Item Shift Only,post,2,0.5
+item_only_00054,item_only,Item Shift Only,post,3,0.5
+item_only_00054,item_only,Item Shift Only,post,4,0.3333333333333333
+item_only_00054,item_only,Item Shift Only,post,5,0.25
+item_only_00054,item_only,Item Shift Only,mid,1,0.125
+item_only_00054,item_only,Item Shift Only,mid,2,0.5
+item_only_00054,item_only,Item Shift Only,mid,3,0.0
+item_only_00054,item_only,Item Shift Only,mid,4,0.4
+item_only_00054,item_only,Item Shift Only,mid,5,0.0
+item_only_00054,item_only,Item Shift Only,pre,1,0.5
+item_only_00054,item_only,Item Shift Only,pre,2,0.25
+item_only_00054,item_only,Item Shift Only,pre,3,0.5
+item_only_00054,item_only,Item Shift Only,pre,4,0.25
+item_only_00055,item_only,Item Shift Only,post,1,0.4
+item_only_00055,item_only,Item Shift Only,post,2,0.8
+item_only_00055,item_only,Item Shift Only,post,3,0.5
+item_only_00055,item_only,Item Shift Only,post,4,0.75
+item_only_00055,item_only,Item Shift Only,post,5,0.5
+item_only_00055,item_only,Item Shift Only,mid,1,0.4
+item_only_00055,item_only,Item Shift Only,mid,2,0.6666666666666666
+item_only_00055,item_only,Item Shift Only,mid,3,0.5
+item_only_00055,item_only,Item Shift Only,mid,4,0.8
+item_only_00055,item_only,Item Shift Only,mid,5,1.0
+item_only_00055,item_only,Item Shift Only,pre,1,0.4
+item_only_00055,item_only,Item Shift Only,pre,2,0.6
+item_only_00055,item_only,Item Shift Only,pre,3,0.3333333333333333
+item_only_00055,item_only,Item Shift Only,pre,4,0.5
+item_only_00055,item_only,Item Shift Only,pre,5,1.0
+item_only_00056,item_only,Item Shift Only,post,1,0.6
+item_only_00056,item_only,Item Shift Only,post,2,0.8333333333333334
+item_only_00056,item_only,Item Shift Only,post,3,0.75
+item_only_00056,item_only,Item Shift Only,post,4,0.6666666666666666
+item_only_00056,item_only,Item Shift Only,post,5,0.0
+item_only_00056,item_only,Item Shift Only,mid,1,0.4
+item_only_00056,item_only,Item Shift Only,mid,2,0.0
+item_only_00056,item_only,Item Shift Only,mid,3,0.3333333333333333
+item_only_00056,item_only,Item Shift Only,mid,4,0.4
+item_only_00056,item_only,Item Shift Only,mid,5,0.6
+item_only_00056,item_only,Item Shift Only,pre,1,0.3333333333333333
+item_only_00056,item_only,Item Shift Only,pre,2,1.0
+item_only_00056,item_only,Item Shift Only,pre,3,1.0
+item_only_00056,item_only,Item Shift Only,pre,4,0.25
+item_only_00056,item_only,Item Shift Only,pre,5,0.42857142857142855
+task_only_00019,task_only,Task Shift Only,post,1,0.5
+task_only_00019,task_only,Task Shift Only,post,2,0.3333333333333333
+task_only_00019,task_only,Task Shift Only,post,3,0.25
+task_only_00019,task_only,Task Shift Only,post,4,0.5
+task_only_00019,task_only,Task Shift Only,post,5,0.3333333333333333
+task_only_00019,task_only,Task Shift Only,mid,1,0.25
+task_only_00019,task_only,Task Shift Only,mid,2,0.16666666666666666
+task_only_00019,task_only,Task Shift Only,mid,3,0.5
+task_only_00019,task_only,Task Shift Only,mid,4,0.5
+task_only_00019,task_only,Task Shift Only,mid,5,1.0
+task_only_00019,task_only,Task Shift Only,pre,1,0.0
+task_only_00019,task_only,Task Shift Only,pre,2,0.0
+task_only_00019,task_only,Task Shift Only,pre,3,0.375
+task_only_00019,task_only,Task Shift Only,pre,4,0.5
+task_only_00019,task_only,Task Shift Only,pre,5,1.0
+task_only_00020,task_only,Task Shift Only,post,1,0.4
+task_only_00020,task_only,Task Shift Only,post,2,0.4
+task_only_00020,task_only,Task Shift Only,post,3,0.14285714285714285
+task_only_00020,task_only,Task Shift Only,post,4,0.0
+task_only_00020,task_only,Task Shift Only,post,5,0.0
+task_only_00020,task_only,Task Shift Only,mid,1,0.2
+task_only_00020,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00020,task_only,Task Shift Only,mid,3,0.6
+task_only_00020,task_only,Task Shift Only,mid,4,0.6666666666666666
+task_only_00020,task_only,Task Shift Only,mid,5,0.25
+task_only_00020,task_only,Task Shift Only,pre,1,0.25
+task_only_00020,task_only,Task Shift Only,pre,2,0.42857142857142855
+task_only_00020,task_only,Task Shift Only,pre,4,1.0
+task_only_00020,task_only,Task Shift Only,pre,5,0.5
+task_only_00021,task_only,Task Shift Only,post,1,0.5555555555555556
+task_only_00021,task_only,Task Shift Only,post,2,0.0
+task_only_00021,task_only,Task Shift Only,post,3,0.6666666666666666
+task_only_00021,task_only,Task Shift Only,post,4,0.5
+task_only_00021,task_only,Task Shift Only,post,5,0.6
+task_only_00021,task_only,Task Shift Only,mid,1,0.5
+task_only_00021,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00021,task_only,Task Shift Only,mid,3,0.8
+task_only_00021,task_only,Task Shift Only,mid,4,0.6666666666666666
+task_only_00021,task_only,Task Shift Only,mid,5,1.0
+task_only_00021,task_only,Task Shift Only,pre,1,0.75
+task_only_00021,task_only,Task Shift Only,pre,3,0.6
+task_only_00021,task_only,Task Shift Only,pre,4,0.6666666666666666
+task_only_00021,task_only,Task Shift Only,pre,5,0.6666666666666666
+task_only_00022,task_only,Task Shift Only,post,1,0.2
+task_only_00022,task_only,Task Shift Only,post,2,0.0
+task_only_00022,task_only,Task Shift Only,post,3,0.6666666666666666
+task_only_00022,task_only,Task Shift Only,post,4,0.6666666666666666
+task_only_00022,task_only,Task Shift Only,post,5,1.0
+task_only_00022,task_only,Task Shift Only,mid,1,0.6
+task_only_00022,task_only,Task Shift Only,mid,2,0.5
+task_only_00022,task_only,Task Shift Only,mid,3,0.6666666666666666
+task_only_00022,task_only,Task Shift Only,mid,4,1.0
+task_only_00022,task_only,Task Shift Only,mid,5,1.0
+task_only_00022,task_only,Task Shift Only,pre,1,0.0
+task_only_00022,task_only,Task Shift Only,pre,2,1.0
+task_only_00022,task_only,Task Shift Only,pre,3,0.75
+task_only_00022,task_only,Task Shift Only,pre,4,1.0
+task_only_00022,task_only,Task Shift Only,pre,5,0.7777777777777778
+task_only_00023,task_only,Task Shift Only,post,1,0.3333333333333333
+task_only_00023,task_only,Task Shift Only,post,2,0.25
+task_only_00023,task_only,Task Shift Only,post,3,0.6666666666666666
+task_only_00023,task_only,Task Shift Only,post,4,0.16666666666666666
+task_only_00023,task_only,Task Shift Only,post,5,1.0
+task_only_00023,task_only,Task Shift Only,mid,1,0.5
+task_only_00023,task_only,Task Shift Only,mid,2,0.5
+task_only_00023,task_only,Task Shift Only,mid,3,0.5
+task_only_00023,task_only,Task Shift Only,mid,4,0.8
+task_only_00023,task_only,Task Shift Only,mid,5,1.0
+task_only_00023,task_only,Task Shift Only,pre,1,0.4
+task_only_00023,task_only,Task Shift Only,pre,2,0.6666666666666666
+task_only_00023,task_only,Task Shift Only,pre,4,0.8
+task_only_00023,task_only,Task Shift Only,pre,5,0.7142857142857143
+task_only_00024,task_only,Task Shift Only,post,1,1.0
+task_only_00024,task_only,Task Shift Only,post,2,0.75
+task_only_00024,task_only,Task Shift Only,post,3,1.0
+task_only_00024,task_only,Task Shift Only,post,4,1.0
+task_only_00024,task_only,Task Shift Only,post,5,1.0
+task_only_00024,task_only,Task Shift Only,mid,1,0.0
+task_only_00024,task_only,Task Shift Only,mid,2,0.8
+task_only_00024,task_only,Task Shift Only,mid,3,0.8333333333333334
+task_only_00024,task_only,Task Shift Only,mid,4,1.0
+task_only_00024,task_only,Task Shift Only,mid,5,0.8571428571428571
+task_only_00024,task_only,Task Shift Only,pre,1,0.6666666666666666
+task_only_00024,task_only,Task Shift Only,pre,2,1.0
+task_only_00024,task_only,Task Shift Only,pre,3,1.0
+task_only_00024,task_only,Task Shift Only,pre,4,0.5
+task_only_00024,task_only,Task Shift Only,pre,5,1.0
+task_only_00025,task_only,Task Shift Only,post,1,0.3333333333333333
+task_only_00025,task_only,Task Shift Only,post,2,0.4
+task_only_00025,task_only,Task Shift Only,post,3,1.0
+task_only_00025,task_only,Task Shift Only,post,4,1.0
+task_only_00025,task_only,Task Shift Only,post,5,1.0
+task_only_00025,task_only,Task Shift Only,mid,1,0.4
+task_only_00025,task_only,Task Shift Only,mid,2,0.75
+task_only_00025,task_only,Task Shift Only,mid,3,1.0
+task_only_00025,task_only,Task Shift Only,mid,4,0.2857142857142857
+task_only_00025,task_only,Task Shift Only,mid,5,0.6666666666666666
+task_only_00025,task_only,Task Shift Only,pre,1,0.5
+task_only_00025,task_only,Task Shift Only,pre,2,0.6666666666666666
+task_only_00025,task_only,Task Shift Only,pre,3,0.6666666666666666
+task_only_00025,task_only,Task Shift Only,pre,4,0.0
+task_only_00025,task_only,Task Shift Only,pre,5,0.6
+task_only_00026,task_only,Task Shift Only,post,1,0.0
+task_only_00026,task_only,Task Shift Only,post,2,0.25
+task_only_00026,task_only,Task Shift Only,post,3,0.5
+task_only_00026,task_only,Task Shift Only,post,4,0.5
+task_only_00026,task_only,Task Shift Only,post,5,0.8333333333333334
+task_only_00026,task_only,Task Shift Only,mid,1,0.4
+task_only_00026,task_only,Task Shift Only,mid,2,0.0
+task_only_00026,task_only,Task Shift Only,mid,3,0.75
+task_only_00026,task_only,Task Shift Only,mid,4,0.8
+task_only_00026,task_only,Task Shift Only,mid,5,1.0
+task_only_00026,task_only,Task Shift Only,pre,1,0.25
+task_only_00026,task_only,Task Shift Only,pre,2,0.0
+task_only_00026,task_only,Task Shift Only,pre,3,0.6
+task_only_00026,task_only,Task Shift Only,pre,4,1.0
+task_only_00026,task_only,Task Shift Only,pre,5,0.8333333333333334
+task_only_00027,task_only,Task Shift Only,post,1,0.8
+task_only_00027,task_only,Task Shift Only,post,2,0.0
+task_only_00027,task_only,Task Shift Only,post,3,0.6666666666666666
+task_only_00027,task_only,Task Shift Only,post,4,1.0
+task_only_00027,task_only,Task Shift Only,post,5,0.8
+task_only_00027,task_only,Task Shift Only,mid,1,0.0
+task_only_00027,task_only,Task Shift Only,mid,2,0.5
+task_only_00027,task_only,Task Shift Only,mid,3,0.8
+task_only_00027,task_only,Task Shift Only,mid,4,0.3333333333333333
+task_only_00027,task_only,Task Shift Only,mid,5,1.0
+task_only_00027,task_only,Task Shift Only,pre,1,0.6666666666666666
+task_only_00027,task_only,Task Shift Only,pre,2,0.0
+task_only_00027,task_only,Task Shift Only,pre,3,0.8333333333333334
+task_only_00027,task_only,Task Shift Only,pre,4,1.0
+task_only_00027,task_only,Task Shift Only,pre,5,1.0
+task_only_00028,task_only,Task Shift Only,post,1,0.6666666666666666
+task_only_00028,task_only,Task Shift Only,post,2,0.6666666666666666
+task_only_00028,task_only,Task Shift Only,post,3,0.6
+task_only_00028,task_only,Task Shift Only,post,4,1.0
+task_only_00028,task_only,Task Shift Only,post,5,0.6666666666666666
+task_only_00028,task_only,Task Shift Only,mid,1,0.8
+task_only_00028,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00028,task_only,Task Shift Only,mid,3,0.6666666666666666
+task_only_00028,task_only,Task Shift Only,mid,4,1.0
+task_only_00028,task_only,Task Shift Only,mid,5,0.75
+task_only_00028,task_only,Task Shift Only,pre,1,0.8333333333333334
+task_only_00028,task_only,Task Shift Only,pre,2,0.75
+task_only_00028,task_only,Task Shift Only,pre,3,1.0
+task_only_00028,task_only,Task Shift Only,pre,4,0.75
+task_only_00028,task_only,Task Shift Only,pre,5,0.75
+task_only_00029,task_only,Task Shift Only,post,1,0.6666666666666666
+task_only_00029,task_only,Task Shift Only,post,2,1.0
+task_only_00029,task_only,Task Shift Only,post,3,1.0
+task_only_00029,task_only,Task Shift Only,post,4,0.3333333333333333
+task_only_00029,task_only,Task Shift Only,post,5,0.8333333333333334
+task_only_00029,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00029,task_only,Task Shift Only,mid,2,0.6
+task_only_00029,task_only,Task Shift Only,mid,3,0.5
+task_only_00029,task_only,Task Shift Only,mid,4,0.0
+task_only_00029,task_only,Task Shift Only,mid,5,0.25
+task_only_00029,task_only,Task Shift Only,pre,1,0.8
+task_only_00029,task_only,Task Shift Only,pre,2,0.6666666666666666
+task_only_00029,task_only,Task Shift Only,pre,3,0.3333333333333333
+task_only_00029,task_only,Task Shift Only,pre,4,1.0
+task_only_00029,task_only,Task Shift Only,pre,5,0.6666666666666666
+task_only_00030,task_only,Task Shift Only,post,1,0.6
+task_only_00030,task_only,Task Shift Only,post,2,1.0
+task_only_00030,task_only,Task Shift Only,post,3,0.4
+task_only_00030,task_only,Task Shift Only,post,4,0.6
+task_only_00030,task_only,Task Shift Only,post,5,0.0
+task_only_00030,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00030,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00030,task_only,Task Shift Only,mid,3,0.0
+task_only_00030,task_only,Task Shift Only,mid,4,0.75
+task_only_00030,task_only,Task Shift Only,mid,5,0.625
+task_only_00030,task_only,Task Shift Only,pre,1,0.0
+task_only_00030,task_only,Task Shift Only,pre,2,0.2857142857142857
+task_only_00030,task_only,Task Shift Only,pre,3,0.6666666666666666
+task_only_00030,task_only,Task Shift Only,pre,4,0.6
+task_only_00030,task_only,Task Shift Only,pre,5,1.0
+task_only_00032,task_only,Task Shift Only,post,1,0.25
+task_only_00032,task_only,Task Shift Only,post,2,0.5
+task_only_00032,task_only,Task Shift Only,post,3,0.25
+task_only_00032,task_only,Task Shift Only,post,4,0.6666666666666666
+task_only_00032,task_only,Task Shift Only,post,5,0.2
+task_only_00032,task_only,Task Shift Only,mid,1,0.0
+task_only_00032,task_only,Task Shift Only,mid,2,0.5
+task_only_00032,task_only,Task Shift Only,mid,3,0.2
+task_only_00032,task_only,Task Shift Only,mid,4,0.2
+task_only_00032,task_only,Task Shift Only,mid,5,0.6666666666666666
+task_only_00032,task_only,Task Shift Only,pre,1,0.5
+task_only_00032,task_only,Task Shift Only,pre,2,0.25
+task_only_00032,task_only,Task Shift Only,pre,3,0.5
+task_only_00032,task_only,Task Shift Only,pre,4,0.0
+task_only_00032,task_only,Task Shift Only,pre,5,0.42857142857142855
+task_only_00033,task_only,Task Shift Only,post,1,0.6666666666666666
+task_only_00033,task_only,Task Shift Only,post,2,0.0
+task_only_00033,task_only,Task Shift Only,post,3,0.6666666666666666
+task_only_00033,task_only,Task Shift Only,post,4,0.5
+task_only_00033,task_only,Task Shift Only,post,5,0.5
+task_only_00033,task_only,Task Shift Only,mid,1,0.4
+task_only_00033,task_only,Task Shift Only,mid,2,0.5
+task_only_00033,task_only,Task Shift Only,mid,3,0.6666666666666666
+task_only_00033,task_only,Task Shift Only,mid,4,0.6666666666666666
+task_only_00033,task_only,Task Shift Only,mid,5,1.0
+task_only_00033,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00033,task_only,Task Shift Only,pre,2,0.25
+task_only_00033,task_only,Task Shift Only,pre,3,0.5
+task_only_00033,task_only,Task Shift Only,pre,4,1.0
+task_only_00033,task_only,Task Shift Only,pre,5,0.6666666666666666
+task_only_00034,task_only,Task Shift Only,post,1,0.3333333333333333
+task_only_00034,task_only,Task Shift Only,post,2,0.5
+task_only_00034,task_only,Task Shift Only,post,3,0.5
+task_only_00034,task_only,Task Shift Only,post,4,0.75
+task_only_00034,task_only,Task Shift Only,post,5,0.0
+task_only_00034,task_only,Task Shift Only,mid,1,0.5
+task_only_00034,task_only,Task Shift Only,mid,2,0.5
+task_only_00034,task_only,Task Shift Only,mid,3,1.0
+task_only_00034,task_only,Task Shift Only,mid,4,0.3333333333333333
+task_only_00034,task_only,Task Shift Only,mid,5,0.6
+task_only_00034,task_only,Task Shift Only,pre,1,0.6
+task_only_00034,task_only,Task Shift Only,pre,2,0.4
+task_only_00034,task_only,Task Shift Only,pre,3,0.5
+task_only_00034,task_only,Task Shift Only,pre,4,0.25
+task_only_00034,task_only,Task Shift Only,pre,5,0.5
+task_only_00035,task_only,Task Shift Only,post,1,0.4
+task_only_00035,task_only,Task Shift Only,post,2,0.0
+task_only_00035,task_only,Task Shift Only,post,3,1.0
+task_only_00035,task_only,Task Shift Only,post,4,0.6666666666666666
+task_only_00035,task_only,Task Shift Only,post,5,0.3333333333333333
+task_only_00035,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00035,task_only,Task Shift Only,mid,2,0.5
+task_only_00035,task_only,Task Shift Only,mid,3,1.0
+task_only_00035,task_only,Task Shift Only,mid,4,0.3333333333333333
+task_only_00035,task_only,Task Shift Only,mid,5,0.6666666666666666
+task_only_00035,task_only,Task Shift Only,pre,1,0.6666666666666666
+task_only_00035,task_only,Task Shift Only,pre,2,0.75
+task_only_00035,task_only,Task Shift Only,pre,3,0.4
+task_only_00035,task_only,Task Shift Only,pre,4,0.8
+task_only_00035,task_only,Task Shift Only,pre,5,0.6666666666666666
+task_only_00036,task_only,Task Shift Only,post,1,0.75
+task_only_00036,task_only,Task Shift Only,post,2,0.8
+task_only_00036,task_only,Task Shift Only,post,3,1.0
+task_only_00036,task_only,Task Shift Only,post,4,1.0
+task_only_00036,task_only,Task Shift Only,post,5,0.8571428571428571
+task_only_00036,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00036,task_only,Task Shift Only,mid,2,0.8
+task_only_00036,task_only,Task Shift Only,mid,3,0.5
+task_only_00036,task_only,Task Shift Only,mid,4,1.0
+task_only_00036,task_only,Task Shift Only,mid,5,0.3333333333333333
+task_only_00036,task_only,Task Shift Only,pre,1,0.5
+task_only_00036,task_only,Task Shift Only,pre,2,1.0
+task_only_00036,task_only,Task Shift Only,pre,3,0.5
+task_only_00036,task_only,Task Shift Only,pre,4,0.8
+task_only_00036,task_only,Task Shift Only,pre,5,0.5
+task_only_00037,task_only,Task Shift Only,post,1,0.2
+task_only_00037,task_only,Task Shift Only,post,2,0.6666666666666666
+task_only_00037,task_only,Task Shift Only,post,3,0.25
+task_only_00037,task_only,Task Shift Only,post,4,0.0
+task_only_00037,task_only,Task Shift Only,post,5,0.5
+task_only_00037,task_only,Task Shift Only,mid,1,0.0
+task_only_00037,task_only,Task Shift Only,mid,2,0.0
+task_only_00037,task_only,Task Shift Only,mid,3,0.5714285714285714
+task_only_00037,task_only,Task Shift Only,mid,4,0.75
+task_only_00037,task_only,Task Shift Only,mid,5,0.75
+task_only_00037,task_only,Task Shift Only,pre,1,0.0
+task_only_00037,task_only,Task Shift Only,pre,2,0.25
+task_only_00037,task_only,Task Shift Only,pre,3,0.3333333333333333
+task_only_00037,task_only,Task Shift Only,pre,4,1.0
+task_only_00037,task_only,Task Shift Only,pre,5,1.0
+task_only_00038,task_only,Task Shift Only,post,1,0.3333333333333333
+task_only_00038,task_only,Task Shift Only,post,2,1.0
+task_only_00038,task_only,Task Shift Only,post,3,0.2
+task_only_00038,task_only,Task Shift Only,post,4,1.0
+task_only_00038,task_only,Task Shift Only,post,5,0.6666666666666666
+task_only_00038,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00038,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00038,task_only,Task Shift Only,mid,3,0.5
+task_only_00038,task_only,Task Shift Only,mid,4,0.75
+task_only_00038,task_only,Task Shift Only,mid,5,0.0
+task_only_00038,task_only,Task Shift Only,pre,1,0.25
+task_only_00038,task_only,Task Shift Only,pre,2,0.0
+task_only_00038,task_only,Task Shift Only,pre,3,0.5
+task_only_00038,task_only,Task Shift Only,pre,4,1.0
+task_only_00038,task_only,Task Shift Only,pre,5,0.75
+task_only_00039,task_only,Task Shift Only,post,1,0.42857142857142855
+task_only_00039,task_only,Task Shift Only,post,2,1.0
+task_only_00039,task_only,Task Shift Only,post,3,1.0
+task_only_00039,task_only,Task Shift Only,post,4,0.6666666666666666
+task_only_00039,task_only,Task Shift Only,post,5,1.0
+task_only_00039,task_only,Task Shift Only,mid,1,0.0
+task_only_00039,task_only,Task Shift Only,mid,2,0.4
+task_only_00039,task_only,Task Shift Only,mid,3,1.0
+task_only_00039,task_only,Task Shift Only,mid,4,1.0
+task_only_00039,task_only,Task Shift Only,mid,5,1.0
+task_only_00039,task_only,Task Shift Only,pre,1,0.5
+task_only_00039,task_only,Task Shift Only,pre,2,1.0
+task_only_00039,task_only,Task Shift Only,pre,3,0.75
+task_only_00039,task_only,Task Shift Only,pre,4,0.6666666666666666
+task_only_00039,task_only,Task Shift Only,pre,5,1.0
+task_only_00040,task_only,Task Shift Only,post,1,0.75
+task_only_00040,task_only,Task Shift Only,post,2,0.5
+task_only_00040,task_only,Task Shift Only,post,3,0.5714285714285714
+task_only_00040,task_only,Task Shift Only,post,4,0.3333333333333333
+task_only_00040,task_only,Task Shift Only,post,5,0.75
+task_only_00040,task_only,Task Shift Only,mid,1,0.5
+task_only_00040,task_only,Task Shift Only,mid,2,0.4
+task_only_00040,task_only,Task Shift Only,mid,3,0.25
+task_only_00040,task_only,Task Shift Only,mid,4,0.25
+task_only_00040,task_only,Task Shift Only,mid,5,0.3333333333333333
+task_only_00040,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00040,task_only,Task Shift Only,pre,2,0.4
+task_only_00040,task_only,Task Shift Only,pre,3,0.16666666666666666
+task_only_00040,task_only,Task Shift Only,pre,4,0.6666666666666666
+task_only_00040,task_only,Task Shift Only,pre,5,0.6666666666666666
+task_only_00041,task_only,Task Shift Only,post,1,0.5
+task_only_00041,task_only,Task Shift Only,post,2,0.42857142857142855
+task_only_00041,task_only,Task Shift Only,post,3,0.2857142857142857
+task_only_00041,task_only,Task Shift Only,post,4,0.0
+task_only_00041,task_only,Task Shift Only,post,5,0.0
+task_only_00041,task_only,Task Shift Only,mid,1,0.4
+task_only_00041,task_only,Task Shift Only,mid,2,0.8
+task_only_00041,task_only,Task Shift Only,mid,3,0.3333333333333333
+task_only_00041,task_only,Task Shift Only,mid,4,0.6666666666666666
+task_only_00041,task_only,Task Shift Only,mid,5,0.75
+task_only_00041,task_only,Task Shift Only,pre,1,0.2
+task_only_00041,task_only,Task Shift Only,pre,2,0.6666666666666666
+task_only_00041,task_only,Task Shift Only,pre,3,0.6666666666666666
+task_only_00041,task_only,Task Shift Only,pre,4,1.0
+task_only_00041,task_only,Task Shift Only,pre,5,0.5
+task_only_00042,task_only,Task Shift Only,post,1,0.2
+task_only_00042,task_only,Task Shift Only,post,2,0.5
+task_only_00042,task_only,Task Shift Only,post,3,0.8333333333333334
+task_only_00042,task_only,Task Shift Only,post,4,0.4
+task_only_00042,task_only,Task Shift Only,post,5,0.0
+task_only_00042,task_only,Task Shift Only,mid,1,0.0
+task_only_00042,task_only,Task Shift Only,mid,2,0.75
+task_only_00042,task_only,Task Shift Only,mid,3,0.6666666666666666
+task_only_00042,task_only,Task Shift Only,mid,4,0.4
+task_only_00042,task_only,Task Shift Only,mid,5,0.5
+task_only_00042,task_only,Task Shift Only,pre,1,0.0
+task_only_00042,task_only,Task Shift Only,pre,2,1.0
+task_only_00042,task_only,Task Shift Only,pre,3,0.5
+task_only_00042,task_only,Task Shift Only,pre,4,0.5
+task_only_00042,task_only,Task Shift Only,pre,5,0.25
+task_only_00043,task_only,Task Shift Only,post,1,0.6
+task_only_00043,task_only,Task Shift Only,post,2,0.75
+task_only_00043,task_only,Task Shift Only,post,3,0.0
+task_only_00043,task_only,Task Shift Only,post,4,0.8571428571428571
+task_only_00043,task_only,Task Shift Only,post,5,0.6666666666666666
+task_only_00043,task_only,Task Shift Only,mid,1,0.6666666666666666
+task_only_00043,task_only,Task Shift Only,mid,2,1.0
+task_only_00043,task_only,Task Shift Only,mid,3,0.5
+task_only_00043,task_only,Task Shift Only,mid,4,0.5
+task_only_00043,task_only,Task Shift Only,mid,5,1.0
+task_only_00043,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00043,task_only,Task Shift Only,pre,2,0.3333333333333333
+task_only_00043,task_only,Task Shift Only,pre,3,1.0
+task_only_00043,task_only,Task Shift Only,pre,4,1.0
+task_only_00043,task_only,Task Shift Only,pre,5,0.8333333333333334
+task_only_00044,task_only,Task Shift Only,post,1,0.2
+task_only_00044,task_only,Task Shift Only,post,2,1.0
+task_only_00044,task_only,Task Shift Only,post,3,0.0
+task_only_00044,task_only,Task Shift Only,post,4,0.5
+task_only_00044,task_only,Task Shift Only,post,5,0.7142857142857143
+task_only_00044,task_only,Task Shift Only,mid,1,0.2
+task_only_00044,task_only,Task Shift Only,mid,2,0.25
+task_only_00044,task_only,Task Shift Only,mid,3,0.4
+task_only_00044,task_only,Task Shift Only,mid,4,0.0
+task_only_00044,task_only,Task Shift Only,mid,5,0.75
+task_only_00044,task_only,Task Shift Only,pre,1,0.0
+task_only_00044,task_only,Task Shift Only,pre,2,0.5
+task_only_00044,task_only,Task Shift Only,pre,3,1.0
+task_only_00044,task_only,Task Shift Only,pre,4,0.0
+task_only_00044,task_only,Task Shift Only,pre,5,0.5714285714285714
+task_only_00045,task_only,Task Shift Only,post,1,0.0
+task_only_00045,task_only,Task Shift Only,post,2,0.3333333333333333
+task_only_00045,task_only,Task Shift Only,post,3,0.25
+task_only_00045,task_only,Task Shift Only,post,4,1.0
+task_only_00045,task_only,Task Shift Only,post,5,0.25
+task_only_00045,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00045,task_only,Task Shift Only,mid,2,0.0
+task_only_00045,task_only,Task Shift Only,mid,3,0.3333333333333333
+task_only_00045,task_only,Task Shift Only,mid,4,0.0
+task_only_00045,task_only,Task Shift Only,mid,5,0.4
+task_only_00045,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00045,task_only,Task Shift Only,pre,2,0.6666666666666666
+task_only_00045,task_only,Task Shift Only,pre,3,1.0
+task_only_00045,task_only,Task Shift Only,pre,4,0.3333333333333333
+task_only_00045,task_only,Task Shift Only,pre,5,0.2
+task_only_00046,task_only,Task Shift Only,post,1,0.6666666666666666
+task_only_00046,task_only,Task Shift Only,post,2,0.8
+task_only_00046,task_only,Task Shift Only,post,3,0.6666666666666666
+task_only_00046,task_only,Task Shift Only,post,4,0.75
+task_only_00046,task_only,Task Shift Only,post,5,0.5
+task_only_00046,task_only,Task Shift Only,mid,1,0.25
+task_only_00046,task_only,Task Shift Only,mid,2,0.75
+task_only_00046,task_only,Task Shift Only,mid,3,0.6
+task_only_00046,task_only,Task Shift Only,mid,4,0.6666666666666666
+task_only_00046,task_only,Task Shift Only,mid,5,0.5
+task_only_00046,task_only,Task Shift Only,pre,1,0.5
+task_only_00046,task_only,Task Shift Only,pre,2,0.5
+task_only_00046,task_only,Task Shift Only,pre,3,1.0
+task_only_00046,task_only,Task Shift Only,pre,4,1.0
+task_only_00046,task_only,Task Shift Only,pre,5,1.0
+task_only_00047,task_only,Task Shift Only,post,1,0.4
+task_only_00047,task_only,Task Shift Only,post,2,0.6666666666666666
+task_only_00047,task_only,Task Shift Only,post,3,0.8
+task_only_00047,task_only,Task Shift Only,post,4,0.6666666666666666
+task_only_00047,task_only,Task Shift Only,post,5,1.0
+task_only_00047,task_only,Task Shift Only,mid,1,0.5
+task_only_00047,task_only,Task Shift Only,mid,2,0.0
+task_only_00047,task_only,Task Shift Only,mid,3,0.25
+task_only_00047,task_only,Task Shift Only,mid,4,1.0
+task_only_00047,task_only,Task Shift Only,mid,5,0.6666666666666666
+task_only_00047,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00047,task_only,Task Shift Only,pre,2,0.4
+task_only_00047,task_only,Task Shift Only,pre,3,0.5
+task_only_00047,task_only,Task Shift Only,pre,4,0.3333333333333333
+task_only_00047,task_only,Task Shift Only,pre,5,0.5
+task_only_00048,task_only,Task Shift Only,post,1,0.6
+task_only_00048,task_only,Task Shift Only,post,2,0.4
+task_only_00048,task_only,Task Shift Only,post,3,0.8
+task_only_00048,task_only,Task Shift Only,post,4,0.6666666666666666
+task_only_00048,task_only,Task Shift Only,post,5,1.0
+task_only_00048,task_only,Task Shift Only,mid,1,1.0
+task_only_00048,task_only,Task Shift Only,mid,2,0.5
+task_only_00048,task_only,Task Shift Only,mid,3,1.0
+task_only_00048,task_only,Task Shift Only,mid,4,1.0
+task_only_00048,task_only,Task Shift Only,mid,5,1.0
+task_only_00048,task_only,Task Shift Only,pre,1,0.4444444444444444
+task_only_00048,task_only,Task Shift Only,pre,2,0.0
+task_only_00048,task_only,Task Shift Only,pre,3,0.6
+task_only_00048,task_only,Task Shift Only,pre,4,1.0
+task_only_00049,task_only,Task Shift Only,post,1,0.0
+task_only_00049,task_only,Task Shift Only,post,2,0.4
+task_only_00049,task_only,Task Shift Only,post,3,0.7142857142857143
+task_only_00049,task_only,Task Shift Only,post,4,0.0
+task_only_00049,task_only,Task Shift Only,post,5,1.0
+task_only_00049,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00049,task_only,Task Shift Only,mid,2,0.5555555555555556
+task_only_00049,task_only,Task Shift Only,mid,3,1.0
+task_only_00049,task_only,Task Shift Only,mid,4,0.5
+task_only_00049,task_only,Task Shift Only,mid,5,0.8
+task_only_00049,task_only,Task Shift Only,pre,1,0.25
+task_only_00049,task_only,Task Shift Only,pre,2,0.6666666666666666
+task_only_00049,task_only,Task Shift Only,pre,3,0.6
+task_only_00049,task_only,Task Shift Only,pre,4,0.6
+task_only_00049,task_only,Task Shift Only,pre,5,0.6666666666666666
+task_only_00050,task_only,Task Shift Only,post,1,0.6666666666666666
+task_only_00050,task_only,Task Shift Only,post,2,0.16666666666666666
+task_only_00050,task_only,Task Shift Only,post,3,0.7142857142857143
+task_only_00050,task_only,Task Shift Only,post,4,0.0
+task_only_00050,task_only,Task Shift Only,post,5,0.3333333333333333
+task_only_00050,task_only,Task Shift Only,mid,1,0.5
+task_only_00050,task_only,Task Shift Only,mid,2,0.2
+task_only_00050,task_only,Task Shift Only,mid,3,0.6666666666666666
+task_only_00050,task_only,Task Shift Only,mid,4,0.0
+task_only_00050,task_only,Task Shift Only,mid,5,1.0
+task_only_00050,task_only,Task Shift Only,pre,1,0.5
+task_only_00050,task_only,Task Shift Only,pre,2,0.5
+task_only_00050,task_only,Task Shift Only,pre,3,0.5
+task_only_00050,task_only,Task Shift Only,pre,4,0.6666666666666666
+task_only_00050,task_only,Task Shift Only,pre,5,0.75
+task_only_00051,task_only,Task Shift Only,post,1,1.0
+task_only_00051,task_only,Task Shift Only,post,2,0.75
+task_only_00051,task_only,Task Shift Only,post,3,0.6666666666666666
+task_only_00051,task_only,Task Shift Only,post,4,0.5
+task_only_00051,task_only,Task Shift Only,post,5,1.0
+task_only_00051,task_only,Task Shift Only,mid,1,0.8
+task_only_00051,task_only,Task Shift Only,mid,2,0.0
+task_only_00051,task_only,Task Shift Only,mid,3,0.625
+task_only_00051,task_only,Task Shift Only,mid,4,1.0
+task_only_00051,task_only,Task Shift Only,mid,5,0.5
+task_only_00051,task_only,Task Shift Only,pre,1,0.5
+task_only_00051,task_only,Task Shift Only,pre,2,0.7142857142857143
+task_only_00051,task_only,Task Shift Only,pre,3,0.6666666666666666
+task_only_00051,task_only,Task Shift Only,pre,4,1.0
+task_only_00051,task_only,Task Shift Only,pre,5,0.5
+task_only_00052,task_only,Task Shift Only,post,1,0.25
+task_only_00052,task_only,Task Shift Only,post,2,0.4
+task_only_00052,task_only,Task Shift Only,post,3,1.0
+task_only_00052,task_only,Task Shift Only,post,4,1.0
+task_only_00052,task_only,Task Shift Only,post,5,0.8
+task_only_00052,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00052,task_only,Task Shift Only,mid,2,0.0
+task_only_00052,task_only,Task Shift Only,mid,3,0.5
+task_only_00052,task_only,Task Shift Only,mid,4,0.8
+task_only_00052,task_only,Task Shift Only,mid,5,0.8571428571428571
+task_only_00052,task_only,Task Shift Only,pre,2,0.6666666666666666
+task_only_00052,task_only,Task Shift Only,pre,3,0.75
+task_only_00052,task_only,Task Shift Only,pre,4,1.0
+task_only_00052,task_only,Task Shift Only,pre,5,0.5
+task_only_00053,task_only,Task Shift Only,post,1,0.5
+task_only_00053,task_only,Task Shift Only,post,2,0.5
+task_only_00053,task_only,Task Shift Only,post,3,1.0
+task_only_00053,task_only,Task Shift Only,post,4,1.0
+task_only_00053,task_only,Task Shift Only,post,5,0.875
+task_only_00053,task_only,Task Shift Only,mid,1,0.6
+task_only_00053,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00053,task_only,Task Shift Only,mid,3,0.625
+task_only_00053,task_only,Task Shift Only,mid,4,1.0
+task_only_00053,task_only,Task Shift Only,pre,1,0.75
+task_only_00053,task_only,Task Shift Only,pre,2,0.5
+task_only_00053,task_only,Task Shift Only,pre,3,0.75
+task_only_00053,task_only,Task Shift Only,pre,4,0.75
+task_only_00053,task_only,Task Shift Only,pre,5,0.75
+task_only_00054,task_only,Task Shift Only,post,1,0.3333333333333333
+task_only_00054,task_only,Task Shift Only,post,2,0.25
+task_only_00054,task_only,Task Shift Only,post,3,1.0
+task_only_00054,task_only,Task Shift Only,post,4,0.5714285714285714
+task_only_00054,task_only,Task Shift Only,post,5,0.3333333333333333
+task_only_00054,task_only,Task Shift Only,mid,1,0.16666666666666666
+task_only_00054,task_only,Task Shift Only,mid,2,1.0
+task_only_00054,task_only,Task Shift Only,mid,3,0.4
+task_only_00054,task_only,Task Shift Only,mid,4,0.0
+task_only_00054,task_only,Task Shift Only,mid,5,0.42857142857142855
+task_only_00054,task_only,Task Shift Only,pre,1,0.2
+task_only_00054,task_only,Task Shift Only,pre,2,0.5
+task_only_00054,task_only,Task Shift Only,pre,3,0.0
+task_only_00054,task_only,Task Shift Only,pre,4,0.25
+task_only_00054,task_only,Task Shift Only,pre,5,0.25
+task_only_00055,task_only,Task Shift Only,post,1,0.0
+task_only_00055,task_only,Task Shift Only,post,2,0.42857142857142855
+task_only_00055,task_only,Task Shift Only,post,3,0.3333333333333333
+task_only_00055,task_only,Task Shift Only,post,4,0.0
+task_only_00055,task_only,Task Shift Only,post,5,0.3333333333333333
+task_only_00055,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00055,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00055,task_only,Task Shift Only,mid,3,0.3333333333333333
+task_only_00055,task_only,Task Shift Only,mid,4,0.2
+task_only_00055,task_only,Task Shift Only,mid,5,0.3333333333333333
+task_only_00055,task_only,Task Shift Only,pre,1,0.0
+task_only_00055,task_only,Task Shift Only,pre,2,0.0
+task_only_00055,task_only,Task Shift Only,pre,3,0.25
+task_only_00055,task_only,Task Shift Only,pre,4,0.0
+task_only_00055,task_only,Task Shift Only,pre,5,0.0
+task_only_00056,task_only,Task Shift Only,post,1,0.75
+task_only_00056,task_only,Task Shift Only,post,2,1.0
+task_only_00056,task_only,Task Shift Only,post,3,1.0
+task_only_00056,task_only,Task Shift Only,post,4,1.0
+task_only_00056,task_only,Task Shift Only,post,5,0.8333333333333334
+task_only_00056,task_only,Task Shift Only,mid,1,0.5
+task_only_00056,task_only,Task Shift Only,mid,2,1.0
+task_only_00056,task_only,Task Shift Only,mid,3,0.6666666666666666
+task_only_00056,task_only,Task Shift Only,mid,4,1.0
+task_only_00056,task_only,Task Shift Only,mid,5,0.5
+task_only_00056,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00056,task_only,Task Shift Only,pre,2,0.5
+task_only_00056,task_only,Task Shift Only,pre,3,0.8571428571428571
+task_only_00056,task_only,Task Shift Only,pre,4,1.0
+task_only_00056,task_only,Task Shift Only,pre,5,0.6
+task_only_00057,task_only,Task Shift Only,post,1,0.6666666666666666
+task_only_00057,task_only,Task Shift Only,post,2,0.5
+task_only_00057,task_only,Task Shift Only,post,3,0.5
+task_only_00057,task_only,Task Shift Only,post,5,0.8
+task_only_00057,task_only,Task Shift Only,mid,1,0.5
+task_only_00057,task_only,Task Shift Only,mid,2,0.5
+task_only_00057,task_only,Task Shift Only,mid,3,0.42857142857142855
+task_only_00057,task_only,Task Shift Only,mid,4,1.0
+task_only_00057,task_only,Task Shift Only,mid,5,1.0
+task_only_00057,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00057,task_only,Task Shift Only,pre,2,0.75
+task_only_00057,task_only,Task Shift Only,pre,3,0.25
+task_only_00057,task_only,Task Shift Only,pre,4,0.75
+task_only_00057,task_only,Task Shift Only,pre,5,0.6
+task_only_00058,task_only,Task Shift Only,post,1,0.4
+task_only_00058,task_only,Task Shift Only,post,2,0.8
+task_only_00058,task_only,Task Shift Only,post,3,1.0
+task_only_00058,task_only,Task Shift Only,post,4,0.3333333333333333
+task_only_00058,task_only,Task Shift Only,post,5,0.6
+task_only_00058,task_only,Task Shift Only,mid,1,0.5
+task_only_00058,task_only,Task Shift Only,mid,2,0.0
+task_only_00058,task_only,Task Shift Only,mid,3,0.6666666666666666
+task_only_00058,task_only,Task Shift Only,mid,4,0.5
+task_only_00058,task_only,Task Shift Only,mid,5,1.0
+task_only_00058,task_only,Task Shift Only,pre,1,0.75
+task_only_00058,task_only,Task Shift Only,pre,2,1.0
+task_only_00058,task_only,Task Shift Only,pre,3,0.5
+task_only_00058,task_only,Task Shift Only,pre,4,1.0
+task_only_00058,task_only,Task Shift Only,pre,5,0.75
+task_only_00059,task_only,Task Shift Only,post,1,1.0
+task_only_00059,task_only,Task Shift Only,post,2,1.0
+task_only_00059,task_only,Task Shift Only,post,3,1.0
+task_only_00059,task_only,Task Shift Only,post,4,0.8333333333333334
+task_only_00059,task_only,Task Shift Only,post,5,0.8333333333333334
+task_only_00059,task_only,Task Shift Only,mid,1,0.8
+task_only_00059,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00059,task_only,Task Shift Only,mid,3,0.75
+task_only_00059,task_only,Task Shift Only,mid,5,0.6
+task_only_00059,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00059,task_only,Task Shift Only,pre,2,0.75
+task_only_00059,task_only,Task Shift Only,pre,3,0.5
+task_only_00059,task_only,Task Shift Only,pre,4,1.0
+task_only_00059,task_only,Task Shift Only,pre,5,1.0
+task_only_00060,task_only,Task Shift Only,post,1,0.3333333333333333
+task_only_00060,task_only,Task Shift Only,post,2,0.5
+task_only_00060,task_only,Task Shift Only,post,3,0.7142857142857143
+task_only_00060,task_only,Task Shift Only,post,4,1.0
+task_only_00060,task_only,Task Shift Only,post,5,0.4
+task_only_00060,task_only,Task Shift Only,mid,1,0.6666666666666666
+task_only_00060,task_only,Task Shift Only,mid,2,0.3333333333333333
+task_only_00060,task_only,Task Shift Only,mid,3,0.75
+task_only_00060,task_only,Task Shift Only,mid,4,1.0
+task_only_00060,task_only,Task Shift Only,mid,5,0.75
+task_only_00060,task_only,Task Shift Only,pre,1,0.6666666666666666
+task_only_00060,task_only,Task Shift Only,pre,2,0.75
+task_only_00060,task_only,Task Shift Only,pre,3,0.5
+task_only_00060,task_only,Task Shift Only,pre,4,1.0
+task_only_00060,task_only,Task Shift Only,pre,5,0.4
+task_only_00061,task_only,Task Shift Only,post,1,0.0
+task_only_00061,task_only,Task Shift Only,post,2,0.5714285714285714
+task_only_00061,task_only,Task Shift Only,post,3,0.5
+task_only_00061,task_only,Task Shift Only,post,4,1.0
+task_only_00061,task_only,Task Shift Only,post,5,1.0
+task_only_00061,task_only,Task Shift Only,mid,1,0.3333333333333333
+task_only_00061,task_only,Task Shift Only,mid,2,0.25
+task_only_00061,task_only,Task Shift Only,mid,3,1.0
+task_only_00061,task_only,Task Shift Only,mid,4,0.6
+task_only_00061,task_only,Task Shift Only,mid,5,0.5714285714285714
+task_only_00061,task_only,Task Shift Only,pre,1,0.16666666666666666
+task_only_00061,task_only,Task Shift Only,pre,2,0.8
+task_only_00061,task_only,Task Shift Only,pre,3,0.5
+task_only_00061,task_only,Task Shift Only,pre,4,0.6666666666666666
+task_only_00061,task_only,Task Shift Only,pre,5,1.0
+task_only_00062,task_only,Task Shift Only,post,1,0.25
+task_only_00062,task_only,Task Shift Only,post,2,0.5
+task_only_00062,task_only,Task Shift Only,post,3,0.4
+task_only_00062,task_only,Task Shift Only,post,4,1.0
+task_only_00062,task_only,Task Shift Only,post,5,0.4
+task_only_00062,task_only,Task Shift Only,mid,1,0.5
+task_only_00062,task_only,Task Shift Only,mid,2,1.0
+task_only_00062,task_only,Task Shift Only,mid,3,0.75
+task_only_00062,task_only,Task Shift Only,mid,4,0.5
+task_only_00062,task_only,Task Shift Only,mid,5,0.3333333333333333
+task_only_00062,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00062,task_only,Task Shift Only,pre,2,0.3333333333333333
+task_only_00062,task_only,Task Shift Only,pre,3,0.3333333333333333
+task_only_00062,task_only,Task Shift Only,pre,4,0.4
+task_only_00062,task_only,Task Shift Only,pre,5,0.8333333333333334
+task_only_00063,task_only,Task Shift Only,post,1,0.6
+task_only_00063,task_only,Task Shift Only,post,2,0.4
+task_only_00063,task_only,Task Shift Only,post,3,0.0
+task_only_00063,task_only,Task Shift Only,post,4,0.6666666666666666
+task_only_00063,task_only,Task Shift Only,post,5,0.4
+task_only_00063,task_only,Task Shift Only,mid,1,0.0
+task_only_00063,task_only,Task Shift Only,mid,2,0.6
+task_only_00063,task_only,Task Shift Only,mid,3,0.0
+task_only_00063,task_only,Task Shift Only,mid,4,0.5
+task_only_00063,task_only,Task Shift Only,mid,5,0.7142857142857143
+task_only_00063,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00063,task_only,Task Shift Only,pre,2,0.0
+task_only_00063,task_only,Task Shift Only,pre,3,0.5
+task_only_00063,task_only,Task Shift Only,pre,4,0.0
+task_only_00063,task_only,Task Shift Only,pre,5,0.8
+task_only_00064,task_only,Task Shift Only,post,1,0.4
+task_only_00064,task_only,Task Shift Only,post,2,0.8
+task_only_00064,task_only,Task Shift Only,post,3,0.6666666666666666
+task_only_00064,task_only,Task Shift Only,post,4,1.0
+task_only_00064,task_only,Task Shift Only,post,5,0.8
+task_only_00064,task_only,Task Shift Only,mid,1,1.0
+task_only_00064,task_only,Task Shift Only,mid,2,1.0
+task_only_00064,task_only,Task Shift Only,mid,3,0.75
+task_only_00064,task_only,Task Shift Only,mid,4,1.0
+task_only_00064,task_only,Task Shift Only,mid,5,1.0
+task_only_00064,task_only,Task Shift Only,pre,1,0.75
+task_only_00064,task_only,Task Shift Only,pre,2,1.0
+task_only_00064,task_only,Task Shift Only,pre,3,0.4
+task_only_00064,task_only,Task Shift Only,pre,4,0.8
+task_only_00064,task_only,Task Shift Only,pre,5,1.0
+task_only_00065,task_only,Task Shift Only,post,1,1.0
+task_only_00065,task_only,Task Shift Only,post,2,1.0
+task_only_00065,task_only,Task Shift Only,post,3,1.0
+task_only_00065,task_only,Task Shift Only,post,4,0.75
+task_only_00065,task_only,Task Shift Only,post,5,0.8333333333333334
+task_only_00065,task_only,Task Shift Only,mid,1,1.0
+task_only_00065,task_only,Task Shift Only,mid,2,0.75
+task_only_00065,task_only,Task Shift Only,mid,3,0.42857142857142855
+task_only_00065,task_only,Task Shift Only,mid,4,0.5
+task_only_00065,task_only,Task Shift Only,mid,5,0.6666666666666666
+task_only_00065,task_only,Task Shift Only,pre,1,1.0
+task_only_00065,task_only,Task Shift Only,pre,2,0.75
+task_only_00065,task_only,Task Shift Only,pre,3,1.0
+task_only_00065,task_only,Task Shift Only,pre,4,0.8333333333333334
+task_only_00065,task_only,Task Shift Only,pre,5,0.6
+task_only_00066,task_only,Task Shift Only,post,1,0.2857142857142857
+task_only_00066,task_only,Task Shift Only,post,2,0.42857142857142855
+task_only_00066,task_only,Task Shift Only,post,3,0.5
+task_only_00066,task_only,Task Shift Only,post,4,0.0
+task_only_00066,task_only,Task Shift Only,post,5,0.5
+task_only_00066,task_only,Task Shift Only,mid,1,0.0
+task_only_00066,task_only,Task Shift Only,mid,2,0.0
+task_only_00066,task_only,Task Shift Only,mid,3,0.6
+task_only_00066,task_only,Task Shift Only,mid,4,0.5
+task_only_00066,task_only,Task Shift Only,mid,5,0.6666666666666666
+task_only_00066,task_only,Task Shift Only,pre,1,0.2857142857142857
+task_only_00066,task_only,Task Shift Only,pre,2,0.3333333333333333
+task_only_00066,task_only,Task Shift Only,pre,3,0.3333333333333333
+task_only_00066,task_only,Task Shift Only,pre,4,0.5
+task_only_00066,task_only,Task Shift Only,pre,5,0.5
+task_only_00067,task_only,Task Shift Only,post,1,1.0
+task_only_00067,task_only,Task Shift Only,post,2,1.0
+task_only_00067,task_only,Task Shift Only,post,3,1.0
+task_only_00067,task_only,Task Shift Only,post,4,0.8
+task_only_00067,task_only,Task Shift Only,post,5,0.75
+task_only_00067,task_only,Task Shift Only,mid,1,0.6
+task_only_00067,task_only,Task Shift Only,mid,2,1.0
+task_only_00067,task_only,Task Shift Only,mid,3,0.3333333333333333
+task_only_00067,task_only,Task Shift Only,mid,4,1.0
+task_only_00067,task_only,Task Shift Only,mid,5,0.75
+task_only_00067,task_only,Task Shift Only,pre,1,0.5714285714285714
+task_only_00067,task_only,Task Shift Only,pre,2,1.0
+task_only_00067,task_only,Task Shift Only,pre,3,1.0
+task_only_00067,task_only,Task Shift Only,pre,4,1.0
+task_only_00067,task_only,Task Shift Only,pre,5,0.75
+task_only_00068,task_only,Task Shift Only,post,1,0.0
+task_only_00068,task_only,Task Shift Only,post,2,0.8
+task_only_00068,task_only,Task Shift Only,post,3,0.75
+task_only_00068,task_only,Task Shift Only,post,4,0.5
+task_only_00068,task_only,Task Shift Only,post,5,0.75
+task_only_00068,task_only,Task Shift Only,mid,1,0.6
+task_only_00068,task_only,Task Shift Only,mid,2,0.6666666666666666
+task_only_00068,task_only,Task Shift Only,mid,3,0.6666666666666666
+task_only_00068,task_only,Task Shift Only,mid,4,0.75
+task_only_00068,task_only,Task Shift Only,mid,5,0.5
+task_only_00068,task_only,Task Shift Only,pre,1,0.75
+task_only_00068,task_only,Task Shift Only,pre,2,0.5
+task_only_00068,task_only,Task Shift Only,pre,3,0.75
+task_only_00068,task_only,Task Shift Only,pre,4,0.5
+task_only_00068,task_only,Task Shift Only,pre,5,0.8333333333333334
+task_only_00069,task_only,Task Shift Only,post,1,0.5
+task_only_00069,task_only,Task Shift Only,post,2,0.5
+task_only_00069,task_only,Task Shift Only,post,3,0.5
+task_only_00069,task_only,Task Shift Only,post,4,0.25
+task_only_00069,task_only,Task Shift Only,post,5,0.5
+task_only_00069,task_only,Task Shift Only,mid,1,0.42857142857142855
+task_only_00069,task_only,Task Shift Only,mid,2,0.0
+task_only_00069,task_only,Task Shift Only,mid,3,0.6
+task_only_00069,task_only,Task Shift Only,mid,4,0.5
+task_only_00069,task_only,Task Shift Only,mid,5,0.4
+task_only_00069,task_only,Task Shift Only,pre,1,0.6666666666666666
+task_only_00069,task_only,Task Shift Only,pre,2,0.5
+task_only_00069,task_only,Task Shift Only,pre,3,0.75
+task_only_00069,task_only,Task Shift Only,pre,4,0.6
+task_only_00069,task_only,Task Shift Only,pre,5,0.0
+task_only_00070,task_only,Task Shift Only,post,1,0.5
+task_only_00070,task_only,Task Shift Only,post,2,0.5
+task_only_00070,task_only,Task Shift Only,post,3,0.3333333333333333
+task_only_00070,task_only,Task Shift Only,post,4,0.6
+task_only_00070,task_only,Task Shift Only,post,5,0.6666666666666666
+task_only_00070,task_only,Task Shift Only,mid,1,0.5
+task_only_00070,task_only,Task Shift Only,mid,2,0.5
+task_only_00070,task_only,Task Shift Only,mid,3,0.4
+task_only_00070,task_only,Task Shift Only,mid,4,0.8
+task_only_00070,task_only,Task Shift Only,mid,5,0.5
+task_only_00070,task_only,Task Shift Only,pre,1,0.3333333333333333
+task_only_00070,task_only,Task Shift Only,pre,2,1.0
+task_only_00070,task_only,Task Shift Only,pre,3,0.5714285714285714
+task_only_00070,task_only,Task Shift Only,pre,4,0.5
+task_only_00070,task_only,Task Shift Only,pre,5,1.0
+task_only_00071,task_only,Task Shift Only,post,1,1.0
+task_only_00071,task_only,Task Shift Only,post,2,1.0
+task_only_00071,task_only,Task Shift Only,post,3,1.0
+task_only_00071,task_only,Task Shift Only,post,4,0.8
+task_only_00071,task_only,Task Shift Only,post,5,0.75
+task_only_00071,task_only,Task Shift Only,mid,1,0.6
+task_only_00071,task_only,Task Shift Only,mid,2,1.0
+task_only_00071,task_only,Task Shift Only,mid,3,0.3333333333333333
+task_only_00071,task_only,Task Shift Only,mid,4,1.0
+task_only_00071,task_only,Task Shift Only,mid,5,0.75
+task_only_00071,task_only,Task Shift Only,pre,1,0.5714285714285714
+task_only_00071,task_only,Task Shift Only,pre,2,1.0
+task_only_00071,task_only,Task Shift Only,pre,3,1.0
+task_only_00071,task_only,Task Shift Only,pre,4,1.0
+task_only_00071,task_only,Task Shift Only,pre,5,0.75
+task_only_00072,task_only,Task Shift Only,post,1,0.0
+task_only_00072,task_only,Task Shift Only,post,2,0.14285714285714285
+task_only_00072,task_only,Task Shift Only,post,3,0.0
+task_only_00072,task_only,Task Shift Only,post,4,0.0
+task_only_00072,task_only,Task Shift Only,post,5,0.0
+task_only_00072,task_only,Task Shift Only,mid,1,0.25
+task_only_00072,task_only,Task Shift Only,mid,2,0.0
+task_only_00072,task_only,Task Shift Only,mid,3,0.0
+task_only_00072,task_only,Task Shift Only,mid,4,0.0
+task_only_00072,task_only,Task Shift Only,mid,5,0.0
+task_only_00072,task_only,Task Shift Only,pre,1,0.0
+task_only_00072,task_only,Task Shift Only,pre,2,0.0
+task_only_00072,task_only,Task Shift Only,pre,3,0.3333333333333333
+task_only_00072,task_only,Task Shift Only,pre,4,0.0
+task_only_00072,task_only,Task Shift Only,pre,5,0.2

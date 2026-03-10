@@ -1,0 +1,4 @@
+condition,condition_label,participants,task_accuracy_n,mean_task_accuracy,sd_task_accuracy,mean_encoding_response_rate,mean_test_response_rate
+item_only,Item Shift Only,56,56,0.9262581650052015,0.035701226164237876,1.0,1.0
+both,Item + Task Shift,49,48,0.9473561069274138,0.03208200831001741,1.0,1.0
+task_only,Task Shift Only,53,52,0.9425371740218118,0.041834038210860174,1.0,1.0

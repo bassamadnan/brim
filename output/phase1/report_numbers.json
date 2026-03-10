@@ -1,0 +1,19 @@
+{
+  "n_item_only": 56,
+  "n_both": 49,
+  "n_task_only": 53,
+  "task_acc_item_only": 0.9262581650052015,
+  "task_acc_both": 0.9473561069274138,
+  "task_acc_task_only": 0.9425371740218118,
+  "rt_post_cost_both": 0.21992939060999145,
+  "rec_post_cost_both": -0.07346938775510205,
+  "ldi_pre_gain_both": -0.03061224489795917,
+  "both_encoding_rt_f": 68.36473041706276,
+  "both_encoding_rt_p": 3.468596197307934e-19,
+  "both_REC_f": 6.44587662764699,
+  "both_REC_p": 0.002361889888560831,
+  "both_LDI_f": 1.398792333945918,
+  "both_LDI_p": 0.2518810359035137,
+  "between_ldi_f": 1.6134947566963096,
+  "between_ldi_p": 0.202517618741728
+}
