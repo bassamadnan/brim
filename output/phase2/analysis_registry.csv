@@ -1,0 +1,6 @@
+model_name,purpose,assumption_focus,included_in_report
+primary_correctness_gee,confirmatory,clustered binary outcome; robust sandwich SE,True
+primary_rt_mixedlm,confirmatory,normality of residuals for log RT,True
+fallback_friedman_target_correctness,robustness,nonparametric repeated-measures alternative,True
+secondary_response_profile_chi_square,exploratory,categorical independence tests,True
+secondary_lure_bin_gee,exploratory,clustered binary outcome with lure difficulty,True

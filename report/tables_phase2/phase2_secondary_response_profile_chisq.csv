@@ -1,0 +1,7 @@
+analysis_family,condition,item_role,test,chi2,dof,p_value,cramers_v,n
+secondary_response_profile,item_only,target,chi_square_independence,0.6845613004233172,4,0.9532190914105131,0.010093029333873066,3360
+secondary_response_profile,item_only,lure,chi_square_independence,1.942340671503845,4,0.7463632325801155,0.01700114085590605,3360
+secondary_response_profile,both,target,chi_square_independence,22.548552447852035,4,0.00015582600661060846,0.06192566375314319,2940
+secondary_response_profile,both,lure,chi_square_independence,6.787540198102871,4,0.14755084540079735,0.03397563201922711,2940
+secondary_response_profile,task_only,target,chi_square_independence,8.930779505381148,4,0.0628531443578088,0.03747279832163111,3180
+secondary_response_profile,task_only,lure,chi_square_independence,2.4260751759106043,4,0.6579202589788966,0.019530959039233926,3180

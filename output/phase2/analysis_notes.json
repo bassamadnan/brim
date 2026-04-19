@@ -1,0 +1,11 @@
+{
+  "confirmatory_primary": [
+    "Correctness modeled via clustered logistic GEE with participant-level clustering.",
+    "Response speed modeled via mixed-effects linear model on log RT."
+  ],
+  "fallbacks_and_secondary": [
+    "Friedman nonparametric tests for target correctness within condition.",
+    "Chi-square response-profile tests with Cramer's V.",
+    "Lure-bin slope model using GEE on similar-response probability."
+  ]
+}
