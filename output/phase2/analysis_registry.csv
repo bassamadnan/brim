@@ -4,3 +4,5 @@ primary_rt_mixedlm,confirmatory,normality of residuals for log RT,True
 fallback_friedman_target_correctness,robustness,nonparametric repeated-measures alternative,True
 secondary_response_profile_chi_square,exploratory,categorical independence tests,True
 secondary_lure_bin_gee,exploratory,clustered binary outcome with lure difficulty,True
+robustness_rt_outlier_trimmed,robustness,sensitivity to participant RT outliers,True
+robustness_correctness_split,robustness,target and lure correctness modeled separately,True

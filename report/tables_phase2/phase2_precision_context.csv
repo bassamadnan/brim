@@ -1,0 +1,7 @@
+condition,n_participants,metric,value
+item_only,56,prop_95ci_half_width_at_p0.5,0.13095800853708794
+both,49,prop_95ci_half_width_at_p0.5,0.13999999999999999
+task_only,53,prop_95ci_half_width_at_p0.5,0.13461335266971525
+item_only,56,participant_mean_rt_95ci_half_width,0.3076919502298613
+both,49,participant_mean_rt_95ci_half_width,0.24037726226421838
+task_only,53,participant_mean_rt_95ci_half_width,0.15273272843326233

@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from scipy import stats
-from statsmodels.formula.api import mixedlm
+from statsmodels.formula.api import mixedlm, ols
 from statsmodels.genmod.cov_struct import Exchangeable
 from statsmodels.genmod.families import Binomial, Gaussian
 from statsmodels.genmod.generalized_estimating_equations import GEE
@@ -169,6 +169,44 @@ def run_qc(test_trials: pd.DataFrame, participant_level: pd.DataFrame) -> tuple[
     return pd.DataFrame(qc_rows), by_participant
 
 
+def build_precision_context(test_trials: pd.DataFrame) -> pd.DataFrame:
+    # Simple precision context for proportions and participant-level mean RT.
+    rows: list[dict[str, object]] = []
+    by_condition_n = test_trials.groupby("condition", observed=True)["participant_uid"].nunique()
+    for condition in CONDITION_ORDER:
+        n = int(by_condition_n.loc[condition])
+        # Worst-case 95% CI half-width for a proportion at p=0.5.
+        prop_half_width = 1.96 * math.sqrt(0.25 / n)
+        rows.append(
+            {
+                "condition": condition,
+                "n_participants": n,
+                "metric": "prop_95ci_half_width_at_p0.5",
+                "value": float(prop_half_width),
+            }
+        )
+
+    participant_mean_rt = (
+        test_trials.groupby(["condition", "participant_uid"], observed=True)["response_rt"].mean().reset_index()
+    )
+    for condition in CONDITION_ORDER:
+        subset = participant_mean_rt.loc[participant_mean_rt["condition"] == condition, "response_rt"]
+        if len(subset) > 1:
+            rt_half_width = 1.96 * subset.std(ddof=1) / math.sqrt(len(subset))
+        else:
+            rt_half_width = math.nan
+        rows.append(
+            {
+                "condition": condition,
+                "n_participants": int(len(subset)),
+                "metric": "participant_mean_rt_95ci_half_width",
+                "value": float(rt_half_width),
+            }
+        )
+
+    return pd.DataFrame(rows)
+
+
 def gee_correctness_model(test_trials: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     working = test_trials.loc[
         test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
@@ -287,6 +325,46 @@ def mixed_rt_model(test_trials: pd.DataFrame) -> pd.DataFrame:
     return table
 
 
+def run_rt_diagnostics(test_trials: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    working = test_trials.loc[
+        test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
+        & test_trials["responded"]
+        & test_trials["response_rt"].notna()
+        & (test_trials["response_rt"] > 0)
+    ].copy()
+
+    # OLS diagnostics are used as an approximate assumption check for RT structure.
+    ols_result = ols(
+        "log_response_rt ~ C(condition) * C(test_boundary_position) + C(item_role) + correct_int",
+        data=working,
+    ).fit()
+
+    resid = pd.Series(ols_result.resid, name="residual")
+    fitted = pd.Series(ols_result.fittedvalues, name="fitted")
+    diag_df = pd.concat([fitted, resid], axis=1)
+
+    shapiro_w, shapiro_p = stats.shapiro(resid.sample(n=min(5000, len(resid)), random_state=17))
+    corr_abs = np.corrcoef(np.abs(resid), fitted)[0, 1]
+    summary = pd.DataFrame(
+        [
+            {
+                "check": "rt_residual_normality_shapiro",
+                "statistic": float(shapiro_w),
+                "p_value": float(shapiro_p),
+                "n": int(len(resid)),
+            },
+            {
+                "check": "rt_abs_resid_fitted_correlation",
+                "statistic": float(corr_abs),
+                "p_value": math.nan,
+                "n": int(len(resid)),
+            },
+        ]
+    )
+
+    return summary, diag_df
+
+
 def response_profile_tests(test_trials: pd.DataFrame) -> pd.DataFrame:
     # Categorical test taught in class: chi-square for response category by boundary.
     rows: list[dict[str, object]] = []
@@ -376,6 +454,103 @@ def speed_accuracy_summary(test_trials: pd.DataFrame) -> pd.DataFrame:
         summary["mean_rt_incorrect"] = np.nan
     summary["delta_rt_incorrect_minus_correct"] = summary["mean_rt_incorrect"] - summary["mean_rt_correct"]
     return summary
+
+
+def robustness_reruns(
+    test_trials: pd.DataFrame,
+    participant_rt_flags: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    # 1) Trim participant RT outliers and rerun primary RT model.
+    outlier_ids = set(
+        participant_rt_flags.loc[participant_rt_flags["rt_outlier_abs_z_gt_3"], "participant_uid"].astype(str)
+    )
+    trimmed = test_trials.loc[~test_trials["participant_uid"].astype(str).isin(outlier_ids)].copy()
+    rt_trimmed = mixed_rt_model(trimmed)
+    rt_trimmed["analysis_family"] = "robustness_rt_outlier_trimmed"
+
+    # 2) Split correctness models by item role (target and lure separately).
+    split_rows: list[pd.DataFrame] = []
+    for role in ["target", "lure"]:
+        subset = test_trials.loc[
+            test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
+            & (test_trials["item_role"] == role)
+        ].copy()
+        subset["lure_bin"] = pd.to_numeric(subset["lure_bin"], errors="coerce")
+        subset["lure_bin_c"] = subset["lure_bin"] - subset["lure_bin"].mean()
+
+        if role == "lure":
+            formula = "correct_int ~ C(condition) * C(test_boundary_position) + C(stimulus_class) + lure_bin_c"
+        else:
+            formula = "correct_int ~ C(condition) * C(test_boundary_position) + C(stimulus_class)"
+
+        model = GEE.from_formula(
+            formula,
+            groups="participant_uid",
+            data=subset,
+            family=Binomial(),
+            cov_struct=Exchangeable(),
+        )
+        result = model.fit()
+        table = pd.DataFrame(
+            {
+                "term": result.params.index,
+                "coef": result.params.values,
+                "std_err": result.bse.values,
+                "z": result.tvalues.values,
+                "p_value": result.pvalues.values,
+            }
+        )
+        table["odds_ratio"] = np.exp(table["coef"])
+        table["analysis_family"] = "robustness_correctness_split"
+        table["item_role_split"] = role
+        split_rows.append(table)
+
+    split_correctness = pd.concat(split_rows, ignore_index=True)
+
+    # 3) Focused boundary contrasts from participant-level means for quick interpretability.
+    target = test_trials.loc[
+        test_trials["item_role"].isin(["target", "lure"])
+        & test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
+    ].copy()
+    grouped = (
+        target.groupby(["participant_uid", "condition", "item_role", "test_boundary_position"], observed=True)[
+            "correct_int"
+        ]
+        .mean()
+        .reset_index()
+    )
+    pivot = grouped.pivot(
+        index=["participant_uid", "condition", "item_role"],
+        columns="test_boundary_position",
+        values="correct_int",
+    ).reset_index()
+    rows: list[dict[str, object]] = []
+    for condition in CONDITION_ORDER:
+        for role in ["target", "lure"]:
+            subset = pivot.loc[(pivot["condition"] == condition) & (pivot["item_role"] == role)].dropna()
+            if subset.empty:
+                continue
+            for left, right in [("post", "mid"), ("post", "pre")]:
+                diff = subset[left] - subset[right]
+                t_stat, p_value = stats.ttest_1samp(diff, 0.0)
+                rows.append(
+                    {
+                        "analysis_family": "robustness_boundary_contrasts",
+                        "condition": condition,
+                        "item_role": role,
+                        "contrast": f"{left}-{right}",
+                        "n": int(len(diff)),
+                        "mean_diff": float(diff.mean()),
+                        "t_value": float(t_stat),
+                        "p_value": float(p_value),
+                    }
+                )
+    boundary_contrasts = pd.DataFrame(rows)
+    if not boundary_contrasts.empty:
+        _, p_holm, _, _ = multipletests(boundary_contrasts["p_value"].to_numpy(), method="holm")
+        boundary_contrasts["p_value_holm"] = p_holm
+
+    return rt_trimmed, split_correctness, boundary_contrasts
 
 
 def apply_family_corrections(
@@ -494,6 +669,37 @@ def plot_lure_bins(test_trials: pd.DataFrame) -> None:
     plt.close(fig)
 
 
+def plot_diagnostics(diag_df: pd.DataFrame, test_trials: pd.DataFrame) -> None:
+    # Participant mean log RT histogram.
+    participant_mean = (
+        test_trials.groupby("participant_uid", observed=True)["response_rt"].mean().replace(0, np.nan).dropna()
+    )
+    participant_log = np.log(participant_mean)
+    fig, ax = plt.subplots(figsize=(8.0, 4.8))
+    sns.histplot(participant_log, bins=24, kde=True, ax=ax)
+    ax.set_xlabel("Participant mean log RT")
+    ax.set_title("Phase 2 diagnostics: participant mean log RT distribution")
+    fig.savefig(FIG_DIR / "phase2_diagnostic_logrt_hist.png")
+    plt.close(fig)
+
+    # QQ plot for OLS residuals.
+    fig, ax = plt.subplots(figsize=(6.0, 6.0))
+    stats.probplot(diag_df["residual"], dist="norm", plot=ax)
+    ax.set_title("Phase 2 diagnostics: QQ plot of RT-model residuals")
+    fig.savefig(FIG_DIR / "phase2_diagnostic_qq_residuals.png")
+    plt.close(fig)
+
+    # Residual vs fitted.
+    fig, ax = plt.subplots(figsize=(8.0, 4.8))
+    sns.scatterplot(data=diag_df.sample(n=min(12000, len(diag_df)), random_state=17), x="fitted", y="residual", s=10, alpha=0.35, ax=ax)
+    ax.axhline(0.0, color="black", linewidth=1)
+    ax.set_xlabel("Fitted log RT")
+    ax.set_ylabel("Residual")
+    ax.set_title("Phase 2 diagnostics: residual vs fitted")
+    fig.savefig(FIG_DIR / "phase2_diagnostic_residuals_vs_fitted.png")
+    plt.close(fig)
+
+
 def write_analysis_registry() -> pd.DataFrame:
     rows = [
         {
@@ -526,6 +732,18 @@ def write_analysis_registry() -> pd.DataFrame:
             "assumption_focus": "clustered binary outcome with lure difficulty",
             "included_in_report": True,
         },
+        {
+            "model_name": "robustness_rt_outlier_trimmed",
+            "purpose": "robustness",
+            "assumption_focus": "sensitivity to participant RT outliers",
+            "included_in_report": True,
+        },
+        {
+            "model_name": "robustness_correctness_split",
+            "purpose": "robustness",
+            "assumption_focus": "target and lure correctness modeled separately",
+            "included_in_report": True,
+        },
     ]
     registry = pd.DataFrame(rows)
     return registry
@@ -542,6 +760,12 @@ def save_outputs(
     speed_accuracy: pd.DataFrame,
     corrected: pd.DataFrame,
     registry: pd.DataFrame,
+    precision_context: pd.DataFrame,
+    rt_diag_summary: pd.DataFrame,
+    rt_diag_points: pd.DataFrame,
+    robustness_rt_trimmed: pd.DataFrame,
+    robustness_correctness_split: pd.DataFrame,
+    robustness_boundary_contrasts: pd.DataFrame,
 ) -> None:
     qc_summary.to_csv(PHASE2_DIR / "qc_summary.csv", index=False)
     participant_rt_flags.to_csv(PHASE2_DIR / "participant_rt_outlier_flags.csv", index=False)
@@ -552,6 +776,14 @@ def save_outputs(
     secondary_lure.to_csv(TABLE_DIR / "phase2_secondary_lure_bin_gee.csv", index=False)
     speed_accuracy.to_csv(TABLE_DIR / "phase2_speed_accuracy_summary.csv", index=False)
     corrected.to_csv(TABLE_DIR / "phase2_all_tests_corrected.csv", index=False)
+    precision_context.to_csv(TABLE_DIR / "phase2_precision_context.csv", index=False)
+    rt_diag_summary.to_csv(TABLE_DIR / "phase2_rt_diagnostic_summary.csv", index=False)
+    robustness_rt_trimmed.to_csv(TABLE_DIR / "phase2_robustness_rt_outlier_trimmed.csv", index=False)
+    robustness_correctness_split.to_csv(TABLE_DIR / "phase2_robustness_correctness_split.csv", index=False)
+    robustness_boundary_contrasts.to_csv(TABLE_DIR / "phase2_robustness_boundary_contrasts.csv", index=False)
+
+    rt_diag_points_sample = rt_diag_points.sample(n=min(20000, len(rt_diag_points)), random_state=17)
+    rt_diag_points_sample.to_csv(PHASE2_DIR / "phase2_rt_diag_points_sample.csv", index=False)
     registry.to_csv(PHASE2_DIR / "analysis_registry.csv", index=False)
 
     notes = {
@@ -563,6 +795,11 @@ def save_outputs(
             "Friedman nonparametric tests for target correctness within condition.",
             "Chi-square response-profile tests with Cramer's V.",
             "Lure-bin slope model using GEE on similar-response probability.",
+            "Robustness reruns include RT outlier-trimmed model and split target/lure correctness models.",
+        ],
+        "precision_and_diagnostics": [
+            "Added precision-context table (CI half-width summaries by condition).",
+            "Added RT diagnostics summary and diagnostic plots (histogram, QQ, residuals vs fitted).",
         ],
     }
     with (PHASE2_DIR / "analysis_notes.json").open("w") as handle:
@@ -575,12 +812,18 @@ def main() -> None:
 
     test_trials, encoding_trials, participant_level = load_data()
     qc_summary, participant_rt_flags = run_qc(test_trials, participant_level)
+    precision_context = build_precision_context(test_trials)
 
     primary_correctness, fallback_np = gee_correctness_model(test_trials)
     primary_rt = mixed_rt_model(test_trials)
+    rt_diag_summary, rt_diag_points = run_rt_diagnostics(test_trials)
     secondary_profile = response_profile_tests(test_trials)
     secondary_lure = lure_bin_gee(test_trials)
     speed_accuracy = speed_accuracy_summary(test_trials)
+    robustness_rt_trimmed, robustness_correctness_split, robustness_boundary_contrasts = robustness_reruns(
+        test_trials,
+        participant_rt_flags,
+    )
 
     corrected = apply_family_corrections(
         primary_correctness=primary_correctness,
@@ -592,6 +835,7 @@ def main() -> None:
     plot_correctness(test_trials)
     plot_rt(test_trials)
     plot_lure_bins(test_trials)
+    plot_diagnostics(rt_diag_points, test_trials)
 
     registry = write_analysis_registry()
     save_outputs(
@@ -605,6 +849,12 @@ def main() -> None:
         speed_accuracy=speed_accuracy,
         corrected=corrected,
         registry=registry,
+        precision_context=precision_context,
+        rt_diag_summary=rt_diag_summary,
+        rt_diag_points=rt_diag_points,
+        robustness_rt_trimmed=robustness_rt_trimmed,
+        robustness_correctness_split=robustness_correctness_split,
+        robustness_boundary_contrasts=robustness_boundary_contrasts,
     )
 
     print("Saved Phase 2 outputs to", PHASE2_DIR)

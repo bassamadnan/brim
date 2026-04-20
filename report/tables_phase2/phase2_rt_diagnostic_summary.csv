@@ -1,0 +1,3 @@
+check,statistic,p_value,n
+rt_residual_normality_shapiro,0.949267234319644,1.7767835177828512e-38,18960
+rt_abs_resid_fitted_correlation,0.08642244481583104,,18960

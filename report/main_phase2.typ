@@ -94,9 +94,31 @@ Primary correctness was modeled with clustered logistic GEE (participant-level c
 
 Secondary analyses included chi-square tests for response-category profile changes and a lure-bin GEE model for similar responses on lure trials. Multiple comparisons were corrected within analysis families using Holm, with BH/FDR also reported in outputs.
 
+== Precision and power context
+To make null and weak effects interpretable, we added a precision-context summary by condition. For proportion-like outcomes, the worst-case 95% CI half-width at $p=0.5$ was approximately 0.131 (`item_only`), 0.140 (`both`), and 0.135 (`task_only`). For participant-mean RT, 95% CI half-widths were approximately 0.308s (`item_only`), 0.240s (`both`), and 0.153s (`task_only`).
+
+These values provide a practical interpretation layer: effects smaller than these ranges are harder to distinguish cleanly without larger samples, especially for proportion endpoints.
+
 = Results
 == Quality-control checks
 Core test-phase variables had no missingness. RT artifact counts were low relative to dataset size (1 very fast trial < 0.2s; 23 very slow trials > 30s). Participant-level mean log RT departed from perfect normality (Shapiro-Wilk $W = 0.953$, $p < .001$), so robust model choices and fallback logic were retained.
+
+Additional RT diagnostics using an OLS approximation for residual checks showed non-normal residual structure (Shapiro-Wilk $W = 0.949$, $p < .001$) and a weak absolute-residual versus fitted correlation (about 0.086), consistent with mild heteroscedasticity. This further justified reporting the robust clustered RT model and robustness reruns.
+
+#figure(
+  image("figures_phase2/phase2_diagnostic_logrt_hist.png", width: 100%),
+  caption: [Diagnostic histogram of participant-level mean log RT used for distributional assessment.],
+)
+
+#figure(
+  image("figures_phase2/phase2_diagnostic_qq_residuals.png", width: 100%),
+  caption: [QQ plot of RT-model residuals (diagnostic approximation), showing departures from strict normality.],
+)
+
+#figure(
+  image("figures_phase2/phase2_diagnostic_residuals_vs_fitted.png", width: 100%),
+  caption: [Residual-versus-fitted diagnostic for RT model approximation, indicating only mild structure in residual spread.],
+)
 
 == Primary model 1: Correct/incorrect responses
 In the confirmatory correctness model, broad boundary-position main effects were not the dominant signal after adjustment. Instead, correctness varied strongly with item role and stimulus structure.
@@ -141,6 +163,15 @@ The speed-accuracy summary also showed a consistent pattern: incorrect responses
 
 == Integrative interpretation
 Phase 2 did not show a dominant omnibus boundary main effect across all adjusted models. Instead, the main robust structure came from item role, stimulus class, lure difficulty, and speed-accuracy coupling. This sharpens Phase 1 interpretation: boundary effects are present but conditional, and should be interpreted alongside stimulus and response-process variables rather than in isolation.
+
+== Robustness analyses
+The high-impact robustness package was added in three parts.
+
+1. *Outlier-trimmed RT rerun:* Excluding participant-level RT outliers did not materially change the RT story. Correct responses remained faster than incorrect responses, and lure trials remained slower than target trials.
+2. *Split correctness models:* Modeling target and lure correctness separately preserved key patterns. For lure trials, lure-bin and stimulus-class effects remained strong. For target trials, the strongest adjusted effects remained condition/stimulus dependent rather than a uniform boundary main effect.
+3. *Focused boundary contrasts:* In corrected contrast testing, the clearest retained boundary effect was in Item + Task Shift target trials for post-minus-mid correctness (Holm-corrected significance retained).
+
+Overall, the confirmatory conclusions were stable under these robustness checks.
 
 = Conclusion
 Phase 2 achieved the confirmatory objectives and expanded coverage beyond REC and LDI by modeling correctness, response speed, and response categories directly.

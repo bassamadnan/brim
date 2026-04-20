@@ -6,6 +6,11 @@
   "fallbacks_and_secondary": [
     "Friedman nonparametric tests for target correctness within condition.",
     "Chi-square response-profile tests with Cramer's V.",
-    "Lure-bin slope model using GEE on similar-response probability."
+    "Lure-bin slope model using GEE on similar-response probability.",
+    "Robustness reruns include RT outlier-trimmed model and split target/lure correctness models."
+  ],
+  "precision_and_diagnostics": [
+    "Added precision-context table (CI half-width summaries by condition).",
+    "Added RT diagnostics summary and diagnostic plots (histogram, QQ, residuals vs fitted)."
   ]
 }
