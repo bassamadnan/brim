@@ -1,4 +1,4 @@
 analysis_family,condition,test,n,statistic,p_value,effect_size_kendall_w
 fallback_nonparametric,item_only,friedman_target_correctness,56,1.3560975609756276,0.507606478364557,0.01210801393728239
 fallback_nonparametric,both,friedman_target_correctness,49,11.471910112359446,0.0032277981672002567,0.11706030726897393
-fallback_nonparametric,task_only,friedman_target_correctness,53,4.095238095238026,0.12904178044764075,0.03863432165318892
+fallback_nonparametric,task_only,friedman_target_correctness,53,4.095238095238026,0.1290417804476408,0.03863432165318892

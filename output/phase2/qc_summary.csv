@@ -9,4 +9,4 @@ missingness_test_trials,lure_bin,0.0,0.0,,,,,,,
 missingness_participant_level,encoding_task_accuracy,2.0,0.012658227848101266,,,,,,,
 rt_artifacts,response_rt,0.0,0.0,1.0,23.0,,,,,
 participant_rt_outliers,mean_test_rt_trial,,,,,3.0,158.0,,,
-normality_shapiro,participant_mean_log_rt,,,,,,,0.953374828968088,3.9825129088895225e-05,158.0
+normality_shapiro,participant_mean_log_rt,,,,,,,0.9533748289680876,3.982512908889167e-05,158.0

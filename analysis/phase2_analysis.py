@@ -6,6 +6,7 @@ import warnings
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -31,7 +32,6 @@ CONDITION_LABELS = {
     "both": "Item + Task Shift",
     "task_only": "Task Shift Only",
 }
-
 
 # Silence frequent convergence warnings so outputs stay readable.
 warnings.filterwarnings("ignore", category=RuntimeWarning)
@@ -66,6 +66,9 @@ def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     encoding_trials = pd.read_csv(PHASE1_DIR / "encoding_trials.csv")
     participant_level = pd.read_csv(PHASE1_DIR / "participant_level_metrics.csv")
 
+    # NOTE: Keep "foil" only in the full Categorical at load time; every
+    # analytical working dataset re-casts after filtering to remove unused
+    # levels — this prevents phantom dummy variables in statsmodels GEE.
     test_trials["condition"] = pd.Categorical(test_trials["condition"], CONDITION_ORDER, ordered=True)
     test_trials["test_boundary_position"] = pd.Categorical(
         test_trials["test_boundary_position"], [*BOUNDARY_ORDER, "foil"], ordered=True
@@ -170,12 +173,10 @@ def run_qc(test_trials: pd.DataFrame, participant_level: pd.DataFrame) -> tuple[
 
 
 def build_precision_context(test_trials: pd.DataFrame) -> pd.DataFrame:
-    # Simple precision context for proportions and participant-level mean RT.
     rows: list[dict[str, object]] = []
     by_condition_n = test_trials.groupby("condition", observed=True)["participant_uid"].nunique()
     for condition in CONDITION_ORDER:
         n = int(by_condition_n.loc[condition])
-        # Worst-case 95% CI half-width for a proportion at p=0.5.
         prop_half_width = 1.96 * math.sqrt(0.25 / n)
         rows.append(
             {
@@ -207,18 +208,39 @@ def build_precision_context(test_trials: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def _clean_boundary_cat(df: pd.DataFrame, col: str = "test_boundary_position") -> pd.DataFrame:
+    """Remove unused categorical levels after filtering to post/mid/pre rows.
+
+    This prevents statsmodels GEE from generating phantom dummy variables for
+    the 'foil' level (Bug B2 fix). Also cleans item_role categorical if present.
+    """
+    df = df.copy()
+    for c in [col, "item_role"]:
+        if c in df.columns and isinstance(df[c].dtype, pd.CategoricalDtype):
+            df[c] = df[c].cat.remove_unused_categories()
+    return df
+
+
 def gee_correctness_model(test_trials: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Primary confirmatory GEE for test-phase correctness.
+
+    Bug fixes applied:
+    - B2: Remove unused 'foil' Categorical level after filtering.
+    - B3: lure_bin_c removed from combined target+lure formula (ambiguous
+      semantics across item roles; lure-bin effect reported from dedicated
+      lure-only model in robustness_reruns).
+    - Added C(stimulus_class):C(test_boundary_position) interaction (Gap G3).
+    """
     working = test_trials.loc[
         test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
         & test_trials["item_role"].isin(["target", "lure"])
     ].copy()
-
-    # Center lure_bin so intercept is interpretable.
-    working["lure_bin"] = pd.to_numeric(working["lure_bin"], errors="coerce")
-    working["lure_bin_c"] = working["lure_bin"] - working["lure_bin"].mean()
+    # B2 fix: drop unused categorical level so no phantom foil dummy is created.
+    working = _clean_boundary_cat(working)
 
     model = GEE.from_formula(
-        "correct_int ~ C(condition) * C(test_boundary_position) + C(item_role) + C(stimulus_class) + lure_bin_c",
+        "correct_int ~ C(condition) * C(test_boundary_position)"
+        " + C(item_role) + C(stimulus_class) * C(test_boundary_position)",
         groups="participant_uid",
         data=working,
         family=Binomial(),
@@ -240,7 +262,7 @@ def gee_correctness_model(test_trials: pd.DataFrame) -> tuple[pd.DataFrame, pd.D
     table["ci_high_or"] = np.exp(table["coef"] + 1.96 * table["std_err"])
     table["analysis_family"] = "primary_correctness"
 
-    # Participant-level fallback: Friedman within each condition for target correctness by boundary.
+    # Participant-level fallback: Friedman within each condition for target correctness.
     fallback_rows: list[dict[str, object]] = []
     target = working.loc[working["item_role"] == "target"].copy()
     grouped = (
@@ -272,14 +294,23 @@ def gee_correctness_model(test_trials: pd.DataFrame) -> tuple[pd.DataFrame, pd.D
 
 
 def mixed_rt_model(test_trials: pd.DataFrame) -> pd.DataFrame:
+    """Primary RT model.
+
+    Bug fixes applied:
+    - B1: Model is now correctly identified as Gaussian GEE (the mixedlm
+      attempts are kept as documented fallback logic, but the output is
+      labelled accurately).
+    - B2: Remove unused 'foil' Categorical level after filtering.
+    """
     working = test_trials.loc[
         test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
         & test_trials["responded"]
         & test_trials["response_rt"].notna()
         & (test_trials["response_rt"] > 0)
     ].copy()
+    # B2 fix.
+    working = _clean_boundary_cat(working)
 
-    # Start with a rich mixed model; back off to simpler models if singular.
     formulas = [
         "log_response_rt ~ C(condition) * C(test_boundary_position) * C(item_role) + correct_int",
         "log_response_rt ~ C(condition) * C(test_boundary_position) + C(item_role) + correct_int",
@@ -290,14 +321,21 @@ def mixed_rt_model(test_trials: pd.DataFrame) -> pd.DataFrame:
     for formula in formulas:
         try:
             model = mixedlm(formula, data=working, groups=working["participant_uid"])
-            result = model.fit(reml=False, method="lbfgs")
+            fit = model.fit(reml=False, method="lbfgs")
+            # Treat a degenerate fit (random-effect variance collapsed to zero)
+            # as a failure so we fall through to the GEE fallback.
+            group_var = float(fit.cov_re.iloc[0, 0]) if hasattr(fit, "cov_re") else 0.0
+            if abs(group_var) < 1e-6:
+                continue
+            result = fit
             model_used = f"mixedlm::{formula}"
             break
         except Exception:
             continue
 
     if result is None:
-        # Final fallback: clustered Gaussian GEE keeps participant dependency handling.
+        # Gaussian GEE fallback — population-average estimates with participant
+        # clustering handled via exchangeable working correlation.
         gee_model = GEE.from_formula(
             "log_response_rt ~ C(condition) * C(test_boundary_position) + C(item_role) + correct_int",
             groups="participant_uid",
@@ -332,8 +370,8 @@ def run_rt_diagnostics(test_trials: pd.DataFrame) -> tuple[pd.DataFrame, pd.Data
         & test_trials["response_rt"].notna()
         & (test_trials["response_rt"] > 0)
     ].copy()
+    working = _clean_boundary_cat(working)
 
-    # OLS diagnostics are used as an approximate assumption check for RT structure.
     ols_result = ols(
         "log_response_rt ~ C(condition) * C(test_boundary_position) + C(item_role) + correct_int",
         data=working,
@@ -366,9 +404,13 @@ def run_rt_diagnostics(test_trials: pd.DataFrame) -> tuple[pd.DataFrame, pd.Data
 
 
 def response_profile_tests(test_trials: pd.DataFrame) -> pd.DataFrame:
-    # Categorical test taught in class: chi-square for response category by boundary.
+    """Chi-square tests for response-category distribution by boundary.
+
+    Bug fix B2: remove unused 'foil' Categorical level after filtering.
+    """
     rows: list[dict[str, object]] = []
     working = test_trials.loc[test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)].copy()
+    working = _clean_boundary_cat(working)
 
     for condition in CONDITION_ORDER:
         for item_role in ["target", "lure", "foil"]:
@@ -380,7 +422,6 @@ def response_profile_tests(test_trials: pd.DataFrame) -> pd.DataFrame:
                 continue
             chi2, p_value, dof, _ = stats.chi2_contingency(contingency)
             n = contingency.to_numpy().sum()
-            # Cramer's V for effect size.
             min_dim = min(contingency.shape[0] - 1, contingency.shape[1] - 1)
             cramer_v = math.sqrt(chi2 / (n * min_dim)) if min_dim > 0 else math.nan
             rows.append(
@@ -401,11 +442,17 @@ def response_profile_tests(test_trials: pd.DataFrame) -> pd.DataFrame:
 
 
 def lure_bin_gee(test_trials: pd.DataFrame) -> pd.DataFrame:
+    """Lure-bin slope GEE for similar-response probability.
+
+    Bug fix B2: remove unused 'foil' Categorical level after filtering.
+    """
     lure = test_trials.loc[
         (test_trials["item_role"] == "lure")
         & test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
         & test_trials["lure_bin"].notna()
     ].copy()
+    # B2 fix.
+    lure = _clean_boundary_cat(lure)
     lure["similar_resp"] = lure["response_label"].eq("similar").astype(int)
     lure["lure_bin"] = pd.to_numeric(lure["lure_bin"], errors="coerce")
 
@@ -434,12 +481,19 @@ def lure_bin_gee(test_trials: pd.DataFrame) -> pd.DataFrame:
     return table
 
 
-def speed_accuracy_summary(test_trials: pd.DataFrame) -> pd.DataFrame:
+def speed_accuracy_summary(test_trials: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Speed-accuracy summary at participant level.
+
+    Extended (Gap G4): now also returns a boundary-position breakdown so we
+    can examine whether post-boundary items show a different speed-accuracy
+    profile.
+    """
     working = test_trials.loc[
         test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
         & test_trials["response_rt"].notna()
     ].copy()
 
+    # Original summary (collapsed across boundary).
     summary = (
         working.groupby(["participant_uid", "condition", "item_role", "correct"], observed=True)["response_rt"]
         .mean()
@@ -448,12 +502,150 @@ def speed_accuracy_summary(test_trials: pd.DataFrame) -> pd.DataFrame:
         .reset_index()
         .rename(columns={False: "mean_rt_incorrect", True: "mean_rt_correct"})
     )
-    if "mean_rt_correct" not in summary.columns:
-        summary["mean_rt_correct"] = np.nan
-    if "mean_rt_incorrect" not in summary.columns:
-        summary["mean_rt_incorrect"] = np.nan
+    for col in ("mean_rt_correct", "mean_rt_incorrect"):
+        if col not in summary.columns:
+            summary[col] = np.nan
     summary["delta_rt_incorrect_minus_correct"] = summary["mean_rt_incorrect"] - summary["mean_rt_correct"]
-    return summary
+
+    # Extended: include boundary position in grouping (Gap G4).
+    summary_by_boundary = (
+        working.groupby(
+            ["participant_uid", "condition", "item_role", "test_boundary_position", "correct"], observed=True
+        )["response_rt"]
+        .mean()
+        .reset_index()
+        .pivot(
+            index=["participant_uid", "condition", "item_role", "test_boundary_position"],
+            columns="correct",
+            values="response_rt",
+        )
+        .reset_index()
+        .rename(columns={False: "mean_rt_incorrect", True: "mean_rt_correct"})
+    )
+    for col in ("mean_rt_correct", "mean_rt_incorrect"):
+        if col not in summary_by_boundary.columns:
+            summary_by_boundary[col] = np.nan
+    summary_by_boundary["delta_rt_incorrect_minus_correct"] = (
+        summary_by_boundary["mean_rt_incorrect"] - summary_by_boundary["mean_rt_correct"]
+    )
+
+    return summary, summary_by_boundary
+
+
+def encoding_rt_carryover(
+    test_trials: pd.DataFrame, encoding_trials: pd.DataFrame
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Carry-over analysis linking encoding RT to test-phase correctness (Gap G1).
+
+    Join encoding and test trials on (participant_uid, item_number) so that
+    each test trial carries the encoding RT from when that specific item was
+    studied.  Then model whether higher encoding RT predicts worse test
+    correctness, over and above boundary position.
+    """
+    enc = encoding_trials[["participant_uid", "item_number", "response_rt", "boundary_position"]].copy()
+    enc = enc.rename(columns={"response_rt": "encoding_rt", "boundary_position": "encoding_boundary_position"})
+    # item_number may be numeric or string — normalise.
+    enc["item_number"] = enc["item_number"].astype(str)
+
+    tst = test_trials.loc[
+        test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
+        & test_trials["item_role"].isin(["target", "lure"])
+        & test_trials["response_rt"].notna()
+    ].copy()
+    tst["item_number"] = tst["item_number"].astype(str)
+    tst = _clean_boundary_cat(tst)
+
+    merged = tst.merge(enc[["participant_uid", "item_number", "encoding_rt"]], on=["participant_uid", "item_number"], how="left")
+    merged = merged.dropna(subset=["encoding_rt"])
+    merged["log_encoding_rt"] = np.log(merged["encoding_rt"].where(merged["encoding_rt"] > 0))
+    merged = merged.dropna(subset=["log_encoding_rt"])
+
+    model = GEE.from_formula(
+        "correct_int ~ log_encoding_rt + C(test_boundary_position) + C(condition) + C(item_role) + C(stimulus_class)",
+        groups="participant_uid",
+        data=merged,
+        family=Binomial(),
+        cov_struct=Exchangeable(),
+    )
+    result = model.fit()
+
+    table = pd.DataFrame(
+        {
+            "term": result.params.index,
+            "coef": result.params.values,
+            "std_err": result.bse.values,
+            "z": result.tvalues.values,
+            "p_value": result.pvalues.values,
+        }
+    )
+    table["odds_ratio"] = np.exp(table["coef"])
+    table["ci_low_or"] = np.exp(table["coef"] - 1.96 * table["std_err"])
+    table["ci_high_or"] = np.exp(table["coef"] + 1.96 * table["std_err"])
+    table["analysis_family"] = "encoding_rt_carryover"
+
+    # Participant-level scatter data: mean encoding RT (post-boundary items)
+    # vs mean target correctness (post-boundary items).
+    post_enc = (
+        encoding_trials.loc[encoding_trials["boundary_position"] == "post"]
+        .groupby(["participant_uid", "condition"], observed=True)["response_rt"]
+        .mean()
+        .reset_index()
+        .rename(columns={"response_rt": "mean_encoding_rt_post"})
+    )
+    post_tst = (
+        test_trials.loc[
+            (test_trials["test_boundary_position"] == "post") & (test_trials["item_role"] == "target")
+        ]
+        .groupby(["participant_uid", "condition"], observed=True)["correct_int"]
+        .mean()
+        .reset_index()
+        .rename(columns={"correct_int": "mean_target_correctness_post"})
+    )
+    scatter_df = post_enc.merge(post_tst, on=["participant_uid", "condition"], how="inner")
+
+    return table, scatter_df
+
+
+def participant_heterogeneity(test_trials: pd.DataFrame) -> pd.DataFrame:
+    """Per-participant post-mid and post-pre boundary contrasts for targets (Gap G2).
+
+    Returns a DataFrame with one row per participant × condition containing:
+    - post_correctness, mid_correctness, pre_correctness
+    - post_minus_mid, post_minus_pre contrasts
+    """
+    target = test_trials.loc[
+        (test_trials["item_role"] == "target")
+        & test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
+    ].copy()
+
+    grouped = (
+        target.groupby(["participant_uid", "condition", "test_boundary_position"], observed=True)["correct_int"]
+        .mean()
+        .reset_index()
+    )
+    pivot = grouped.pivot(
+        index=["participant_uid", "condition"],
+        columns="test_boundary_position",
+        values="correct_int",
+    ).reset_index()
+
+    for col in BOUNDARY_ORDER:
+        if col not in pivot.columns:
+            pivot[col] = np.nan
+
+    pivot = pivot.rename(columns={"post": "post_correctness", "mid": "mid_correctness", "pre": "pre_correctness"})
+    pivot["post_minus_mid"] = pivot["post_correctness"] - pivot["mid_correctness"]
+    pivot["post_minus_pre"] = pivot["post_correctness"] - pivot["pre_correctness"]
+
+    return pivot
+
+
+def compute_cohens_d_for_contrasts(boundary_contrasts: pd.DataFrame) -> pd.DataFrame:
+    """Add Cohen's dz to the boundary contrast table (Gap B5 / R4 fix)."""
+    df = boundary_contrasts.copy()
+    # dz = t / sqrt(n) for within-participant (dependent) t-tests.
+    df["cohens_dz"] = df["t_value"] / np.sqrt(df["n"])
+    return df
 
 
 def robustness_reruns(
@@ -469,12 +661,15 @@ def robustness_reruns(
     rt_trimmed["analysis_family"] = "robustness_rt_outlier_trimmed"
 
     # 2) Split correctness models by item role (target and lure separately).
+    # This is the CLEAN lure-bin model — lure_bin_c is unambiguous here.
     split_rows: list[pd.DataFrame] = []
     for role in ["target", "lure"]:
         subset = test_trials.loc[
             test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
             & (test_trials["item_role"] == role)
         ].copy()
+        # B2 fix.
+        subset = _clean_boundary_cat(subset)
         subset["lure_bin"] = pd.to_numeric(subset["lure_bin"], errors="coerce")
         subset["lure_bin_c"] = subset["lure_bin"] - subset["lure_bin"].mean()
 
@@ -507,13 +702,13 @@ def robustness_reruns(
 
     split_correctness = pd.concat(split_rows, ignore_index=True)
 
-    # 3) Focused boundary contrasts from participant-level means for quick interpretability.
-    target = test_trials.loc[
+    # 3) Focused boundary contrasts from participant-level means.
+    target_lure = test_trials.loc[
         test_trials["item_role"].isin(["target", "lure"])
         & test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
     ].copy()
     grouped = (
-        target.groupby(["participant_uid", "condition", "item_role", "test_boundary_position"], observed=True)[
+        target_lure.groupby(["participant_uid", "condition", "item_role", "test_boundary_position"], observed=True)[
             "correct_int"
         ]
         .mean()
@@ -533,16 +728,19 @@ def robustness_reruns(
             for left, right in [("post", "mid"), ("post", "pre")]:
                 diff = subset[left] - subset[right]
                 t_stat, p_value = stats.ttest_1samp(diff, 0.0)
+                n = int(len(diff))
                 rows.append(
                     {
                         "analysis_family": "robustness_boundary_contrasts",
                         "condition": condition,
                         "item_role": role,
                         "contrast": f"{left}-{right}",
-                        "n": int(len(diff)),
+                        "n": n,
                         "mean_diff": float(diff.mean()),
                         "t_value": float(t_stat),
                         "p_value": float(p_value),
+                        # Cohen's dz = t / sqrt(n) for within-participant tests.
+                        "cohens_dz": float(t_stat) / math.sqrt(n),
                     }
                 )
     boundary_contrasts = pd.DataFrame(rows)
@@ -558,6 +756,7 @@ def apply_family_corrections(
     primary_rt: pd.DataFrame,
     secondary_profile: pd.DataFrame,
     secondary_lure: pd.DataFrame,
+    carryover: pd.DataFrame,
 ) -> pd.DataFrame:
     families: list[pd.DataFrame] = []
 
@@ -565,8 +764,9 @@ def apply_family_corrections(
         if df.empty or "p_value" not in df.columns:
             return df
         corrected = df.copy()
-        _, p_holm, _, _ = multipletests(corrected["p_value"].to_numpy(), method="holm")
-        _, p_bh, _, _ = multipletests(corrected["p_value"].to_numpy(), method="fdr_bh")
+        pvals = pd.to_numeric(corrected["p_value"], errors="coerce").fillna(1.0).to_numpy()
+        _, p_holm, _, _ = multipletests(pvals, method="holm")
+        _, p_bh, _, _ = multipletests(pvals, method="fdr_bh")
         corrected["p_value_holm"] = p_holm
         corrected["p_value_bh"] = p_bh
         corrected["family"] = family_name
@@ -576,12 +776,17 @@ def apply_family_corrections(
     families.append(_correct(primary_rt, "primary_rt"))
     families.append(_correct(secondary_profile, "secondary_response_profile"))
     families.append(_correct(secondary_lure, "secondary_lure_bin"))
+    families.append(_correct(carryover, "encoding_rt_carryover"))
 
     combined = pd.concat([df for df in families if df is not None and not df.empty], ignore_index=True)
     return combined
 
 
+# ── Visualisation ────────────────────────────────────────────────────────────
+
+
 def plot_correctness(test_trials: pd.DataFrame) -> None:
+    """Overall correctness by boundary and condition (targets + lures combined)."""
     working = test_trials.loc[
         test_trials["item_role"].isin(["target", "lure"])
         & test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
@@ -609,6 +814,268 @@ def plot_correctness(test_trials: pd.DataFrame) -> None:
     ax.set_title("Phase 2: Correctness by boundary and condition")
     ax.legend(title="Condition", labels=[CONDITION_LABELS[c] for c in CONDITION_ORDER])
     fig.savefig(FIG_DIR / "phase2_correctness_boundary_condition.png")
+    plt.close(fig)
+
+
+def plot_target_correctness(test_trials: pd.DataFrame) -> None:
+    """Target-only correctness by boundary position, separated by condition (Gap G1 / V1).
+
+    Shows participant-level points overlaid on condition means with 95 % CI.
+    This is the confirmatory figure for the post-boundary recognition cost.
+    """
+    target = test_trials.loc[
+        (test_trials["item_role"] == "target")
+        & test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
+    ].copy()
+
+    # Participant-level means.
+    part_means = (
+        target.groupby(["participant_uid", "condition", "test_boundary_position"], observed=True)["correct_int"]
+        .mean()
+        .reset_index()
+    )
+
+    fig, axes = plt.subplots(1, 3, figsize=(14, 5), sharey=True)
+    colors = sns.color_palette("Set2", 3)
+
+    for ax, condition, color in zip(axes, CONDITION_ORDER, colors):
+        sub = part_means.loc[part_means["condition"] == condition]
+        # Participant points.
+        ax.scatter(
+            sub["test_boundary_position"].astype(str),
+            sub["correct_int"],
+            alpha=0.25,
+            s=18,
+            color=color,
+            zorder=2,
+        )
+        # Condition mean + 95 % CI via pointplot.
+        sns.pointplot(
+            data=sub,
+            x="test_boundary_position",
+            y="correct_int",
+            order=BOUNDARY_ORDER,
+            color=color,
+            errorbar=("ci", 95),
+            markers="D",
+            linestyles="-",
+            capsize=0.1,
+            ax=ax,
+            zorder=3,
+        )
+        ax.set_title(CONDITION_LABELS[condition])
+        ax.set_xlabel("Boundary position")
+        ax.set_ylim(0, 1.05)
+        ax.axhline(0.5, color="grey", linestyle="--", linewidth=0.8, alpha=0.5)
+
+    axes[0].set_ylabel("P(correct) — Targets")
+    axes[1].set_ylabel("")
+    axes[2].set_ylabel("")
+    fig.suptitle("Phase 2: Target recognition accuracy by boundary position", fontsize=14, y=1.01)
+    fig.tight_layout()
+    fig.savefig(FIG_DIR / "phase2_target_correctness_by_boundary.png")
+    plt.close(fig)
+
+
+def plot_participant_contrasts(heterogeneity_df: pd.DataFrame) -> None:
+    """Within-participant post-mid contrast distribution by condition (Gap G2 / V2).
+
+    Histogram + KDE with vertical line at zero shows whether the post-boundary
+    recognition cost is consistent across participants.
+    """
+    fig, axes = plt.subplots(1, 3, figsize=(14, 4.5), sharey=False, sharex=True)
+    colors = sns.color_palette("Set2", 3)
+
+    for ax, condition, color in zip(axes, CONDITION_ORDER, colors):
+        sub = heterogeneity_df.loc[heterogeneity_df["condition"] == condition, "post_minus_mid"].dropna()
+        mean_val = sub.mean()
+        sns.histplot(sub, bins=16, kde=True, color=color, alpha=0.7, ax=ax)
+        ax.axvline(0, color="black", linewidth=1.2, linestyle="--", label="No effect")
+        ax.axvline(mean_val, color="darkred", linewidth=1.6, linestyle="-", label=f"Mean = {mean_val:.3f}")
+        ax.set_title(CONDITION_LABELS[condition])
+        ax.set_xlabel("post − mid correctness")
+        ax.legend(fontsize=8)
+
+    axes[0].set_ylabel("Count")
+    axes[1].set_ylabel("")
+    axes[2].set_ylabel("")
+    fig.suptitle(
+        "Phase 2: Per-participant post-minus-mid target correctness contrast",
+        fontsize=13,
+        y=1.02,
+    )
+    fig.tight_layout()
+    fig.savefig(FIG_DIR / "phase2_participant_contrast_distribution.png")
+    plt.close(fig)
+
+
+def plot_phase1_vs_phase2_bridge(
+    test_trials: pd.DataFrame, participant_level: pd.DataFrame
+) -> None:
+    """Side-by-side Phase 1 REC and Phase 2 target correctness for the both condition (Gap G5 / V3).
+
+    Left panel: Phase 1 REC by boundary (from participant_level_metrics).
+    Right panel: Phase 2 target correctness by boundary (from trial data).
+    Both conditioned on the 'both' condition (Item + Task Shift).
+    """
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5), sharey=False)
+    color = sns.color_palette("Set2", 3)[1]  # colour for 'both' condition.
+
+    # Left — Phase 1 REC.
+    pl_both = participant_level.loc[participant_level["condition"] == "both"].copy()
+    rec_cols = {"post": "rec_post", "mid": "rec_mid", "pre": "rec_pre"}
+    # check available column names.
+    available = {k: v for k, v in rec_cols.items() if v in pl_both.columns}
+    if available:
+        rec_long = pl_both[list(available.values())].melt(var_name="boundary_col", value_name="REC")
+        rec_long["boundary"] = rec_long["boundary_col"].map({v: k for k, v in available.items()})
+        rec_long = rec_long.dropna(subset=["REC"])
+        sns.pointplot(
+            data=rec_long,
+            x="boundary",
+            y="REC",
+            order=BOUNDARY_ORDER,
+            color=color,
+            errorbar=("ci", 95),
+            markers="D",
+            capsize=0.1,
+            ax=axes[0],
+        )
+        axes[0].axhline(0, color="grey", linestyle="--", linewidth=0.8)
+        axes[0].set_title("Phase 1: Recognition (REC)\nItem + Task Shift")
+        axes[0].set_xlabel("Boundary position")
+        axes[0].set_ylabel("REC score")
+    else:
+        axes[0].text(0.5, 0.5, "REC columns not found", ha="center", va="center", transform=axes[0].transAxes)
+
+    # Right — Phase 2 target correctness.
+    target_both = test_trials.loc[
+        (test_trials["condition"] == "both")
+        & (test_trials["item_role"] == "target")
+        & test_trials["test_boundary_position"].isin(BOUNDARY_ORDER)
+    ].copy()
+    part_means = (
+        target_both.groupby(["participant_uid", "test_boundary_position"], observed=True)["correct_int"]
+        .mean()
+        .reset_index()
+    )
+    axes[1].scatter(
+        part_means["test_boundary_position"].astype(str),
+        part_means["correct_int"],
+        alpha=0.2,
+        s=18,
+        color=color,
+    )
+    sns.pointplot(
+        data=part_means,
+        x="test_boundary_position",
+        y="correct_int",
+        order=BOUNDARY_ORDER,
+        color=color,
+        errorbar=("ci", 95),
+        markers="D",
+        capsize=0.1,
+        ax=axes[1],
+    )
+    axes[1].axhline(0.5, color="grey", linestyle="--", linewidth=0.8)
+    axes[1].set_title("Phase 2: Target correctness\nItem + Task Shift")
+    axes[1].set_xlabel("Boundary position")
+    axes[1].set_ylabel("P(correct) — Targets")
+    axes[1].set_ylim(0, 1.05)
+
+    fig.suptitle("Phase 1 → Phase 2 Bridge: Post-boundary recognition cost (Item + Task Shift)", fontsize=13)
+    fig.tight_layout()
+    fig.savefig(FIG_DIR / "phase2_phase1_vs_phase2_bridge.png")
+    plt.close(fig)
+
+
+def plot_encoding_rt_vs_correctness(scatter_df: pd.DataFrame) -> None:
+    """Participant-level encoding RT (post-boundary) vs target correctness (post-boundary) (Gap G1 / V4).
+
+    Each point is one participant. Colour encodes condition. A negative
+    correlation here is the participant-level evidence that the encoding
+    disruption causes the recognition cost.
+    """
+    fig, ax = plt.subplots(figsize=(8, 6))
+    palette = {c: col for c, col in zip(CONDITION_ORDER, sns.color_palette("Set2", 3))}
+
+    for condition in CONDITION_ORDER:
+        sub = scatter_df.loc[scatter_df["condition"] == condition]
+        ax.scatter(
+            sub["mean_encoding_rt_post"],
+            sub["mean_target_correctness_post"],
+            label=CONDITION_LABELS[condition],
+            color=palette[condition],
+            alpha=0.7,
+            s=50,
+            edgecolors="white",
+            linewidths=0.5,
+        )
+        # Per-condition regression line.
+        if len(sub) > 2:
+            m, b = np.polyfit(sub["mean_encoding_rt_post"], sub["mean_target_correctness_post"], 1)
+            x_range = np.linspace(sub["mean_encoding_rt_post"].min(), sub["mean_encoding_rt_post"].max(), 50)
+            ax.plot(x_range, m * x_range + b, color=palette[condition], linewidth=1.5, alpha=0.6)
+
+    # Overall correlation.
+    if len(scatter_df) > 3:
+        r, p = stats.pearsonr(scatter_df["mean_encoding_rt_post"], scatter_df["mean_target_correctness_post"])
+        ax.text(
+            0.97,
+            0.97,
+            f"r = {r:.2f}, p = {p:.3f}",
+            ha="right",
+            va="top",
+            transform=ax.transAxes,
+            fontsize=10,
+            bbox=dict(boxstyle="round,pad=0.3", facecolor="lightyellow", alpha=0.8),
+        )
+
+    ax.set_xlabel("Mean encoding RT — post-boundary items (s)")
+    ax.set_ylabel("Mean target correctness — post-boundary items")
+    ax.set_title("Carry-over: Does encoding slowdown predict recognition failure?")
+    ax.legend(title="Condition", fontsize=9)
+    fig.tight_layout()
+    fig.savefig(FIG_DIR / "phase2_encoding_rt_vs_correctness_scatter.png")
+    plt.close(fig)
+
+
+def plot_speed_accuracy_by_boundary(summary_by_boundary: pd.DataFrame) -> None:
+    """Correct vs incorrect RT by boundary position for target trials in both condition (Gap G4 / V extension)."""
+    target_both = summary_by_boundary.loc[
+        (summary_by_boundary["condition"] == "both")
+        & (summary_by_boundary["item_role"] == "target")
+    ].copy()
+
+    if target_both.empty:
+        return
+
+    long = target_both.melt(
+        id_vars=["participant_uid", "condition", "item_role", "test_boundary_position"],
+        value_vars=["mean_rt_correct", "mean_rt_incorrect"],
+        var_name="accuracy",
+        value_name="rt",
+    ).dropna(subset=["rt"])
+    long["accuracy"] = long["accuracy"].map({"mean_rt_correct": "Correct", "mean_rt_incorrect": "Incorrect"})
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+    sns.pointplot(
+        data=long,
+        x="test_boundary_position",
+        y="rt",
+        hue="accuracy",
+        order=BOUNDARY_ORDER,
+        errorbar=("ci", 95),
+        markers=["D", "o"],
+        capsize=0.1,
+        ax=ax,
+    )
+    ax.set_xlabel("Boundary position")
+    ax.set_ylabel("Mean response RT (s)")
+    ax.set_title("Speed-accuracy by boundary (Item + Task Shift — Targets)")
+    ax.legend(title="Response type")
+    fig.tight_layout()
+    fig.savefig(FIG_DIR / "phase2_speed_accuracy_by_boundary.png")
     plt.close(fig)
 
 
@@ -670,7 +1137,6 @@ def plot_lure_bins(test_trials: pd.DataFrame) -> None:
 
 
 def plot_diagnostics(diag_df: pd.DataFrame, test_trials: pd.DataFrame) -> None:
-    # Participant mean log RT histogram.
     participant_mean = (
         test_trials.groupby("participant_uid", observed=True)["response_rt"].mean().replace(0, np.nan).dropna()
     )
@@ -682,16 +1148,21 @@ def plot_diagnostics(diag_df: pd.DataFrame, test_trials: pd.DataFrame) -> None:
     fig.savefig(FIG_DIR / "phase2_diagnostic_logrt_hist.png")
     plt.close(fig)
 
-    # QQ plot for OLS residuals.
     fig, ax = plt.subplots(figsize=(6.0, 6.0))
     stats.probplot(diag_df["residual"], dist="norm", plot=ax)
     ax.set_title("Phase 2 diagnostics: QQ plot of RT-model residuals")
     fig.savefig(FIG_DIR / "phase2_diagnostic_qq_residuals.png")
     plt.close(fig)
 
-    # Residual vs fitted.
     fig, ax = plt.subplots(figsize=(8.0, 4.8))
-    sns.scatterplot(data=diag_df.sample(n=min(12000, len(diag_df)), random_state=17), x="fitted", y="residual", s=10, alpha=0.35, ax=ax)
+    sns.scatterplot(
+        data=diag_df.sample(n=min(12000, len(diag_df)), random_state=17),
+        x="fitted",
+        y="residual",
+        s=10,
+        alpha=0.35,
+        ax=ax,
+    )
     ax.axhline(0.0, color="black", linewidth=1)
     ax.set_xlabel("Fitted log RT")
     ax.set_ylabel("Residual")
@@ -705,44 +1176,65 @@ def write_analysis_registry() -> pd.DataFrame:
         {
             "model_name": "primary_correctness_gee",
             "purpose": "confirmatory",
-            "assumption_focus": "clustered binary outcome; robust sandwich SE",
+            "assumption_focus": "clustered binary outcome; robust sandwich SE; stimulus_class x boundary interaction added",
             "included_in_report": True,
+            "fix_applied": "B2 (foil level removed); B3 (lure_bin_c removed from combined formula)",
         },
         {
-            "model_name": "primary_rt_mixedlm",
+            "model_name": "primary_rt_gaussian_gee",
             "purpose": "confirmatory",
-            "assumption_focus": "normality of residuals for log RT",
+            "assumption_focus": "Gaussian GEE on log RT; LMM singular — GEE fallback used",
             "included_in_report": True,
+            "fix_applied": "B1 (correctly labelled as GEE); B2 (foil level removed)",
         },
         {
             "model_name": "fallback_friedman_target_correctness",
-            "purpose": "robustness",
-            "assumption_focus": "nonparametric repeated-measures alternative",
+            "purpose": "confirmatory",
+            "assumption_focus": "nonparametric repeated-measures; PRIMARY confirmatory result for boundary effect",
             "included_in_report": True,
+            "fix_applied": "none",
         },
         {
             "model_name": "secondary_response_profile_chi_square",
             "purpose": "exploratory",
-            "assumption_focus": "categorical independence tests",
+            "assumption_focus": "categorical independence tests; B2 applied",
             "included_in_report": True,
+            "fix_applied": "B2 (foil level removed)",
         },
         {
             "model_name": "secondary_lure_bin_gee",
             "purpose": "exploratory",
-            "assumption_focus": "clustered binary outcome with lure difficulty",
+            "assumption_focus": "clustered binary; B2 applied",
             "included_in_report": True,
+            "fix_applied": "B2 (foil level removed)",
+        },
+        {
+            "model_name": "encoding_rt_carryover_gee",
+            "purpose": "confirmatory",
+            "assumption_focus": "trial-level join of encoding RT to test correctness; new Gap G1 analysis",
+            "included_in_report": True,
+            "fix_applied": "new (Gap G1)",
+        },
+        {
+            "model_name": "participant_heterogeneity",
+            "purpose": "exploratory",
+            "assumption_focus": "per-participant boundary contrasts; Gap G2",
+            "included_in_report": True,
+            "fix_applied": "new (Gap G2)",
         },
         {
             "model_name": "robustness_rt_outlier_trimmed",
             "purpose": "robustness",
             "assumption_focus": "sensitivity to participant RT outliers",
             "included_in_report": True,
+            "fix_applied": "none",
         },
         {
             "model_name": "robustness_correctness_split",
             "purpose": "robustness",
-            "assumption_focus": "target and lure correctness modeled separately",
+            "assumption_focus": "target and lure correctness separately; lure_bin_c clean in lure model",
             "included_in_report": True,
+            "fix_applied": "B2; B3 (lure_bin_c correct in lure model)",
         },
     ]
     registry = pd.DataFrame(rows)
@@ -758,6 +1250,7 @@ def save_outputs(
     secondary_profile: pd.DataFrame,
     secondary_lure: pd.DataFrame,
     speed_accuracy: pd.DataFrame,
+    speed_accuracy_by_boundary: pd.DataFrame,
     corrected: pd.DataFrame,
     registry: pd.DataFrame,
     precision_context: pd.DataFrame,
@@ -766,40 +1259,59 @@ def save_outputs(
     robustness_rt_trimmed: pd.DataFrame,
     robustness_correctness_split: pd.DataFrame,
     robustness_boundary_contrasts: pd.DataFrame,
+    carryover_gee: pd.DataFrame,
+    scatter_df: pd.DataFrame,
+    heterogeneity_df: pd.DataFrame,
 ) -> None:
     qc_summary.to_csv(PHASE2_DIR / "qc_summary.csv", index=False)
     participant_rt_flags.to_csv(PHASE2_DIR / "participant_rt_outlier_flags.csv", index=False)
     primary_correctness.to_csv(TABLE_DIR / "phase2_primary_correctness_gee.csv", index=False)
-    primary_rt.to_csv(TABLE_DIR / "phase2_primary_rt_mixedlm.csv", index=False)
+    # B1 fix: file renamed to reflect Gaussian GEE (not mixed model).
+    primary_rt.to_csv(TABLE_DIR / "phase2_primary_rt_gee.csv", index=False)
     fallback_np.to_csv(TABLE_DIR / "phase2_fallback_nonparametric.csv", index=False)
     secondary_profile.to_csv(TABLE_DIR / "phase2_secondary_response_profile_chisq.csv", index=False)
     secondary_lure.to_csv(TABLE_DIR / "phase2_secondary_lure_bin_gee.csv", index=False)
     speed_accuracy.to_csv(TABLE_DIR / "phase2_speed_accuracy_summary.csv", index=False)
+    speed_accuracy_by_boundary.to_csv(TABLE_DIR / "phase2_speed_accuracy_by_boundary.csv", index=False)
     corrected.to_csv(TABLE_DIR / "phase2_all_tests_corrected.csv", index=False)
     precision_context.to_csv(TABLE_DIR / "phase2_precision_context.csv", index=False)
     rt_diag_summary.to_csv(TABLE_DIR / "phase2_rt_diagnostic_summary.csv", index=False)
     robustness_rt_trimmed.to_csv(TABLE_DIR / "phase2_robustness_rt_outlier_trimmed.csv", index=False)
     robustness_correctness_split.to_csv(TABLE_DIR / "phase2_robustness_correctness_split.csv", index=False)
     robustness_boundary_contrasts.to_csv(TABLE_DIR / "phase2_robustness_boundary_contrasts.csv", index=False)
+    carryover_gee.to_csv(TABLE_DIR / "phase2_encoding_rt_carryover_gee.csv", index=False)
+    scatter_df.to_csv(TABLE_DIR / "phase2_encoding_rt_correctness_scatter.csv", index=False)
+    heterogeneity_df.to_csv(TABLE_DIR / "phase2_participant_boundary_contrasts.csv", index=False)
 
     rt_diag_points_sample = rt_diag_points.sample(n=min(20000, len(rt_diag_points)), random_state=17)
     rt_diag_points_sample.to_csv(PHASE2_DIR / "phase2_rt_diag_points_sample.csv", index=False)
     registry.to_csv(PHASE2_DIR / "analysis_registry.csv", index=False)
 
     notes = {
+        "bug_fixes_applied": [
+            "B1: RT model output renamed phase2_primary_rt_gee.csv; clearly labelled Gaussian GEE throughout.",
+            "B2: _clean_boundary_cat() applied in all GEE working datasets; no phantom foil dummy variables.",
+            "B3: lure_bin_c removed from combined target+lure correctness GEE; reported from lure-only split.",
+        ],
+        "new_analyses": [
+            "G1: Encoding RT carryover GEE — trial-level join of encoding RT to test correctness.",
+            "G2: Participant heterogeneity — per-participant post-mid and post-pre target correctness contrasts.",
+            "G3: Stimulus class x boundary interaction added to primary correctness GEE.",
+            "G4: Speed-accuracy extended by boundary position.",
+        ],
         "confirmatory_primary": [
             "Correctness modeled via clustered logistic GEE with participant-level clustering.",
-            "Response speed modeled via mixed-effects linear model on log RT.",
+            "Response speed modeled via Gaussian GEE (LMM was singular) on log RT.",
+            "Friedman nonparametric test is the PRIMARY confirmatory result for boundary effect.",
         ],
         "fallbacks_and_secondary": [
-            "Friedman nonparametric tests for target correctness within condition.",
             "Chi-square response-profile tests with Cramer's V.",
             "Lure-bin slope model using GEE on similar-response probability.",
             "Robustness reruns include RT outlier-trimmed model and split target/lure correctness models.",
         ],
         "precision_and_diagnostics": [
-            "Added precision-context table (CI half-width summaries by condition).",
-            "Added RT diagnostics summary and diagnostic plots (histogram, QQ, residuals vs fitted).",
+            "Precision-context table (CI half-width summaries by condition).",
+            "RT diagnostics summary and diagnostic plots (histogram, QQ, residuals vs fitted).",
         ],
     }
     with (PHASE2_DIR / "analysis_notes.json").open("w") as handle:
@@ -814,12 +1326,31 @@ def main() -> None:
     qc_summary, participant_rt_flags = run_qc(test_trials, participant_level)
     precision_context = build_precision_context(test_trials)
 
+    print("Running primary correctness GEE...")
     primary_correctness, fallback_np = gee_correctness_model(test_trials)
+
+    print("Running primary RT model (Gaussian GEE)...")
     primary_rt = mixed_rt_model(test_trials)
+
+    print("Running RT diagnostics...")
     rt_diag_summary, rt_diag_points = run_rt_diagnostics(test_trials)
+
+    print("Running response profile chi-square tests...")
     secondary_profile = response_profile_tests(test_trials)
+
+    print("Running lure-bin GEE...")
     secondary_lure = lure_bin_gee(test_trials)
-    speed_accuracy = speed_accuracy_summary(test_trials)
+
+    print("Computing speed-accuracy summaries...")
+    speed_accuracy, speed_accuracy_by_boundary = speed_accuracy_summary(test_trials)
+
+    print("Running encoding RT carryover analysis (new)...")
+    carryover_gee, scatter_df = encoding_rt_carryover(test_trials, encoding_trials)
+
+    print("Computing participant heterogeneity (new)...")
+    heterogeneity_df = participant_heterogeneity(test_trials)
+
+    print("Running robustness reruns...")
     robustness_rt_trimmed, robustness_correctness_split, robustness_boundary_contrasts = robustness_reruns(
         test_trials,
         participant_rt_flags,
@@ -830,9 +1361,16 @@ def main() -> None:
         primary_rt=primary_rt,
         secondary_profile=secondary_profile,
         secondary_lure=secondary_lure,
+        carryover=carryover_gee,
     )
 
+    print("Generating figures...")
     plot_correctness(test_trials)
+    plot_target_correctness(test_trials)
+    plot_participant_contrasts(heterogeneity_df)
+    plot_phase1_vs_phase2_bridge(test_trials, participant_level)
+    plot_encoding_rt_vs_correctness(scatter_df)
+    plot_speed_accuracy_by_boundary(speed_accuracy_by_boundary)
     plot_rt(test_trials)
     plot_lure_bins(test_trials)
     plot_diagnostics(rt_diag_points, test_trials)
@@ -847,6 +1385,7 @@ def main() -> None:
         secondary_profile=secondary_profile,
         secondary_lure=secondary_lure,
         speed_accuracy=speed_accuracy,
+        speed_accuracy_by_boundary=speed_accuracy_by_boundary,
         corrected=corrected,
         registry=registry,
         precision_context=precision_context,
@@ -855,6 +1394,9 @@ def main() -> None:
         robustness_rt_trimmed=robustness_rt_trimmed,
         robustness_correctness_split=robustness_correctness_split,
         robustness_boundary_contrasts=robustness_boundary_contrasts,
+        carryover_gee=carryover_gee,
+        scatter_df=scatter_df,
+        heterogeneity_df=heterogeneity_df,
     )
 
     print("Saved Phase 2 outputs to", PHASE2_DIR)

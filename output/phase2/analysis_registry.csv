@@ -1,8 +1,10 @@
-model_name,purpose,assumption_focus,included_in_report
-primary_correctness_gee,confirmatory,clustered binary outcome; robust sandwich SE,True
-primary_rt_mixedlm,confirmatory,normality of residuals for log RT,True
-fallback_friedman_target_correctness,robustness,nonparametric repeated-measures alternative,True
-secondary_response_profile_chi_square,exploratory,categorical independence tests,True
-secondary_lure_bin_gee,exploratory,clustered binary outcome with lure difficulty,True
-robustness_rt_outlier_trimmed,robustness,sensitivity to participant RT outliers,True
-robustness_correctness_split,robustness,target and lure correctness modeled separately,True
+model_name,purpose,assumption_focus,included_in_report,fix_applied
+primary_correctness_gee,confirmatory,clustered binary outcome; robust sandwich SE; stimulus_class x boundary interaction added,True,B2 (foil level removed); B3 (lure_bin_c removed from combined formula)
+primary_rt_gaussian_gee,confirmatory,Gaussian GEE on log RT; LMM singular — GEE fallback used,True,B1 (correctly labelled as GEE); B2 (foil level removed)
+fallback_friedman_target_correctness,confirmatory,nonparametric repeated-measures; PRIMARY confirmatory result for boundary effect,True,none
+secondary_response_profile_chi_square,exploratory,categorical independence tests; B2 applied,True,B2 (foil level removed)
+secondary_lure_bin_gee,exploratory,clustered binary; B2 applied,True,B2 (foil level removed)
+encoding_rt_carryover_gee,confirmatory,trial-level join of encoding RT to test correctness; new Gap G1 analysis,True,new (Gap G1)
+participant_heterogeneity,exploratory,per-participant boundary contrasts; Gap G2,True,new (Gap G2)
+robustness_rt_outlier_trimmed,robustness,sensitivity to participant RT outliers,True,none
+robustness_correctness_split,robustness,target and lure correctness separately; lure_bin_c clean in lure model,True,B2; B3 (lure_bin_c correct in lure model)

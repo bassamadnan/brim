@@ -1,19 +1,19 @@
 analysis_family,condition,condition_label,metric,test,effect,num_df,den_df,f_value,p_value,contrast,n,mean_difference,t_value,cohens_dz,p_value_holm,reject_holm
-within_condition_anova,item_only,Item Shift Only,encoding_rt,AnovaRM,boundary_position,2.0,110.0,2.2163657646458903,0.11385002295771128,,,,,,,
+within_condition_anova,item_only,Item Shift Only,encoding_rt,AnovaRM,boundary_position,2.0,110.0,2.2163657646458983,0.11385002295771036,,,,,,,
 within_condition_anova,item_only,Item Shift Only,REC,AnovaRM,boundary_position,2.0,110.0,0.2060759493670837,0.8140847160030562,,,,,,,
-within_condition_anova,item_only,Item Shift Only,LDI,AnovaRM,boundary_position,2.0,110.0,0.39519205180520406,0.6745030862469725,,,,,,,
-within_condition_anova,item_only,Item Shift Only,ALT_LDI,AnovaRM,boundary_position,2.0,110.0,0.44287268770402516,0.6433289202644519,,,,,,,
-within_condition_anova,both,Item + Task Shift,encoding_rt,AnovaRM,boundary_position,2.0,96.0,68.36473041706276,3.468596197307934e-19,,,,,,,
-within_condition_anova,both,Item + Task Shift,REC,AnovaRM,boundary_position,2.0,96.0,6.445876627646979,0.0023618898885608562,,,,,,,
-within_condition_anova,both,Item + Task Shift,LDI,AnovaRM,boundary_position,2.0,96.0,1.3987923339458996,0.2518810359035181,,,,,,,
-within_condition_anova,both,Item + Task Shift,ALT_LDI,AnovaRM,boundary_position,2.0,96.0,3.1739266687558803,0.046263635330230084,,,,,,,
-within_condition_anova,task_only,Task Shift Only,encoding_rt,AnovaRM,boundary_position,2.0,104.0,60.21333575801045,4.2644328807348795e-18,,,,,,,
-within_condition_anova,task_only,Task Shift Only,REC,AnovaRM,boundary_position,2.0,104.0,4.618180816787362,0.011980266915529454,,,,,,,
-within_condition_anova,task_only,Task Shift Only,LDI,AnovaRM,boundary_position,2.0,104.0,0.5527230252591607,0.5770616628149701,,,,,,,
-within_condition_anova,task_only,Task Shift Only,ALT_LDI,AnovaRM,boundary_position,2.0,104.0,1.0022802564212845,0.37055873304710085,,,,,,,
+within_condition_anova,item_only,Item Shift Only,LDI,AnovaRM,boundary_position,2.0,110.0,0.39519205180519495,0.6745030862469787,,,,,,,
+within_condition_anova,item_only,Item Shift Only,ALT_LDI,AnovaRM,boundary_position,2.0,110.0,0.4428726877040188,0.6433289202644559,,,,,,,
+within_condition_anova,both,Item + Task Shift,encoding_rt,AnovaRM,boundary_position,2.0,96.0,68.36473041706272,3.4685961973080014e-19,,,,,,,
+within_condition_anova,both,Item + Task Shift,REC,AnovaRM,boundary_position,2.0,96.0,6.445876627647002,0.002361889888560808,,,,,,,
+within_condition_anova,both,Item + Task Shift,LDI,AnovaRM,boundary_position,2.0,96.0,1.3987923339459274,0.25188103590351135,,,,,,,
+within_condition_anova,both,Item + Task Shift,ALT_LDI,AnovaRM,boundary_position,2.0,96.0,3.173926668755873,0.046263635330230375,,,,,,,
+within_condition_anova,task_only,Task Shift Only,encoding_rt,AnovaRM,boundary_position,2.0,104.0,60.2133357580105,4.264432880734799e-18,,,,,,,
+within_condition_anova,task_only,Task Shift Only,REC,AnovaRM,boundary_position,2.0,104.0,4.618180816787386,0.011980266915529189,,,,,,,
+within_condition_anova,task_only,Task Shift Only,LDI,AnovaRM,boundary_position,2.0,104.0,0.5527230252591715,0.577061662814964,,,,,,,
+within_condition_anova,task_only,Task Shift Only,ALT_LDI,AnovaRM,boundary_position,2.0,104.0,1.0022802564212767,0.37055873304710374,,,,,,,
 within_condition_pairwise,item_only,Item Shift Only,encoding_rt,paired_t,,,,,0.4003198553238742,post - mid,56.0,-0.016063623842763195,-0.8476261153865644,-0.11326880413780858,0.4003198553238742,False
-within_condition_pairwise,item_only,Item Shift Only,encoding_rt,paired_t,,,,,0.08305863417867916,post - pre,56.0,-0.04588602715158962,-1.7653348547059353,-0.23590279282999874,0.2491759025360375,False
-within_condition_pairwise,item_only,Item Shift Only,encoding_rt,paired_t,,,,,0.15742797169501674,mid - pre,56.0,-0.029822403308826424,-1.4333159829507995,-0.19153490482817898,0.3148559433900335,False
+within_condition_pairwise,item_only,Item Shift Only,encoding_rt,paired_t,,,,,0.08305863417867917,post - pre,56.0,-0.04588602715158962,-1.7653348547059353,-0.23590279282999874,0.24917590253603752,False
+within_condition_pairwise,item_only,Item Shift Only,encoding_rt,paired_t,,,,,0.1574279716950168,mid - pre,56.0,-0.029822403308826424,-1.4333159829507995,-0.19153490482817898,0.3148559433900336,False
 within_condition_pairwise,item_only,Item Shift Only,REC,paired_t,,,,,0.8041351966999335,post - mid,56.0,-0.005357142857142847,-0.24919894243213783,-0.03330060941883795,1.0,False
 within_condition_pairwise,item_only,Item Shift Only,REC,paired_t,,,,,0.7052665418550026,post - pre,56.0,0.00714285714285715,0.38019291043608505,0.050805414704723606,1.0,False
 within_condition_pairwise,item_only,Item Shift Only,REC,paired_t,,,,,0.4942486510401328,mid - pre,56.0,0.012499999999999999,0.6881531337917131,0.09195833058155,1.0,False
@@ -23,27 +23,27 @@ within_condition_pairwise,item_only,Item Shift Only,LDI,paired_t,,,,,0.408253924
 within_condition_pairwise,item_only,Item Shift Only,ALT_LDI,paired_t,,,,,0.9197944065232575,post - mid,56.0,0.0017857142857142874,0.10115610777177474,0.013517553495055777,1.0,False
 within_condition_pairwise,item_only,Item Shift Only,ALT_LDI,paired_t,,,,,0.3984023980409755,post - pre,56.0,0.015178571428571435,0.8511032807021204,0.1137334598980937,1.0,False
 within_condition_pairwise,item_only,Item Shift Only,ALT_LDI,paired_t,,,,,0.4447575109226132,mid - pre,56.0,0.013392857142857142,0.7697231888954236,0.10285858769649127,1.0,False
-within_condition_pairwise,both,Item + Task Shift,encoding_rt,paired_t,,,,,2.4312920790180223e-13,post - mid,49.0,0.21992939060999145,10.01250963379365,1.4303585191133787,7.293876237054066e-13,True
-within_condition_pairwise,both,Item + Task Shift,encoding_rt,paired_t,,,,,2.449508811707121e-12,post - pre,49.0,0.24267215888879837,9.315356463615128,1.3307652090878754,4.899017623414242e-12,True
-within_condition_pairwise,both,Item + Task Shift,encoding_rt,paired_t,,,,,0.27001459059630695,mid - pre,49.0,0.022742768278806925,1.1159135849933899,0.1594162264276271,0.27001459059630695,False
-within_condition_pairwise,both,Item + Task Shift,REC,paired_t,,,,,0.0016446930532766388,post - mid,49.0,-0.07346938775510205,-3.3363798669282976,-0.4766256952754711,0.004934079159829916,True
-within_condition_pairwise,both,Item + Task Shift,REC,paired_t,,,,,0.014544862330232413,post - pre,49.0,-0.05102040816326532,-2.5353722167946966,-0.362196030970671,0.029089724660464826,True
-within_condition_pairwise,both,Item + Task Shift,REC,paired_t,,,,,0.28415280284251065,mid - pre,49.0,0.022448979591836737,1.08315041743295,0.15473577391899285,0.28415280284251065,False
-within_condition_pairwise,both,Item + Task Shift,LDI,paired_t,,,,,0.14852976233329032,post - mid,49.0,-0.033673469387755096,-1.4683595795340585,-0.2097656542191512,0.445589286999871,False
+within_condition_pairwise,both,Item + Task Shift,encoding_rt,paired_t,,,,,2.4312920790180203e-13,post - mid,49.0,0.21992939060999145,10.01250963379365,1.4303585191133787,7.29387623705406e-13,True
+within_condition_pairwise,both,Item + Task Shift,encoding_rt,paired_t,,,,,2.4495088117071194e-12,post - pre,49.0,0.24267215888879837,9.315356463615128,1.3307652090878754,4.899017623414239e-12,True
+within_condition_pairwise,both,Item + Task Shift,encoding_rt,paired_t,,,,,0.2700145905963069,mid - pre,49.0,0.022742768278806925,1.1159135849933899,0.1594162264276271,0.2700145905963069,False
+within_condition_pairwise,both,Item + Task Shift,REC,paired_t,,,,,0.0016446930532766381,post - mid,49.0,-0.07346938775510205,-3.3363798669282976,-0.4766256952754711,0.004934079159829914,True
+within_condition_pairwise,both,Item + Task Shift,REC,paired_t,,,,,0.01454486233023241,post - pre,49.0,-0.05102040816326532,-2.5353722167946966,-0.362196030970671,0.02908972466046482,True
+within_condition_pairwise,both,Item + Task Shift,REC,paired_t,,,,,0.2841528028425106,mid - pre,49.0,0.022448979591836737,1.08315041743295,0.15473577391899285,0.2841528028425106,False
+within_condition_pairwise,both,Item + Task Shift,LDI,paired_t,,,,,0.14852976233329024,post - mid,49.0,-0.033673469387755096,-1.4683595795340585,-0.2097656542191512,0.4455892869998707,False
 within_condition_pairwise,both,Item + Task Shift,LDI,paired_t,,,,,0.8924074519743838,post - pre,49.0,-0.0030612244897959256,-0.1359778827298013,-0.019425411818543042,0.8924074519743838,False
-within_condition_pairwise,both,Item + Task Shift,LDI,paired_t,,,,,0.15753093814048252,mid - pre,49.0,0.03061224489795917,1.4358477885258065,0.20512111264654376,0.445589286999871,False
-within_condition_pairwise,both,Item + Task Shift,ALT_LDI,paired_t,,,,,0.2859189482317754,post - mid,49.0,-0.017346938775510194,-1.07913852665193,-0.15416264666456145,0.37789489367131435,False
-within_condition_pairwise,both,Item + Task Shift,ALT_LDI,paired_t,,,,,0.18894744683565717,post - pre,49.0,0.027551020408163276,1.3326226282888676,0.1903746611841239,0.37789489367131435,False
-within_condition_pairwise,both,Item + Task Shift,ALT_LDI,paired_t,,,,,0.01038289019291426,mid - pre,49.0,0.04489795918367347,2.6676875566648897,0.38109822238069846,0.03114867057874278,True
-within_condition_pairwise,task_only,Task Shift Only,encoding_rt,paired_t,,,,,8.690310674630914e-13,post - mid,53.0,0.2355842332303819,9.391138905550624,1.289972136186908,2.6070932023892742e-12,True
-within_condition_pairwise,task_only,Task Shift Only,encoding_rt,paired_t,,,,,2.035843559817556e-11,post - pre,53.0,0.2674794381752766,8.50613569213838,1.1684075956962001,4.071687119635112e-11,True
-within_condition_pairwise,task_only,Task Shift Only,encoding_rt,paired_t,,,,,0.1632774621055612,mid - pre,53.0,0.03189520494489459,1.4141501238785241,0.19424845852406247,0.1632774621055612,False
-within_condition_pairwise,task_only,Task Shift Only,REC,paired_t,,,,,0.07745528158549159,post - mid,53.0,-0.037735849056603765,-1.8012986155230652,-0.247427393668241,0.15491056317098317,False
-within_condition_pairwise,task_only,Task Shift Only,REC,paired_t,,,,,0.009489978727550526,post - pre,53.0,-0.061320754716981146,-2.693713706624829,-0.37001003385829995,0.02846993618265158,True
+within_condition_pairwise,both,Item + Task Shift,LDI,paired_t,,,,,0.15753093814048244,mid - pre,49.0,0.03061224489795917,1.4358477885258065,0.20512111264654376,0.4455892869998707,False
+within_condition_pairwise,both,Item + Task Shift,ALT_LDI,paired_t,,,,,0.28591894823177527,post - mid,49.0,-0.017346938775510194,-1.07913852665193,-0.15416264666456145,0.37789489367131424,False
+within_condition_pairwise,both,Item + Task Shift,ALT_LDI,paired_t,,,,,0.18894744683565712,post - pre,49.0,0.027551020408163276,1.3326226282888676,0.1903746611841239,0.37789489367131424,False
+within_condition_pairwise,both,Item + Task Shift,ALT_LDI,paired_t,,,,,0.010382890192914256,mid - pre,49.0,0.04489795918367347,2.6676875566648897,0.38109822238069846,0.03114867057874277,True
+within_condition_pairwise,task_only,Task Shift Only,encoding_rt,paired_t,,,,,8.690310674630913e-13,post - mid,53.0,0.2355842332303819,9.391138905550624,1.289972136186908,2.6070932023892742e-12,True
+within_condition_pairwise,task_only,Task Shift Only,encoding_rt,paired_t,,,,,2.0358435598175553e-11,post - pre,53.0,0.2674794381752766,8.50613569213838,1.1684075956962001,4.0716871196351105e-11,True
+within_condition_pairwise,task_only,Task Shift Only,encoding_rt,paired_t,,,,,0.16327746210556116,mid - pre,53.0,0.03189520494489459,1.4141501238785241,0.19424845852406247,0.16327746210556116,False
+within_condition_pairwise,task_only,Task Shift Only,REC,paired_t,,,,,0.07745528158549157,post - mid,53.0,-0.037735849056603765,-1.8012986155230652,-0.247427393668241,0.15491056317098315,False
+within_condition_pairwise,task_only,Task Shift Only,REC,paired_t,,,,,0.009489978727550525,post - pre,53.0,-0.061320754716981146,-2.693713706624829,-0.37001003385829995,0.028469936182651576,True
 within_condition_pairwise,task_only,Task Shift Only,REC,paired_t,,,,,0.16901232101633784,mid - pre,53.0,-0.02358490566037736,-1.3947791348988012,-0.19158764855356394,0.16901232101633784,False
-within_condition_pairwise,task_only,Task Shift Only,LDI,paired_t,,,,,0.437787092250166,post - mid,53.0,0.01698113207547169,0.7819551600929698,0.10740980177295774,0.9767328778386568,False
-within_condition_pairwise,task_only,Task Shift Only,LDI,paired_t,,,,,0.9187954637649467,post - pre,53.0,-0.0018867924528301993,-0.1024475921293977,-0.014072259030079344,0.9767328778386568,False
-within_condition_pairwise,task_only,Task Shift Only,LDI,paired_t,,,,,0.3255776259462189,mid - pre,53.0,-0.018867924528301896,-0.9924423186503551,-0.13632243657635731,0.9767328778386568,False
-within_condition_pairwise,task_only,Task Shift Only,ALT_LDI,paired_t,,,,,0.19449423107070146,post - mid,53.0,0.02264150943396226,1.3143572172174098,0.18054084858701297,0.5834826932121044,False
-within_condition_pairwise,task_only,Task Shift Only,ALT_LDI,paired_t,,,,,0.32384215179765474,post - pre,53.0,0.015094339622641508,0.9960422500872445,0.13681692518870506,0.6476843035953095,False
-within_condition_pairwise,task_only,Task Shift Only,ALT_LDI,paired_t,,,,,0.6474569569802988,mid - pre,53.0,-0.007547169811320743,-0.45996765966085434,-0.06318141712917362,0.6476843035953095,False
+within_condition_pairwise,task_only,Task Shift Only,LDI,paired_t,,,,,0.43778709225016604,post - mid,53.0,0.01698113207547169,0.7819551600929698,0.10740980177295774,0.9767328778386573,False
+within_condition_pairwise,task_only,Task Shift Only,LDI,paired_t,,,,,0.9187954637649467,post - pre,53.0,-0.0018867924528301993,-0.1024475921293977,-0.014072259030079344,0.9767328778386573,False
+within_condition_pairwise,task_only,Task Shift Only,LDI,paired_t,,,,,0.3255776259462191,mid - pre,53.0,-0.018867924528301896,-0.9924423186503551,-0.13632243657635731,0.9767328778386573,False
+within_condition_pairwise,task_only,Task Shift Only,ALT_LDI,paired_t,,,,,0.19449423107070143,post - mid,53.0,0.02264150943396226,1.3143572172174098,0.18054084858701297,0.5834826932121043,False
+within_condition_pairwise,task_only,Task Shift Only,ALT_LDI,paired_t,,,,,0.323842151797655,post - pre,53.0,0.015094339622641508,0.9960422500872445,0.13681692518870506,0.64768430359531,False
+within_condition_pairwise,task_only,Task Shift Only,ALT_LDI,paired_t,,,,,0.6474569569802989,mid - pre,53.0,-0.007547169811320743,-0.45996765966085434,-0.06318141712917362,0.64768430359531,False

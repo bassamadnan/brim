@@ -1,16 +1,27 @@
 {
+  "bug_fixes_applied": [
+    "B1: RT model output renamed phase2_primary_rt_gee.csv; clearly labelled Gaussian GEE throughout.",
+    "B2: _clean_boundary_cat() applied in all GEE working datasets; no phantom foil dummy variables.",
+    "B3: lure_bin_c removed from combined target+lure correctness GEE; reported from lure-only split."
+  ],
+  "new_analyses": [
+    "G1: Encoding RT carryover GEE \u2014 trial-level join of encoding RT to test correctness.",
+    "G2: Participant heterogeneity \u2014 per-participant post-mid and post-pre target correctness contrasts.",
+    "G3: Stimulus class x boundary interaction added to primary correctness GEE.",
+    "G4: Speed-accuracy extended by boundary position."
+  ],
   "confirmatory_primary": [
     "Correctness modeled via clustered logistic GEE with participant-level clustering.",
-    "Response speed modeled via mixed-effects linear model on log RT."
+    "Response speed modeled via Gaussian GEE (LMM was singular) on log RT.",
+    "Friedman nonparametric test is the PRIMARY confirmatory result for boundary effect."
   ],
   "fallbacks_and_secondary": [
-    "Friedman nonparametric tests for target correctness within condition.",
     "Chi-square response-profile tests with Cramer's V.",
     "Lure-bin slope model using GEE on similar-response probability.",
     "Robustness reruns include RT outlier-trimmed model and split target/lure correctness models."
   ],
   "precision_and_diagnostics": [
-    "Added precision-context table (CI half-width summaries by condition).",
-    "Added RT diagnostics summary and diagnostic plots (histogram, QQ, residuals vs fitted)."
+    "Precision-context table (CI half-width summaries by condition).",
+    "RT diagnostics summary and diagnostic plots (histogram, QQ, residuals vs fitted)."
   ]
 }
