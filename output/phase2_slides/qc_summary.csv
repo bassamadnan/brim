@@ -1,0 +1,10 @@
+check,variable,n_missing,pct_missing,n_very_fast_lt_0.2,n_very_slow_gt_30,statistic,p_value,n
+missingness_test_trials,correct,0.0,0.0,,,,,
+missingness_test_trials,response_label,0.0,0.0,,,,,
+missingness_test_trials,response_rt,0.0,0.0,,,,,
+missingness_test_trials,test_boundary_position,0.0,0.0,,,,,
+missingness_test_trials,item_role,0.0,0.0,,,,,
+missingness_test_trials,lure_bin,0.0,0.0,,,,,
+missingness_participant_level,encoding_task_accuracy,2.0,0.012658227848101266,,,,,
+rt_artifacts,response_rt,0.0,0.0,1.0,23.0,,,
+normality_shapiro,participant_mean_log_rt,,,,,0.953374828968088,3.9825129088895225e-05,158.0

@@ -1,0 +1,20 @@
+{
+  "positioning": [
+    "This script is the slide-aligned Phase 2 analysis.",
+    "Primary analyses are participant-level and match class-taught methods.",
+    "Advanced clustered models from phase2_analysis.py are intentionally omitted here."
+  ],
+  "methods_kept": [
+    "Repeated-measures ANOVA",
+    "Friedman test",
+    "Holm-corrected paired t-tests",
+    "Chi-square with Cramer's V",
+    "Spearman correlation for lure-bin trend"
+  ],
+  "methods_removed": [
+    "GEE",
+    "mixed-model fallback logic",
+    "trial-level carryover GLM/GEE",
+    "robustness reruns as primary evidence"
+  ]
+}

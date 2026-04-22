@@ -1,0 +1,10 @@
+analysis_family,condition,condition_label,boundary_position,spearman_rho,p_value,n
+lure_bin_spearman,item_only,Item Shift Only,post,0.16858724529243743,0.00482566064327019,278
+lure_bin_spearman,item_only,Item Shift Only,mid,0.2666484753952629,6.303655869205283e-06,279
+lure_bin_spearman,item_only,Item Shift Only,pre,0.1397000378509058,0.020019874611341328,277
+lure_bin_spearman,both,Item + Task Shift,post,0.21109966551395423,0.001025293453158605,239
+lure_bin_spearman,both,Item + Task Shift,mid,0.16610563409857002,0.009635964117484396,242
+lure_bin_spearman,both,Item + Task Shift,pre,0.1015967252945535,0.11418473063079976,243
+lure_bin_spearman,task_only,Task Shift Only,post,0.16976497461116058,0.00568588764638087,264
+lure_bin_spearman,task_only,Task Shift Only,mid,0.2967068319395277,9.601540003856072e-07,263
+lure_bin_spearman,task_only,Task Shift Only,pre,0.310658203941472,3.185597799662417e-07,260

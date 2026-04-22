@@ -1,0 +1,5 @@
+analysis_name,method,role
+target_correctness_within_condition,Repeated-measures ANOVA + Friedman + Holm-corrected paired t-tests,primary
+test_rt_within_condition,Repeated-measures ANOVA + Friedman + Holm-corrected paired t-tests,primary_secondary
+response_profile,Chi-square test of independence + Cramer's V,secondary
+lure_bin,Descriptive boundary-wise summary + Spearman correlation,secondary
