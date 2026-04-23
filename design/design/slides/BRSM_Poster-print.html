@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRSM Poster — Print</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page {
+    size: 33.1in 23.4in;
+    margin: 0;
+  }
+
+  html, body {
+    width: 3178px;
+    height: 2246px;
+    background: #fff;
+    font-family: 'Carlito', 'Calibri', Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .stage { width: 3178px; height: 2246px; display: block; }
+
+  /* ── POSTER: 33.1 × 23.4 inches @ 96dpi = 3178 × 2246px ── */
+  .poster {
+    width: 3178px;
+    height: 2246px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform-origin: center center;
+  }
+
+  /* ── HEADER (≈16.5% of height) ── */
+  .header {
+    background: #B2E8F1;
+    height: 352px;
+    display: flex; align-items: stretch;
+    flex-shrink: 0;
+  }
+  .header-title {
+    flex: 1; padding: 32px 44px 28px 46px;
+    display: flex; align-items: center;
+  }
+  .poster-title {
+    font-size: 66px; font-weight: 700;
+    line-height: 1.15; color: #000;
+    text-transform: uppercase; letter-spacing: 0.005em;
+  }
+  .header-badge {
+    width: 384px; background: #808080; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px 28px;
+  }
+  .badge-text {
+    font-size: 33px; font-weight: 700; color: #fff;
+    text-transform: uppercase; text-align: center;
+    line-height: 1.35; letter-spacing: 0.03em;
+  }
+
+  /* ── BODY ── */
+  .body { flex: 1; display: flex; overflow: hidden; }
+
+  .col {
+    display: flex; flex-direction: column;
+    padding: 16px 20px; gap: 11px; overflow: hidden;
+  }
+  .col-left  { width: 822px; border-right: 2px solid #bbb; flex-shrink: 0; }
+  .col-mid   { flex: 1; border-right: 2px solid #bbb; }
+  .col-right { width: 756px; flex-shrink: 0; }
+
+  /* Section header bar */
+  .sec-hd {
+    background: #D9D9D9;
+    font-size: 28px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em; color: #000;
+    padding: 6px 18px; flex-shrink: 0; line-height: 1.3;
+  }
+
+  /* Text */
+  .bt {
+    font-size: 25px; line-height: 1.45; color: #111;
+    text-align: justify;
+  }
+  .bt b { font-weight: 700; }
+  .bt i { font-style: italic; }
+
+  ul.bl {
+    padding-left: 32px;
+    font-size: 25px; line-height: 1.45; color: #111;
+  }
+  ul.bl li { margin-bottom: 3px; }
+
+  /* Figure */
+  .fig {
+    flex-shrink: 0; display: flex; flex-direction: column;
+    border: 2px solid #b8dce4; background: #e5f5f9;
+  }
+  .fig img { width: 100%; display: block; }
+  .fig-cap {
+    font-size: 21px; font-style: italic; color: #444;
+    padding: 6px 14px 8px; line-height: 1.35; background: #e5f5f9;
+  }
+
+  /* 2-fig row */
+  .fig-row { display: flex; gap: 13px; flex-shrink: 0; }
+  .fig-row .fig { flex: 1; }
+
+  /* Blue content blocks */
+  .cb-row { display: flex; gap: 13px; flex: 1; min-height: 0; }
+  .cb {
+    flex: 1; background: #B2E8F1;
+    padding: 13px 18px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .cb-hd { font-size: 27px; font-weight: 700; color: #000; line-height: 1.2; }
+  .cb-txt {
+    font-size: 23px; line-height: 1.44; color: #0d3040;
+    text-align: justify; flex: 1;
+  }
+  .cb-txt b { font-weight: 700; }
+  .cb .fig { border-color: #88ccd8; background: #cceef5; flex-shrink: 0; }
+  .cb .fig-cap { background: #cceef5; font-size: 20px; }
+
+  /* Key finding callout */
+  .kf {
+    background: #33ABBF; color: #fff;
+    padding: 11px 22px; flex-shrink: 0;
+  }
+  .kf-label { font-size: 20px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; opacity: 0.82; margin-bottom: 3px; }
+  .kf-text  { font-size: 25px; font-weight: 700; line-height: 1.38; }
+
+  /* Inline stats bar */
+  .stat-bar {
+    background: #d4f2f8; border: 2px solid #9fd8e5;
+    padding: 10px 18px; flex-shrink: 0;
+  }
+  .stat-bar p { font-size: 23px; line-height: 1.45; color: #0d3040; }
+  .stat-bar b { font-weight: 700; }
+
+  /* Section wrapper */
+  .sec { display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; }
+
+  /* Sample table */
+  .stbl { width: 100%; border-collapse: collapse; font-size: 24px; flex-shrink: 0; }
+  .stbl th { background: #5B9BD5; color: #fff; padding: 6px 12px; text-align: left; font-weight: 700; font-size: 23px; }
+  .stbl td { padding: 5px 12px; border-bottom: 1px solid #e4e4e4; color: #111; }
+  .stbl tr:nth-child(even) td { background: #f2fbfd; }
+
+  /* Ref */
+  .ref { font-size: 21px; line-height: 1.38; color: #222; padding-left: 32px; text-indent: -32px; margin-bottom: 5px; }
+  .ref i { font-style: italic; }
+
+  /* Contributions */
+  .contrib-row { display: flex; gap: 13px; flex-shrink: 0; }
+  .contrib-box {
+    flex: 1; background: #e5f5f9; border: 2px solid #b8dce4;
+    padding: 10px 14px;
+  }
+  .contrib-name { font-size: 24px; font-weight: 700; color: #0d3040; margin-bottom: 4px; }
+  .contrib-id   { font-size: 20px; color: #5B9BD5; font-weight: 700; margin-bottom: 6px; }
+  .contrib-txt  { font-size: 22px; line-height: 1.42; color: #111; text-align: justify; }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: #33ABBF; height: 100px;
+    display: flex; align-items: center; padding: 0 46px;
+    flex-shrink: 0; justify-content: space-between;
+  }
+  .ft-l { font-size: 27px; font-style: italic; color: #fff; }
+  .ft-r { font-size: 27px; font-style: italic; color: #fff; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+<div class="poster" id="poster">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-title">
+      <div class="poster-title">Event Boundaries and Recognition Memory:<br>A Confirmatory Mnemonic Similarity Task (MST) Study</div>
+    </div>
+    <div class="header-badge">
+      <div class="badge-text">BRSM<br>PROJECT<br>POSTER<br>PRESENTATION<br>SP 2026</div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ══ LEFT COLUMN ══ -->
+    <div class="col col-left">
+
+      <div class="sec">
+        <div class="sec-hd">Abstract</div>
+        <p class="bt">In Phase 2 we moved from exploratory summaries to confirmatory modelling of test-phase correctness, response speed, and response-category behaviour. Three code-level bugs were corrected and nine analyses added. The clearest result is a post-boundary recognition cost in Item + Task Shift, confirmed by Friedman χ²(2)=11.47, <i>p</i>=.003, W=0.117; Holm-corrected dz=−0.477, <i>p</i>=.020; and SDT d' dz=−0.473, <i>p</i>=.016. Response decomposition shows general trace weakening; encoding RT did not predict test correctness; pre-boundary lure FA elevation (dz=+0.381) supports a familiarity-based reinterpretation of the LDI non-replication (observed contrast=−0.031, wrong direction).</p>
+      </div>
+
+      <div class="sec">
+        <div class="sec-hd">Introduction</div>
+        <p class="bt"><b>Dataset:</b> MST data, IIIT Hyderabad SP 2026. Conditions: Item Shift Only (<i>n</i>=56), Item + Task Shift (<i>n</i>=49), Task Shift Only (<i>n</i>=53); 150 test trials each. Positions: post (crossed boundary), mid (within event), pre (before boundary).</p>
+        <p class="bt" style="margin-top:6px;"><b>Prior work:</b> Zacks &amp; Swallow (2007) and Swallow et al. (2009) showed event boundaries impair memory encoding. Morse et al. (2023) predicted a pre-boundary LDI advantage via hippocampal pattern separation — we re-examine this. Phase 1 found task-rule boundaries slow encoding RT dramatically (Fig. 1), motivating Phase 2.</p>
+      </div>
+
+      <div class="sec">
+        <div class="sec-hd">Methodology</div>
+        <ul class="bl" style="margin-top:2px;">
+          <li><b>QC:</b> RT artifact removal; Shapiro-Wilk (<i>W</i>=0.953, <i>p</i>&lt;.001 → nonparametric warranted)</li>
+          <li><b>ANOVA + Friedman:</b> Repeated-measures ANOVA &amp; Friedman test on participant-level target accuracy across post/mid/pre per condition</li>
+          <li><b>Pairwise contrasts:</b> Holm-corrected paired <i>t</i>-tests with Cohen's dz; chi-square on old/new/similar response profiles</li>
+          <li><b>SDT d-prime:</b> Foil-based FA rate as baseline; d' by boundary position</li>
+          <li><b>Lure analysis:</b> Spearman (lure bin vs P(similar)); lure FA rate by boundary</li>
+        </ul>
+        <p class="bt" style="margin-top:6px;"><b>H₁:</b> Post-boundary targets show lower recognition than mid/pre when both item and task rule shift simultaneously.</p>
+      </div>
+
+      <div class="fig" style="max-height:420px;overflow:hidden;">
+        <img src="../assets/fig_phase1_encoding_rt.png" alt="Phase 1 encoding RT" style="max-height:370px;object-fit:cover;object-position:top;">
+        <div class="fig-cap"><b>Fig. 1 (Phase 1).</b> Encoding RT by boundary. Task-rule boundaries slow encoding dramatically — F(2,96)=68.36, <i>p</i>&lt;.001 (Item + Task Shift). Motivates Phase 2.</div>
+      </div>
+
+    </div><!-- /col-left -->
+
+    <!-- ══ MIDDLE COLUMN ══ -->
+    <div class="col col-mid">
+
+      <div class="kf">
+        <div class="kf-label">Primary Finding — Phase 2 Confirmatory Result</div>
+        <div class="kf-text">Post-boundary recognition cost confirmed — Item + Task Shift: Friedman χ²(2)=11.47, <i>p</i>=.003, W=0.117 &nbsp;·&nbsp; Post-mid dz=−0.477, Holm <i>p</i>=.020 &nbsp;·&nbsp; SDT d': dz=−0.473, <i>p</i>=.016 &nbsp;·&nbsp; Not significant in Item Shift Only or Task Shift Only</div>
+      </div>
+
+      <div class="sec">
+        <div class="sec-hd">Results</div>
+        <p class="bt"><b>H₁ confirmed:</b> ANOVA — Item + Task Shift: F(2,96)=6.45, <i>p</i>=.002; Item Shift Only: F(2,110)=0.21, <i>p</i>=.814; Task Shift Only: F(2,104)=4.62, <i>p</i>=.012. Both parametric and nonparametric tests agree only for Item + Task Shift. Per-participant contrast distribution (Fig. 3) shows the effect is consistent across individuals — mean post−mid=−0.073.</p>
+      </div>
+
+      <div class="fig-row">
+        <div class="fig">
+          <img src="../assets/fig_target_correctness.png" alt="Target correctness by boundary">
+          <div class="fig-cap"><b>Fig. 2.</b> Target recognition accuracy by boundary position. Post-boundary cost is significant only in Item + Task Shift (centre). Points = participant means; diamonds = condition means ± 95% CI.</div>
+        </div>
+        <div class="fig">
+          <img src="../assets/fig_participant_contrast.png" alt="Per-participant contrast distribution">
+          <div class="fig-cap"><b>Fig. 3.</b> Per-participant post−mid target correctness contrast. Item + Task Shift (centre) distribution is shifted left of zero (mean=−0.073) — boundary cost is consistent at the person level.</div>
+        </div>
+      </div>
+
+      <div class="stat-bar">
+        <p><b>ANOVA:</b> F(2,96)=6.45, <i>p</i>=.002 &nbsp;|&nbsp; <b>Friedman:</b> χ²(2)=11.47, <i>p</i>=.003, W=0.117 &nbsp;|&nbsp; <b>Post-mid:</b> dz=−0.477, Holm <i>p</i>=.020 &nbsp;|&nbsp; <b>Post-pre:</b> dz=−0.357, Holm <i>p</i>=.029 &nbsp;|&nbsp; <b>SDT d' post-mid:</b> dz=−0.473, Holm <i>p</i>=.016 &nbsp;|&nbsp; <b>Chi-square (response profiles):</b> χ²(4)=22.55, <i>p</i>&lt;.001, V=0.062</p>
+      </div>
+
+      <div class="cb-row">
+        <div class="cb">
+          <div class="cb-hd">SDT d-prime &amp; Response Decomposition</div>
+          <div class="cb-txt"><b>SDT (Fig. 4):</b> Post-boundary d' is lowest in Item + Task Shift — Friedman χ²(2)=11.47, <i>p</i>=.003. Post-mid d' contrast: dz=−0.473, Holm <i>p</i>=.016. Null in other conditions.<br><br><b>Response direction:</b> P("old"|target) post-mid: dz=−0.477, Holm <i>p</i>=.028. Both P("similar") and P("new") trend upward but don't survive correction — <b>general trace weakening</b>, not conservative responding alone.</div>
+          <div class="fig">
+            <img src="../assets/fig_sdt_dprime.png" alt="SDT d-prime">
+            <div class="fig-cap"><b>Fig. 4.</b> SDT d' by boundary position. Post-boundary d' dip largest in Item + Task Shift. Error bars ±1 SE.</div>
+          </div>
+        </div>
+        <div class="cb">
+          <div class="cb-hd">Lure Analysis &amp; LDI Non-Replication</div>
+          <div class="cb-txt"><b>Lure bins (Fig. 5):</b> P(similar) increases with lure bin across all conditions (Spearman ρ=0.14–0.31, all <i>p</i>&lt;.011) — confirms MST difficulty gradient is intact.<br><br><b>LDI non-replication:</b> Morse et al. (2023) predicted pre-boundary LDI advantage. Observed: x̄=−0.031 (wrong direction). Post-hoc power &gt;54% for dz≥0.30 — null is genuine.<br><br><b>Familiarity account:</b> Pre-boundary lure FA rate is elevated (dz=+0.381, Holm <i>p</i>=.093, marginal) — pre-boundary items encoded with stronger familiarity, making their visual variants feel familiar at test. Reframes LDI null as a familiarity, not pattern-separation, effect.</div>
+          <div class="fig">
+            <img src="../assets/fig_lure_bins.png" alt="Lure bins">
+            <div class="fig-cap"><b>Fig. 5.</b> P(similar) vs. lure bin by condition and boundary. Increasing trend validates MST structure.</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /col-mid -->
+
+    <!-- ══ RIGHT COLUMN ══ -->
+    <div class="col col-right">
+
+      <div class="sec">
+        <div class="sec-hd">Conclusion &amp; Future Works</div>
+        <ul class="bl" style="margin-top:2px;">
+          <li><b>Post-boundary cost confirmed (H₁):</b> Friedman χ²(2)=11.47, <i>p</i>=.003; post-mid dz=−0.477, <i>p</i>=.020 — Item + Task Shift only. Task-rule shift drives impairment, not item shift alone.</li>
+          <li><b>SDT d-prime converges:</b> Post-mid d' dz=−0.473, Holm <i>p</i>=.016. Post-boundary d' lowest across all conditions.</li>
+          <li><b>General trace weakening:</b> "New" misses and "similar" errors both trend upward post-boundary — weakened, poorly differentiated trace.</li>
+          <li><b>Carry-over null:</b> Encoding RT does not predict trial-level correctness — encoding disruption and memory cost are parallel, not causal.</li>
+          <li><b>LDI non-replication genuine:</b> x̄=−0.031 (wrong direction); power &gt;54% for dz≥0.30. Pre-boundary lure FA supports familiarity account.</li>
+          <li><b>MST validity:</b> Lure bin gradient holds (ρ=0.14–0.31); speed-accuracy coupling intact across all boundary positions.</li>
+        </ul>
+        <p class="bt" style="margin-top:6px;"><b>Future work:</b> (1) Test boundary cost in fMRI hippocampal data. (2) Examine Objects-vs-Scenes × boundary with larger samples.</p>
+      </div>
+
+      <div class="sec">
+        <div class="sec-hd">Acknowledgment</div>
+        <div class="contrib-row">
+          <div class="contrib-box">
+            <div class="contrib-name">Sambu Aneesh</div>
+            <div class="contrib-id">2023121012</div>
+            <div class="contrib-txt">Framed the confirmatory research questions and designed the statistical analysis plan. Led hypothesis specification, correction families, and quality-check pipeline.</div>
+          </div>
+          <div class="contrib-box">
+            <div class="contrib-name">Renu Sree Vyshnavi</div>
+            <div class="contrib-id">2022101035</div>
+            <div class="contrib-txt">Led results interpretation and report narrative. Authored the Phase 2 report and verified statistical reporting consistency across all analysis outputs and the final poster.</div>
+          </div>
+          <div class="contrib-box">
+            <div class="contrib-name">Pavan Harshit Chinta</div>
+            <div class="contrib-id">2025701057</div>
+            <div class="contrib-txt">Implemented the full Phase 2 analysis pipeline in Python. Generated all figures, corrected three code-level bugs, added nine new analyses, and integrated all assets into the final poster.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="sec-hd">References</div>
+        <div class="ref">[1] Zacks, J. M. &amp; Swallow, K. M. (2007). Event Segmentation. <i>Current Directions in Psychological Science</i>, 16(2), 80–84.</div>
+        <div class="ref">[2] Swallow, K. M. et al. (2009). Event Boundaries in Perception Affect Memory Encoding. <i>J. Exp. Psych.: General</i>, 138(2), 236–257.</div>
+        <div class="ref">[3] Stark, S. M. et al. (2019). Mnemonic Similarity Task. <i>Trends in Cognitive Sciences</i>.</div>
+        <div class="ref">[4] Yassa, M. A. &amp; Stark, C. E. L. (2011). Pattern Separation in the Hippocampus. <i>Trends in Neurosciences</i>, 34(10), 515–525.</div>
+        <div class="ref">[5] Morse, S. J. et al. (2023). Event Boundaries Directionally Influence Item-Level Recognition Memory.</div>
+      </div>
+
+    </div><!-- /col-right -->
+
+  </div><!-- /body -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div><span class="ft-l">Author names: </span><span class="ft-l" style="font-style:normal;font-weight:700"> Sambu Aneesh &nbsp;·&nbsp; Renu Sree Vyshnavi &nbsp;·&nbsp; Pavan Harshit Chinta</span></div>
+    <div><span class="ft-r">email ID: </span><span class="ft-r" style="font-style:normal"> sambu.aneesh@research.iiit.ac.in &nbsp;·&nbsp; renu.sree@students.iiit.ac.in &nbsp;·&nbsp; pavan.harshit@research.iiit.ac.in</span></div>
+  </div>
+
+</div><!-- /poster -->
+</div><!-- /stage -->
+
+<script>
+  // Auto-print after fonts and layout are ready
+  document.fonts.ready.then(function() {
+    setTimeout(function() { window.print(); }, 500);
+  });
+</script>
+</body>
+</html>

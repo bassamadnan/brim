@@ -1,0 +1,136 @@
+/* BRSM Poster Design System — Colors & Typography */
+/* Source: uploads/poster_template.pptx (ch-pavan/brim@develop) */
+
+/* ─── COLOR TOKENS ─────────────────────────────────────── */
+:root {
+  /* Brand Colors */
+  --color-teal:          #33ABBF;   /* Primary — footer bar, accents */
+  --color-teal-dark:     #2190A2;   /* Darker teal for hover/emphasis */
+  --color-blue-light:    #B2E8F1;   /* Header background, section fills */
+  --color-blue:          #5B9BD5;   /* Image placeholders, highlights */
+  --color-blue-mid:      #4A89C5;   /* Darker blue variant */
+
+  /* Neutrals */
+  --color-white:         #FFFFFF;
+  --color-gray-light:    #D9D9D9;   /* Section header bars, dividers */
+  --color-gray-mid:      #808080;   /* Muted text, secondary elements */
+  --color-gray-dark:     #444444;   /* Subheadings, captions */
+  --color-black:         #000000;   /* Body text */
+  --color-text:          #1a1a1a;   /* Soft black for comfortable reading */
+
+  /* Semantic */
+  --color-bg-header:     var(--color-blue-light);
+  --color-bg-footer:     var(--color-teal);
+  --color-bg-content:    var(--color-white);
+  --color-bg-section-hd: var(--color-gray-light);
+  --color-text-header:   var(--color-black);
+  --color-text-footer:   var(--color-white);
+  --color-text-body:     var(--color-text);
+  --color-text-muted:    var(--color-gray-mid);
+  --color-accent:        var(--color-teal);
+  --color-figure-bg:     var(--color-blue-light);
+}
+
+/* ─── TYPOGRAPHY TOKENS ─────────────────────────────────── */
+:root {
+  /* Font Families */
+  --font-primary:    'Carlito', 'Calibri', Arial, sans-serif;
+  --font-fallback:   Arial, Helvetica, sans-serif;
+
+  /* Font Sizes (poster at 1190×841 base) */
+  --fs-poster-title:   clamp(20px, 2.4vw, 34px);
+  --fs-section-hd:     clamp(10px, 1.05vw, 14px);
+  --fs-body:           clamp(8px,  0.85vw, 11px);
+  --fs-caption:        clamp(7px,  0.72vw,  9px);
+  --fs-author:         clamp(9px,  0.92vw, 12px);
+  --fs-stat:           clamp(8px,  0.78vw, 10px);
+  --fs-footer:         clamp(7px,  0.68vw,  9px);
+
+  /* Font Weights */
+  --fw-regular:   400;
+  --fw-bold:      700;
+
+  /* Line Heights */
+  --lh-tight:   1.2;
+  --lh-normal:  1.45;
+  --lh-loose:   1.65;
+
+  /* Spacing */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   12px;
+  --space-lg:   16px;
+  --space-xl:   24px;
+
+  /* Border / Radii */
+  --radius-none:  0px;
+  --border-divider: 1px solid var(--color-gray-light);
+}
+
+/* ─── BASE ELEMENT STYLES ───────────────────────────────── */
+
+/* Poster title */
+.poster-title {
+  font-family: var(--font-primary);
+  font-size: var(--fs-poster-title);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  color: var(--color-text-header);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+/* Section heading (on gray bar) */
+.section-heading {
+  font-family: var(--font-primary);
+  font-size: var(--fs-section-hd);
+  font-weight: var(--fw-bold);
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--color-bg-section-hd);
+  padding: 3px 8px;
+  margin: 0;
+}
+
+/* Body text */
+.body-text {
+  font-family: var(--font-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--color-text-body);
+}
+
+/* Figure caption */
+.caption {
+  font-family: var(--font-primary);
+  font-size: var(--fs-caption);
+  font-style: italic;
+  color: var(--color-gray-dark);
+  line-height: var(--lh-normal);
+}
+
+/* Author info */
+.author-name {
+  font-family: var(--font-primary);
+  font-size: var(--fs-author);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-header);
+}
+
+/* Footer text */
+.footer-text {
+  font-family: var(--font-primary);
+  font-size: var(--fs-footer);
+  color: var(--color-text-footer);
+  font-weight: var(--fw-regular);
+}
+
+/* Statistical highlight */
+.stat-highlight {
+  font-family: var(--font-primary);
+  font-size: var(--fs-stat);
+  font-weight: var(--fw-bold);
+  color: var(--color-teal-dark);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Carlito', Calibri, Arial, sans-serif; background: #fff; padding: 12px; }
+  .poster-mini {
+    width: 100%;
+    aspect-ratio: 1190/841;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    font-size: 4px;
+  }
+  .hd { background: #B2E8F1; height: 17.6%; display: flex; }
+  .hd-title { flex: 1; padding: 4px 5px; display: flex; align-items: center; }
+  .hd-title span { font-size: 5px; font-weight: 700; text-transform: uppercase; color: #000; line-height: 1.2; }
+  .hd-authors { width: 26%; background: #5B9BD5; padding: 3px 4px; display: flex; flex-direction: column; justify-content: center; gap: 2px; }
+  .hd-authors span { font-size: 3.5px; color: #fff; display: block; }
+  .body { flex: 1; display: flex; }
+  .col { flex: 1; border-right: 1px solid #D9D9D9; padding: 3px; display: flex; flex-direction: column; gap: 2px; }
+  .col:last-child { border-right: none; }
+  .col-l { flex: 0 0 28%; }
+  .col-r { flex: 0 0 25%; }
+  .sec-bar { background: #D9D9D9; height: 5px; margin-bottom: 1px; }
+  .text-block { background: #f8f8f8; height: 14px; border: 1px solid #eee; }
+  .fig-block { background: #B2E8F1; flex: 1; min-height: 20px; display: flex; align-items: center; justify-content: center; }
+  .fig-block span { font-size: 3px; color: #1a4a5a; text-align: center; }
+  .stat-block { background: #B2E8F1; height: 8px; }
+  .kf { background: #33ABBF; height: 10px; }
+  .ft { background: #33ABBF; height: 5.2%; display: flex; align-items: center; padding: 0 5px; justify-content: space-between; }
+  .ft span { font-size: 3.5px; color: #fff; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="poster-mini">
+  <div class="hd">
+    <div class="hd-title"><span>Event Boundaries Directionally Influence<br>Recognition Memory: MST Study</span></div>
+    <div class="hd-authors">
+      <span style="font-weight:700">Sambu Aneesh</span>
+      <span>2023121012</span>
+      <span style="font-weight:700;margin-top:2px">Renu Sree Vyshnavi</span>
+      <span>2022101035</span>
+      <span style="font-weight:700;margin-top:2px">Pavan Harshit Chinta</span>
+      <span>2025701057</span>
+    </div>
+  </div>
+  <div class="body">
+    <div class="col col-l">
+      <div class="sec-bar"></div>
+      <div class="text-block"></div>
+      <div class="sec-bar"></div>
+      <div class="text-block" style="height:10px"></div>
+      <div class="sec-bar"></div>
+      <div class="text-block" style="height:20px"></div>
+    </div>
+    <div class="col">
+      <div class="kf"></div>
+      <div class="sec-bar"></div>
+      <div class="fig-block"><span>Fig 1<br>Target Correctness</span></div>
+      <div class="stat-block"></div>
+      <div class="sec-bar"></div>
+      <div class="fig-block"><span>Fig 2<br>Response Dir.</span></div>
+      <div class="stat-block"></div>
+      <div class="sec-bar"></div>
+      <div class="fig-block"><span>Fig 3<br>SDT d'</span></div>
+    </div>
+    <div class="col col-r">
+      <div class="sec-bar"></div>
+      <div class="fig-block"><span>Fig 4<br>Lure Bins</span></div>
+      <div class="stat-block"></div>
+      <div class="sec-bar"></div>
+      <div class="fig-block"><span>Fig 5<br>Lure FA</span></div>
+      <div class="stat-block"></div>
+      <div class="sec-bar"></div>
+      <div class="text-block" style="height:16px"></div>
+      <div class="sec-bar"></div>
+      <div class="text-block" style="height:10px"></div>
+    </div>
+  </div>
+  <div class="ft">
+    <span>Sambu Aneesh · Renu Sree Vyshnavi · Pavan Harshit Chinta</span>
+    <span style="font-weight:700">BRSM PROJECT POSTER PRESENTATION — SP 2026 · IIIT Hyderabad</span>
+    <span>sambu.aneesh@research.iiit.ac.in</span>
+  </div>
+</div>
+</body>
+</html>
